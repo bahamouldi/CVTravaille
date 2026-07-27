@@ -1,0 +1,94 @@
+% !TEX TS-program = pdflatex
+% CV targeted — Fullstack Developer
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.0cm,right=1.0cm,top=0.6cm,bottom=0.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.70}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Fullstack Developer},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Fullstack, React, Next.js, TypeScript, Python, APIs}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{3pt}{1.5pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0.1pt,topsep=0.2pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[1pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[3pt]
+{\large Full-Stack Developer --- Angular \textbar\ React \textbar\ Spring Boot \textbar\ TypeScript}\\[5pt]
+Tunis, Tunisia \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{1pt}
+\section{Profile}
+Computer engineering graduate (ENIT) with 3+ years of hands-on experience across full-stack development: Angular/React frontend and Java/Spring Boot/Python backend. Delivered 6+ full-stack projects covering REST API design, rich user interfaces, database management, Docker/Kubernetes containerization and CI/CD deployment. Security-aware developer with hands-on penetration testing and OWASP remediation experience. Seeking a Full-Stack Developer role to build complete, high-performance web applications.
+\section{Core Skills}
+\textbf{Frontend} : Angular, React, Next.js, TypeScript, HTML5/CSS3, Tailwind CSS, Framer Motion\\[0.5pt]
+\hspace*{1.5em} responsive mobile-first design\\[0.5pt]
+\textbf{Backend} : Java, Spring Boot, Python, FastAPI, Node.js, REST APIs, microservices, JWT authentication\\[0.5pt]
+\textbf{Databases} : PostgreSQL, MySQL, MongoDB, Prisma ORM, SQL, NoSQL, data modeling\\[0.5pt]
+\textbf{DevOps \& Tools} : Docker, Kubernetes, Git, GitHub Actions, CI/CD, Linux, Bash\\[0.5pt]
+\textbf{Security} : OWASP Top 10, secure coding, authentication/authorization, penetration testing\\[0.5pt]
+\textbf{Quality} : Unit testing, integration testing, code review, modular architecture, technical documentation
+\section{Professional Experience}
+\cventry{Full-Stack Developer, Freelance}{Digital Power Consulting}{Tunisia}{01/2024 -- 12/2025}
+\begin{itemize}
+  \item Built full-stack web applications for clients: Angular/TypeScript frontend, Java/Spring Boot backend, REST APIs, PostgreSQL/MySQL databases.
+  \item Designed responsive user interfaces, integrated authentication systems (JWT, OAuth2), Docker containerization and CI/CD deployment.
+  \item Contributed to application security projects: penetration testing, vulnerability analysis, OWASP remediation.
+\end{itemize}
+\cventry{Full-Stack Developer --- Intern (PFE)}{Digital Power Consulting}{Tunisia}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Full-stack application: Python (FastAPI) backend, REST APIs, React/Next.js/TypeScript frontend, JWT authentication, Docker, Kubernetes.
+  \item Real-time interactive dashboard: data visualization, dynamic charts, responsive mobile-first interface.
+  \item ML model integration in backend, data pipelines, technical documentation and CI/CD deployment.
+\end{itemize}
+\cventry{Cybersecurity Intern --- SAP Threat Detection}{Streamlink}{Tunisia}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Developed Python scripts for data collection and transformation, interactive dashboards with ELK (Elasticsearch, Kibana).
+\end{itemize}
+\cventry{Network Security Intern}{Tunisie Telecom}{Tunisia}{07/2024}
+\begin{itemize}
+  \item Built network monitoring dashboards (Elastic/Kibana), analyzed traffic data and detected anomalies.
+\end{itemize}
+\section{Full-Stack Projects}
+\cventry{Fedi Phone --- E-commerce Platform}{Next.js, TypeScript, React, Prisma, PostgreSQL, Tailwind CSS, Docker}{}{2026}
+\begin{itemize}
+  \item Complete full-stack e-commerce: API routes backend, React/TypeScript frontend, JWT, cart, wishlist, real-time search, admin dashboard, WhatsApp integration, Prisma ORM, dark mode, Framer Motion.
+\end{itemize}
+\cventry{Microservices Architecture}{TypeScript, Node.js, REST API, Docker}{}{2026}
+\begin{itemize}
+  \item Distributed microservices application: decoupled services, REST communication, modular organization.
+\end{itemize}
+\cventry{Revenue Assurance Dashboard --- Tunisie Telecom}{Python, Streamlit, PostgreSQL, Plotly, RAG}{}{2026}
+\begin{itemize}
+  \item Interactive dashboard: Python backend, PostgreSQL (900K+ records), Plotly visualization, RAG chatbot, forecasting.
+\end{itemize}
+\cventry{Financial Analysis Platform --- SFBT}{Python, Data Warehouse, BI, ML}{}{2026}
+\begin{itemize}
+  \item Complete ETL pipeline: data warehouse, interactive BI dashboards, predictive models.
+\end{itemize}
+\cventry{IDTS --- Secure Web Application}{Java, Spring Boot, Angular, PostgreSQL, Docker, Kubernetes}{}{2024}
+\begin{itemize}
+  \item Full-stack application: Spring Boot backend (JPA, REST APIs), Angular frontend, PostgreSQL, Docker, Kubernetes.
+\end{itemize}
+\cventry{Kairos --- Management Platform}{Java, Spring Boot, Angular, PostgreSQL, Docker, Kubernetes}{}{2024}
+\begin{itemize}
+  \item Full-stack application: Spring Boot backend (JPA, REST APIs), Angular frontend, PostgreSQL, Docker, Kubernetes.
+\end{itemize}
+\section{Education}
+\cventry{Engineering Degree in Computer Science}{ENIT}{Tunisia}{09/2023 -- 06/2026}
+\cventry{Preparatory Classes (Physics \& Technology)}{IPEI El Manar}{Tunisia}{09/2021 -- 06/2023}
+\section{Certifications}
+Git \& GitHub --- 365 Data Science (2024) ; Networking --- Cisco (2025) ; Fundamentals of Deep Learning --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024).
+\section{Languages}
+French (Fluent) \quad|\quad English (B2) \quad|\quad Arabic (Native) \quad|\quad Chinese (Basic)
+\end{document}

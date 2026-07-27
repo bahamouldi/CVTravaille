@@ -1,0 +1,87 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Full Stack + Sécurité
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.3cm,right=1.3cm,top=0.85cm,bottom=0.75cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.94}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Ingénieur Full Stack Sécurité},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Ingénieur Logiciel, Backend, Full Stack, Sécurité}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=1.2em,label=\textbullet,itemsep=0.2pt,topsep=0.5pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[1pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{2pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[4pt]
+{\large Ingénieur Full Stack / Backend — Orienté Sécurité}\\[6pt]
+Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[2pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{3pt}
+\section{Profil}
+Ingénieur diplômé en génie informatique avec un profil d'ingénierie logiciel orienté sécurité. Expérience dans la création de services backend, APIs REST, applications data-driven, microservices et plateformes web/mobile sécurisées. Solides bases en Python, Java/Spring Boot, APIs, SQL/NoSQL, Docker et tests de sécurité applicative. Recherche de postes d'Ingénieur Logiciel, Backend ou Full Stack où la cybersécurité est un atout.
+\section{Compétences clés}
+\textbf{Backend \& APIs} : Python, FastAPI, Java, Spring Boot, REST APIs, Node.js, TypeScript\\[1pt]
+\textbf{Frontend \& Mobile} : Angular (exposition), Flutter, Dart, interfaces web responsive, HTML/CSS\\[1pt]
+\textbf{Données} : SQL, MySQL, PostgreSQL, MongoDB, Data Warehouse, Pandas, Plotly\\[1pt]
+\textbf{DevOps} : Docker, Kubernetes, Git, GitHub Actions, concepts CI/CD, Linux, Bash\\[1pt]
+\textbf{Sécurité} : OWASP Top 10, codage sécurisé, tests Web/API, WAF, remédiation de vulnérabilités
+\section{Expérience professionnelle}
+\cventry{Ingénieur Sécurité Logiciel --- Stagiaire PFE}{Digital Power Consulting}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Développement de BeeWAF avec FastAPI, Docker, Kubernetes, reporting ELK et détection ML d'attaques web.
+  \item Implémentation de modules backend anti-bot, DLP, anti-DDoS et virtual patching.
+  \item Production de documentation technique et intégration de logique de sécurité dans un prototype déployable.
+\end{itemize}
+\cventry{Spécialiste Cybersécurité Junior, Freelance temps partiel}{Digital Power Consulting}{Tunisie}{01/2025 -- 05/2026}
+\begin{itemize}
+  \item Tests d'intrusion sur 8 applications web et API, production de plusieurs rapports de remédiation détaillés.
+\end{itemize}
+\cventry{Chef de projet technique — Vmate}{ENIT}{Tunisie}{06/2024}
+\begin{itemize}
+  \item Encadrement d'une équipe de 4 sur une plateforme sécurisée web/mobile (projet classé 1er).
+  \item Développement sécurisé, revue de code et tests de sécurité applicative.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité — Détection de menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Automatisation de la collecte d'événements via Python/PyRFC et support de corrélation de sécurité ELK.
+\end{itemize}
+\section{Projets logiciels}
+\cventry{Système de gestion de cinéma}{Java, Spring Boot, JPA, MySQL, REST API}{}{2025}
+\begin{itemize}
+  \item Développement backend de gestion de cinéma : films, séances, réservations, paiements et statistiques.
+\end{itemize}
+\cventry{Architecture Microservices}{TypeScript, Node.js, Microservices, REST API}{}{2026}
+\begin{itemize}
+  \item Conception de services découplés avec communication REST et organisation modulaire pour la maintenabilité.
+\end{itemize}
+\cventry{Dashboard Assurance Revenus — Tunisie Telecom}{Streamlit, PostgreSQL, Data Warehouse, Plotly, RAG}{}{2026}
+\begin{itemize}
+  \item Tableaux de bord interactifs et workflows d'analyse sur près de 900 000 enregistrements télécom.
+\end{itemize}
+\cventry{BeeWAF — Pare-feu applicatif intelligent}{FastAPI, Python, Docker, Kubernetes, ELK}{}{2026}
+\begin{itemize}
+  \item Développement de modules de sécurité backend et reporting orienté monitoring pour trafic web suspect.
+\end{itemize}
+\cventry{Fedi Phone — Plateforme E-commerce}{Next.js, TypeScript, Prisma, PostgreSQL, Tailwind CSS, Docker}{}{2026}
+\begin{itemize}
+  \item Application e-commerce full-stack avec authentification JWT, recherche temps réel, panier, wishlist, dashboard admin et intégration WhatsApp.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\section{Certifications}
+Git \& GitHub — 365 Data Science (2024) ; Réseaux — Cisco (2025) ; Fondements du Deep Learning — NVIDIA (2025) ; Machine Learning — NVIDIA (2024) ; IA Adversariale — NVIDIA (2025).
+\section{Langues}
+Anglais (B2) \quad|\quad Français (B2) \quad|\quad Arabe (Natif) \quad|\quad Chinois (Notions)
+\end{document}

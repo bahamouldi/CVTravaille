@@ -1,0 +1,94 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — AI Software Engineer — Medius (AI & Transformation)
+\documentclass[a4paper,8.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.83}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - AI Software Engineer},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={AI Software Engineer, RAG, LLM, Agents, FastAPI, Azure AI}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} AI Software Engineer --- RAG \textbar\ LLM \textbar\ Agentic Systems \textbar\ FastAPI}\\[3pt]
+{\small Tunis, Tunisia \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profile}
+Computer engineering graduate with hands-on experience building production-grade AI systems: RAG pipelines, LLM orchestration, multi-agent architectures and FastAPI services. Comfortable translating business processes into agentic workflows that are testable, auditable and built to last. Proficient in AI-assisted coding (Copilot, Claude) as a daily productivity multiplier. Systems thinker who takes real ownership of what ships. Drawn to applying AI where it removes real operational friction --- turning finance and back-office processes into reliable, auditable automation.
+\section{Core Skills}
+\textbf{RAG \& LLM} : RAG pipelines (retrieval, generation, evaluation), LangChain, LangGraph, Gemini, Azure AI Foundry, prompt versioning, semantic search, context-aware generation, LLM fine-tuning (LoRA), self-hosted LLMs (Ollama, Llama/Qwen)\\[0.3pt]
+\textbf{Agentic Systems} : Multi-agent architectures, MCP (Model Context Protocol) server integrations, tool integration, Agent-to-Agent (A2A) protocols, agentic design patterns, workflow orchestration, testable and auditable agent configs\\[0.3pt]
+\textbf{Backend \& APIs} : Python, FastAPI, REST APIs, JSON, async services, error logging, observability (monitoring, metrics, quality tracking)\\[0.3pt]
+\textbf{AI \& ML} : Scikit-learn, Pandas, SHAP, sentiment analysis, text classification, NLP pipelines, AI code generation, prompt engineering\\[0.3pt]
+\textbf{Data \& Infrastructure} : PostgreSQL, MongoDB, SQL, Azure AI Search, Azure Functions, Docker, Kubernetes, CI/CD (Azure DevOps, Jenkins, ArgoCD, GitHub Actions)\\[0.3pt]
+\textbf{Tools \& Process} : Git, code review (give and receive), technical documentation, demos \& knowledge-sharing, hackathons
+\section{Professional Experience}
+\cventry{AI Software Engineer --- Intern (PFE)}{Digital Power Consulting}{Tunisia}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Designed and shipped production AI systems: RAG chatbot over 900K records, multi-agent architectures and FastAPI services on Kubernetes.
+  \item Built RAG pipelines with LangChain, Gemini and Azure AI Foundry: retrieval, context injection, generation and evaluation --- testable agentic workflows.
+  \item Implemented observability: Prometheus/Grafana dashboards, ELK log tracking, quality metrics and real-time alerting for agent performance.
+  \item Versioned prompts and agent configs with code-level rigor. Participated in code reviews on both sides.
+  \item Contributed to AI enablement through demos, workshops and knowledge-sharing sessions.
+\end{itemize}
+\cventry{AI \& Backend Developer, Freelance (Part-Time)}{Digital Power Consulting}{Tunisia}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Built AI-powered backend services: FastAPI, LLM integrations, RAG pipelines, multi-agent orchestration for client applications.
+  \item Code review and vulnerability analysis on 8 web and API applications. Cross-functional collaboration with business teams.
+\end{itemize}
+\cventry{Cybersecurity Intern --- SAP Threat Detection}{Streamlink}{Tunisia}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Automated detection pipeline: Python, ELK correlation, real-time alerting with N8N orchestration. Testable, auditable detection workflows.
+\end{itemize}
+\cventry{Technical Project Lead --- Vmate}{ENIT}{Tunisia}{06/2024}
+\begin{itemize}
+  \item Led team of 4 on full-stack platform --- project ranked 1st. Sprint planning, code review, cross-functional collaboration.
+\end{itemize}
+\section{Key Projects}
+\cventry{RAG Chatbot --- Revenue Assurance Dashboard (Tunisie Telecom)}{Python, LangChain, Gemini, Azure AI Foundry, Streamlit, PostgreSQL}{}{2026}
+\begin{itemize}
+  \item Production RAG pipeline over ~900K records across 4 domains: retrieval, context injection, generation with Gemini. Business users query revenue data in natural language. Observability dashboards tracking latency, retrieval quality and generation accuracy.
+\end{itemize}
+\cventry{Multi-Agent Vulnerability Detection System}{Python, Multi-Agent, A2A, Azure AI Foundry}{}{2025}
+\begin{itemize}
+  \item Distributed agent architecture: specialized agents for collection, correlation and alerting. A2A protocols. Testable and auditable workflow design.
+\end{itemize}
+\cventry{Multi-Agent Customer Feedback Analysis}{Python, NLP, Sentiment Analysis, ML}{}{2026}
+\begin{itemize}
+  \item Agentic pipeline: sentiment analysis, topic extraction, actionable insights via multi-agent orchestration. Prompt versioning and config management.
+\end{itemize}
+\cventry{RAG Hotel Recommendation System}{Python, LangChain, LLM, Azure AI Foundry}{}{2025}
+\begin{itemize}
+  \item RAG system: semantic search over reviews, context-aware LLM recommendations, multi-agent orchestration for personalized suggestions.
+\end{itemize}
+\cventry{BeeWAF --- Intelligent Web Application Firewall (PFE, graded 86/100)}{FastAPI, Python, ML, Docker, Kubernetes, ELK, Prometheus, Grafana}{}{2026}
+\begin{itemize}
+  \item Enterprise WAF deployed in production: 27 modules, 107 signatures, 3 ML models, CI/CD (Jenkins + ArgoCD), monitoring dashboards, real-time alerting. Score 98.2/100, 0\% false positives.
+\end{itemize}
+\section{Education}
+\cventry{Engineering Degree in Computer Science}{National Engineering School of Tunis (ENIT)}{Tunisia}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Graduated 06/25/2026. Ranked 65th out of 600+ in the national engineering school entrance exam.
+\end{itemize}
+\cventry{Preparatory Classes (Physics \& Technology)}{Preparatory Institute for Engineering Studies, El Manar}{Tunisia}{09/2021 -- 06/2023}
+\cventry{Technical Baccalaureate --- High Distinction}{Lycee Abdelaziz Khouja, Kelibia}{Tunisia}{06/2021}
+\section{Certifications}
+Fundamentals of Deep Learning --- NVIDIA (2025) ; Exploring Adversarial ML --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Networking --- Cisco (2025) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Languages}
+French (Fluent) \quad|\quad English (B2) \quad|\quad Arabic (Native) \quad|\quad Chinese (Basic)
+\end{document}

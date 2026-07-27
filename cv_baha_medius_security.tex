@@ -1,0 +1,92 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Web Application Security Engineer — Medius
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.83}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Web Application Security Engineer},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Application Security, OWASP, Penetration Testing, DevSecOps, Threat Modeling}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} Web Application Security Engineer --- OWASP \textbar\ Pen Testing \textbar\ DevSecOps \textbar\ Threat Modeling}\\[3pt]
+{\small Tunis, Tunisia \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profile}
+Computer engineering graduate with hands-on experience in application security, penetration testing and DevSecOps. Built and deployed an enterprise-grade WAF (BeeWAF) with 10,041 detection rules, 3 ML models and compliance with 7 security frameworks (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2). Conducted penetration tests on 8 web and API applications, producing detailed remediation reports. Strong understanding of OWASP Top 10, API Top 10 and LLM Top 10. Driven by the challenge of securing AI-enabled applications and elevating application security maturity.
+\section{Core Skills}
+\textbf{Application Security} : OWASP Top 10, OWASP API Top 10, OWASP LLM Top 10, SANS/CWE Top 25, threat modelling, secure coding, vulnerability remediation\\[0.3pt]
+\textbf{Penetration Testing} : Web \& API pentesting, XSS, SQLi, CSRF, fuzzing, authentication bypass, business logic flaws, Burp Suite Professional, OWASP ZAP\\[0.3pt]
+\textbf{DevSecOps} : Security by design reviews, SAST/DAST scanning, CI/CD security gates (Jenkins, ArgoCD, GitHub Actions), Docker/Kubernetes security, WAF engineering\\[0.3pt]
+\textbf{Security Monitoring} : ELK Stack (Elasticsearch, Kibana), Sigma rules, SIEM integration, real-time alerting, incident response, risk scoring\\[0.3pt]
+\textbf{Identity \& Auth} : JWT, OAuth2, RBAC, authentication/authorization testing, access management\\[0.3pt]
+\textbf{Tools \& Systems} : Nmap, Wireshark, Hydra, Metasploit, Linux/Kali, Bash, PowerShell, Python, Git, Docker
+\section{Professional Experience}
+\cventry{Application Security Engineer --- Intern (PFE)}{Digital Power Consulting}{Tunisia}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Designed and deployed BeeWAF: 10,041 rules + 3 ML models, 98.2\% precision, 0\% false positives. Security by design from architecture to deployment.
+  \item 27 security modules: anti-bot, DLP, anti-DDoS, virtual patching of 37 CVEs. Compliance with 7 frameworks (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2).
+  \item Penetration testing: 153 OWASP scenarios with Burp Suite Professional. Documented test results and remediation plans for all findings.
+  \item Threat modelling: MITRE ATT\&CK mapping (22 techniques), APT attribution. 18-layer evasion detection.
+  \item DevSecOps: CI/CD (Jenkins + ArgoCD GitOps), Docker/Kubernetes with security gates, Prometheus/Grafana monitoring.
+\end{itemize}
+\cventry{Junior Cybersecurity Specialist, Freelance (Part-Time)}{Digital Power Consulting}{Tunisia}{01/2025 -- 05/2026}
+\begin{itemize}
+  \item Penetration testing on 8 web and API applications. Documented security assessments, test results and remediation plans.
+  \item Vulnerability management: identified, classified and tracked remediation. Delivered regular reports on security posture.
+  \item Secure coding guidance: OWASP remediation reports and secure development documentation for development teams.
+\end{itemize}
+\cventry{Cybersecurity Intern --- SAP Threat Detection}{Streamlink}{Tunisia}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Threat modelling for SAP: 7 critical tcodes catalogued with risk levels and automated scoring. Detection $<$2 min, auto-blocking $<$7 min.
+\end{itemize}
+\cventry{Network Security Intern}{Tunisie Telecom}{Tunisia}{07/2024}
+\begin{itemize}
+  \item Network security assessment: 10+ vulnerabilities identified. SOC detection project with Elastic/Kibana, Sigma rules.
+\end{itemize}
+\cventry{Technical Project Lead --- Vmate}{ENIT}{Tunisia}{06/2024}
+\begin{itemize}
+  \item Led team of 4 on secure web/mobile platform --- project ranked 1st. Secure development, code review and security testing.
+\end{itemize}
+\section{Key Projects}
+\cventry{BeeWAF --- Enterprise Web Application Firewall (PFE, graded 86/100)}{FastAPI, Python, ML, Docker, Kubernetes, ELK, Burp Suite}{}{2026}
+\begin{itemize}
+  \item Full security lifecycle: threat modelling, security architecture, penetration testing, DevSecOps pipeline, production deployment. 27 modules, 107 signatures, 37 CVE virtual patches.
+  \item ML-based detection on CSIC 2010 (12,213 requests). MITRE ATT\&CK mapping (22 techniques). Compliance: 7 frameworks. Documented security and risk assessments.
+\end{itemize}
+\cventry{SOC Analyst Project --- Threat Detection \& SIEM Integration}{Elastic Stack, Kibana, Sigma, Bash, PowerShell}{}{2024}
+\begin{itemize}
+  \item SOC detection pipeline: brute force, DNS exfiltration simulations. Sigma rules, Kibana dashboards, investigation workflows.
+\end{itemize}
+\cventry{SAP Threat Detection \& Response System}{Python, PyRFC, ELK, N8N, TheHive}{}{2025}
+\begin{itemize}
+  \item Automated threat response: BAPI\_USER\_LOCK for instant blocking. 3 attack scenarios tested: abnormal logins, privilege escalation, unauthorized access.
+\end{itemize}
+\section{Education}
+\cventry{Engineering Degree in Computer Science}{National Engineering School of Tunis (ENIT)}{Tunisia}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Graduated 06/25/2026. Ranked 65th out of 600+ in the national engineering school entrance exam.
+\end{itemize}
+\cventry{Preparatory Classes (Physics \& Technology)}{Preparatory Institute for Engineering Studies, El Manar}{Tunisia}{09/2021 -- 06/2023}
+\cventry{Technical Baccalaureate --- High Distinction}{Lycee Abdelaziz Khouja, Kelibia}{Tunisia}{06/2021}
+\section{Certifications}
+Fundamentals of Deep Learning --- NVIDIA (2025) ; Exploring Adversarial ML --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Networking --- Cisco (2025) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Languages}
+French (Fluent) \quad|\quad English (B2) \quad|\quad Arabic (Native) \quad|\quad Chinese (Basic)
+\end{document}

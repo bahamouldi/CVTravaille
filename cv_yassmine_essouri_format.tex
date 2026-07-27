@@ -1,0 +1,113 @@
+% !TEX TS-program = pdflatex
+% CV ATS-friendly — Yassmine Essouri
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.3cm,right=1.3cm,top=0.8cm,bottom=0.7cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{navy}{RGB}{23,54,93}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.93}
+
+\hypersetup{
+  pdftitle={CV - Yassmine Essouri},
+  pdfauthor={Yassmine Essouri},
+  pdfsubject={Marketing Digital, Multimedia et Creation de Contenu}
+}
+
+\titleformat{\section}
+  {\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{4pt}{1.8pt}
+
+\setlist[itemize]{leftmargin=1.15em,label=\textbullet,itemsep=0pt,topsep=0.3pt,parsep=0pt}
+
+\newcommand{\cventry}[4]{%
+  \textbf{#1} \hfill \textbf{#4}\\[1pt]
+  #2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1.5pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{navy} Yassmine Essouri}\\[4pt]
+  {\large Marketing Digital \& Création de Contenu}\\[6pt]
+  \normalsize
+  Kélibia, Tunisie \quad|\quad +216 58 626 547 \quad|\quad
+  \href{mailto:yassminessouri7@gmail.com}{yassminessouri7@gmail.com}\\[2pt]
+  Portfolio UGC
+\end{center}
+\vspace{3pt}
+
+\section{Profil}
+Profil junior en marketing digital, multimédia et création de contenu, avec une expérience en UGC, réseaux sociaux, montage vidéo, conception graphique et communication digitale. À l'aise avec Adobe, Canva, CapCut et Meta Business Suite, avec une base technique en développement web et bases de données.
+
+\section{Compétences}
+\textbf{Marketing digital} : Community management, Meta Business Suite, UGC, campagnes promotionnelles\\[1pt]
+\textbf{Création de contenu} : Montage vidéo, photographie, contenus réseaux sociaux, affiches, logos\\[1pt]
+\textbf{Outils créatifs} : Adobe Premiere Pro, Illustrator, After Effects, Canva, CapCut\\[1pt]
+\textbf{Développement} : HTML5, CSS3, Python, Visual Basic, Visual Studio, applications CRUD\\[1pt]
+\textbf{Langues} : Arabe, Français, Anglais, Italien (notions)
+
+\section{Expérience professionnelle}
+\cventry{Content Creator}{Yalla Digital}{Tunisie}{2025 -- présent}
+\begin{itemize}
+  \item Création de contenus photo/vidéo et supports visuels pour réseaux sociaux et campagnes digitales.
+\end{itemize}
+
+\cventry{Chroniqueuse radio}{Radio locale}{Tunisie}{2025 -- présent}
+\begin{itemize}
+  \item Préparation et présentation de chroniques, animation de contenus et échange avec l'audience.
+\end{itemize}
+
+\cventry{Stagiaire — Création de contenu digital}{Hcom Agency}{Kélibia, Tunisie}{2025}
+\begin{itemize}
+  \item Montage vidéo pour les réseaux sociaux, photographie et création de contenu digital.
+\end{itemize}
+
+\cventry{Freelance — Marketing digital, UGC \& design graphique}{Clients indépendants / Réseaux sociaux}{Tunisie}{2022 -- présent}
+\begin{itemize}
+  \item Réalisation de projets marketing, contenus UGC, logos, affiches et supports promotionnels.
+\end{itemize}
+
+\cventry{Vente en ligne}{Réseaux sociaux}{Tunisie}{2023 -- 2024}
+\begin{itemize}
+  \item Gestion de pages sociales, communication client, suivi des commandes et contenus promotionnels.
+\end{itemize}
+
+\cventry{Stagiaire — Tunisie Telecom}{Tunisie Telecom}{Kélibia, Tunisie}{2024}
+\begin{itemize}
+  \item Découverte des infrastructures réseau et télécom, assistance technique et observation des systèmes professionnels.
+\end{itemize}
+
+\cventry{Stagiaire — Société Espace Info}{Société Espace Info}{Kélibia, Tunisie}{2023}
+\begin{itemize}
+  \item Initiation aux systèmes informatiques de gestion, maintenance et support applicatif.
+\end{itemize}
+
+\section{Projets académiques}
+\textbf{Application de gestion} — Visual Basic, base de données, CRUD (2024)\\[1pt]
+\textbf{Application commerciale} — Gestion des produits, factures et clients (2024)\\[1pt]
+\textbf{Gestion de pépinière de fleurs} — Stocks, ventes et clients (2023)\\[1pt]
+\textbf{Site vitrine — Restaurant italien} — HTML, CSS, responsive design (09/2025)
+
+\section{Formation}
+\cventry{Brevet de Technicien Supérieur (BTS) — Marketing Digital et Multimédia}{Établissement non précisé}{Tunisie}{2024 -- présent}
+\cventry{Brevet de Technicien Professionnel (BTP) — Informatique de Gestion}{École Elite}{Tunisie}{2022 -- 2024}
+\cventry{Baccalauréat}{Lycée Abdelaziz Khouja, Kélibia}{Tunisie}{2021}
+
+\section{Certifications}
+Marketing ; Canva ; CapCut ; Gestion du stress ; LinkedIn Learning.
+
+\section{Vie associative}
+Responsable Marketing — BDE (2025 -- présent) ; Membre Marketing — ANCU Nabeul (2024 -- présent) ; Vice-présidente — Club Jeune Citoyen (2018).
+
+\end{document}

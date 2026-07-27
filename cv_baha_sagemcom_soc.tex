@@ -1,0 +1,93 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Analyste SOC Junior — Sagemcom
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.83}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Analyste SOC Junior},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={SOC, Cybersécurité, IA/ML, DevSecOps, Automatisation}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} Analyste SOC Junior --- Cybersécurité \textbar\ IA/ML \textbar\ DevSecOps \textbar\ Automatisation}\\[3pt]
+{\small Tunis, Tunisia \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profil}
+Diplômé en génie informatique avec des connaissances concrètes en opérations SOC, développement Python, IA/ML appliquée à la cybersécurité et concepts DevSecOps. Expérience pratique en détection de menaces, automatisation de pipelines de sécurité et création de solutions basées sur l'IA. Esprit d'analyse, motivation et intérêt marqué pour l'automatisation et l'amélioration continue des outils de sécurité.
+\section{Compétences clés}
+\textbf{Opérations SOC} : Triage d'alertes, investigation d'événements, corrélation de logs, règles Sigma, SIEM (Elastic Stack, Kibana), analyse de menaces, documentation de workflows\\[0.3pt]
+\textbf{IA/ML pour la cybersécurité} : Modèles de détection ML (RandomForest, GradientBoosting, IsolationForest), analyse de trafic, détection d'anomalies, corrélation d'événements temps réel\\[0.3pt]
+\textbf{Automatisation} : Python, scripts d'automatisation, pipelines de détection et réponse, orchestration (N8N), collecte de logs automatisée\\[0.3pt]
+\textbf{DevSecOps} : Docker, Kubernetes, CI/CD (Jenkins, ArgoCD, GitHub Actions), Linux (Debian), conteneurisation, déploiement sécurisé, amélioration continue des outils\\[0.3pt]
+\textbf{Sécurité applicative} : OWASP Top 10, CWE, CVSS, tests de sécurité web/API, analyse de vulnérabilités, revue de code sécurité, remédiation\\[0.3pt]
+\textbf{Développement} : Python, FastAPI, Java, Spring Boot, Node.js, Bash, PowerShell, SQL, MongoDB
+\section{Expérience professionnelle}
+\cventry{Analyste Sécurité --- Stagiaire PFE}{Digital Power Consulting}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Conception de BeeWAF, pare-feu applicatif intelligent combinant 10 041 règles de détection et 3 modèles ML --- score 98,2/100, 0\% faux positifs.
+  \item Automatisation de la détection et de la réponse : 27 modules de sécurité (anti-bot, DLP, anti-DDoS, virtual patching de 37 CVE).
+  \item Pipeline CI/CD (Jenkins 8 étapes + ArgoCD GitOps), déploiement Kubernetes, monitoring ELK et Prometheus/Grafana avec alerting temps réel.
+  \item Mapping MITRE ATT\&CK (22 techniques), attribution APT, conformité 7 référentiels (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2).
+\end{itemize}
+\cventry{Spécialiste Cybersécurité Junior, Freelance}{Digital Power Consulting}{Tunisie}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Analyse de vulnérabilités et revue de code sécurité sur 8 applications web et API, avec rapports de remédiation détaillés pour les équipes de développement.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Pipeline de détection automatisé : collecte Python/PyRFC, corrélation ELK, orchestration N8N, suivi TheHive. Détection $<$2 min, blocage auto $<$7 min.
+  \item Surveillance de 7 transactions critiques SAP (SU01, SE16N, PFCG) avec scoring de risque automatisé et alerting temps réel via Kibana.
+\end{itemize}
+\cventry{Stagiaire Sécurité réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Projet de détection SOC avec Elastic/Kibana, règles Sigma, simulations d'attaques (brute force, exfiltration DNS).
+  \item Identification de 10+ vulnérabilités, documentation des workflows d'investigation et rapports de sécurité.
+\end{itemize}
+\section{Projets clés}
+\cventry{BeeWAF --- Pare-feu Applicatif Intelligent (PFE, note 86/100)}{FastAPI, Python, ML, Docker, Kubernetes, ELK, Prometheus, Grafana}{}{2026}
+\begin{itemize}
+  \item WAF d'entreprise déployé en production : pipeline de détection à 27 modules, 107 signatures, 3 modèles ML, détection d'évasion 18 couches.
+  \item Évaluation ML sur CSIC 2010 (12 213 requêtes) : 92,3\% accuracy, 98,2\% precision, 89,8\% F1. Latence $<$20ms.
+  \item Intégration IA : modèles de détection, analyse de trafic, corrélation d'événements, alerting automatisé pour équipes SOC.
+\end{itemize}
+\cventry{Projet SOC Analyst --- Détection de menaces \& SIEM}{Elastic Stack, Kibana, Sigma, Bash, PowerShell}{}{2024}
+\begin{itemize}
+  \item Pipeline de détection SOC : simulations brute force, DNS suspects, exfiltration. Règles Sigma, dashboards Kibana, documentation des investigations.
+\end{itemize}
+\cventry{Système de Détection et Réponse aux Menaces SAP}{Python, PyRFC, ELK, N8N, TheHive}{}{2025}
+\begin{itemize}
+  \item Pipeline SOC complet : collecte de logs SAP $\rightarrow$ Metricbeat $\rightarrow$ Elasticsearch $\rightarrow$ Kibana $\rightarrow$ N8N $\rightarrow$ TheHive.
+  \item Réponse automatisée : BAPI\_USER\_LOCK pour blocage instantané. 3 scénarios testés : connexions anormales, escalade de privilèges, accès non autorisé.
+\end{itemize}
+\cventry{Analyse Multi-Agent de Feedback Client}{Python, NLP, Sentiment Analysis, ML}{}{2026}
+\begin{itemize}
+  \item Pipeline NLP temps réel : analyse de sentiments, extraction de sujets, insights actionnables via orchestration multi-agents.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Diplômé le 25/06/2026. Classé 65e sur 600+ au concours national d'entrée.
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\cventry{Baccalauréat Technique --- Mention Très Bien}{Lycée Abdelaziz Khouja, Kélibia}{Tunisie}{06/2021}
+\section{Certifications}
+Fondements du Deep Learning --- NVIDIA (2025) ; IA Adversariale --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Réseaux --- Cisco (2025) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Langues}
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif) \quad|\quad Chinois (Notions)
+\end{document}

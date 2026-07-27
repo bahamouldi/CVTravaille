@@ -1,0 +1,106 @@
+% !TEX TS-program = pdflatex
+% Targeted CV — Salt Junior Cybersecurity Specialist
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.3cm,right=1.3cm,top=0.85cm,bottom=0.75cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{navy}{RGB}{23,54,93}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.94}
+
+\hypersetup{
+  pdftitle={CV - Baha Eddine Belhaj Mouldi - Junior Cybersecurity Specialist},
+  pdfauthor={Baha Eddine Belhaj Mouldi},
+  pdfsubject={Junior Cybersecurity Specialist}
+}
+
+\titleformat{\section}
+  {\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+\setlist[itemize]{leftmargin=1.2em,label=\textbullet,itemsep=0.2pt,topsep=0.5pt,parsep=0pt}
+
+\newcommand{\cventry}[4]{%
+  \textbf{#1} \hfill \textbf{#4}\\[1pt]
+  #2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{2pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[4pt]
+  {\large Junior Cybersecurity Specialist}\\[6pt]
+  \normalsize
+  Tunis, Tunisia \quad|\quad +216 55 128 982 \quad|\quad
+  \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[2pt]
+  \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad
+  \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad
+  \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{3pt}
+
+\section{Profile}
+Fresh computer engineering graduate from ENIT with hands-on exposure to security operations, SIEM integration, web/API security testing, network assessment, Linux environments and security monitoring workflows. Practical experience collecting technical data, analyzing system activity, documenting findings and supporting remediation. Seeking a junior cybersecurity role focused on alert triage, threat investigation and risk identification.
+
+\section{Core Skills}
+\textbf{Security Operations} : Alert triage, event investigation, documentation, threat research, log analysis, Sigma rules, SIEM\\[1pt]
+\textbf{Security Testing} : Web/API assessment, OWASP Top 10, vulnerability identification, XSS, SQL injection, CSRF, fuzzing\\[1pt]
+\textbf{Networking \& Systems} : TCP/IP fundamentals, network security, Linux/Kali Linux, Windows, Wireshark, Nmap\\[1pt]
+\textbf{Tools} : Elastic Stack, Kibana, Burp Suite, OWASP ZAP, Metasploit, Hydra, Wireshark, Nmap, Git, Docker\\[1pt]
+\textbf{Scripting \& Data} : Python, Bash, PowerShell, Java, MySQL, MongoDB, Pandas
+
+\section{Professional Experience}
+\cventry{Junior Cybersecurity Specialist, Freelance Part-Time}{Digital Power Consulting}{Tunisia}{01/2025 -- 05/2026}
+\begin{itemize}
+  \item Penetration testing on 8 web and API applications, produced multiple detailed remediation reports.
+\end{itemize}
+
+\cventry{Cybersecurity Intern — SAP Threat Detection}{Streamlink}{Tunisia}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Developed a prototype for real-time detection of suspicious activities in SAP environments.
+  \item Automated event collection using Python/PyRFC and supported correlation of security events in ELK Stack.
+\end{itemize}
+
+\cventry{Network Security Intern}{Tunisie Telecom}{Tunisia}{07/2024}
+\begin{itemize}
+  \item Assessed network security posture and identified more than 10 vulnerabilities.
+  \item Built a SOC-oriented threat detection project with Elastic/Kibana, Sigma rules and attack simulations.
+\end{itemize}
+
+\section{Projects}
+\cventry{BeeWAF — Intelligent Web Application Firewall, Final-Year Project}{FastAPI, Machine Learning, Docker, Kubernetes, ELK}{}{2026}
+\begin{itemize}
+  \item Built an enterprise-oriented WAF prototype combining rule-based detection and Machine Learning models.
+  \item Used ELK-based monitoring and reporting to support visibility into suspicious web traffic.
+\end{itemize}
+
+\cventry{SOC Analyst Project — Threat Detection, Simulation \& SIEM Integration}{Elastic Stack, Kibana, Sigma, Bash, PowerShell}{}{2024}
+\begin{itemize}
+  \item Simulated brute force, suspicious DNS and data exfiltration scenarios to validate detection logic.
+  \item Created detection rules, visualized alerts in Kibana and documented investigation results.
+\end{itemize}
+
+\section{Education}
+\cventry{Engineering Degree in Computer Science}{National Engineering School of Tunis (ENIT)}{Tunisia}{09/2023 -- 06/2026}
+\cventry{Preparatory Classes in Physics and Technology}{Preparatory Institute for Engineering Studies, El Manar}{Tunisia}{09/2021 -- 06/2023}
+\begin{itemize}
+  \item Ranked 65th out of 600+ candidates in the national engineering school entrance exam.
+\end{itemize}
+
+\section{Certifications}
+Fundamentals of Deep Learning — NVIDIA (2025) ; Exploring Adversarial Machine Learning — NVIDIA (2025) ; Machine Learning — NVIDIA (2024) ; Networking — Cisco (2025) ; Git \& GitHub — 365 Data Science (2024).
+
+\section{Languages}
+English (B2) \quad|\quad French (B2) \quad|\quad Arabic (Native) \quad|\quad Chinese (Basic)
+
+\end{document}

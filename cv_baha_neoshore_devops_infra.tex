@@ -1,0 +1,92 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Senior DevOps Engineer (Infrastructure) — Neoshore
+\documentclass[a4paper,8pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.3cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.65}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Ingénieur DevOps Senior Infrastructure},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={DevOps, Infrastructure Cloud, AWS, CI/CD, Conteneurisation}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{2pt}{0.5pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0pt,topsep=0.1pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.3pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[1pt]
+{\large Ingénieur DevOps Senior — Infrastructure \& Cloud}\\[3pt]
+Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{0pt}
+\section{Profil}
+Ingénieur diplômé en génie informatique spécialisé en infrastructure cloud, DevOps et sécurité. Expérience concrète en production sur Kubernetes : déploiement d'un WAF intelligent (v8.54) avec CI/CD complet (Jenkins + ArgoCD GitOps), monitoring Prometheus/Grafana et gestion de flux distribués. Maîtrise de Docker, pipelines CI/CD, automatisation d'infrastructure et sécurité en production. Recherche un poste DevOps Senior orienté infrastructure cloud.
+\section{Compétences clés}
+\textbf{Cloud \& Infrastructure} : AWS (EC2, S3, VPC, IAM, RDS, CloudWatch), déploiement d'instances, configuration réseau, sécurité des accès\\[0.3pt]
+\textbf{Conteneurisation \& Orchestration} : Docker, Kubernetes (Deployment, Service, Ingress, PVC, Secrets), Docker Compose\\[0.3pt]
+\textbf{CI/CD \& Automatisation} : Jenkins (pipelines multi-étapes), ArgoCD (GitOps), GitHub Actions, déploiement continu zéro downtime\\[0.3pt]
+\textbf{Infrastructure as Code} : Terraform, manifests Kubernetes (YAML), Docker Compose, scripts Bash/PowerShell\\[0.3pt]
+\textbf{Monitoring \& Observabilité} : Prometheus, Grafana, ELK Stack (Elasticsearch, Kibana, Metricbeat), CloudWatch, alerting temps réel\\[0.3pt]
+\textbf{Sécurité Infrastructure} : pare-feux, VPN, IAM, gestion des accès, durcissement Linux, OWASP Top 10, WAF\\[0.3pt]
+\textbf{Systèmes \& Réseaux} : Linux (Ubuntu, CentOS, Kali), administration système, TCP/IP, DNS, routage, Wireshark, Nmap\\[0.3pt]
+\textbf{Scripting \& Outils} : Python, Bash, PowerShell, Git, MySQL, MongoDB, Java, Spring Boot, Node.js
+\section{Expérience professionnelle}
+\cventry{Ingénieur DevOps / Sécurité --- Stagiaire PFE}{Digital Power Consulting}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Déploiement et exploitation de BeeWAF (v8.54) sur cluster Kubernetes : manifests, affinité nœuds, probes santé, dimensionnement ressources.
+  \item Pipeline CI/CD : Jenkins (8 étapes) + ArgoCD (GitOps), déploiement continu zéro downtime. Monitoring Prometheus/Grafana + ELK Stack.
+  \item Sécurité infrastructure : 27 modules d'inspection, pare-feu intelligent (10 041 règles, 3 modèles ML), détection d'évasion à 18 couches.
+\end{itemize}
+\cventry{Spécialiste Cybersécurité Junior, Freelance temps partiel}{Digital Power Consulting}{Tunisie}{01/2025 -- 05/2026}
+\begin{itemize}
+  \item Tests d'intrusion sur 8 applications web et API, production de rapports de remédiation, analyse de vulnérabilités en environnement de production.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection de menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Automatisation de pipelines de collecte de logs (Python/PyRFC), corrélation ELK, dashboards monitoring temps réel, alerting automatisé (N8N, TheHive).
+\end{itemize}
+\cventry{Stagiaire Sécurité Réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Analyse de trafic réseau et administration de systèmes Linux : identification de 10+ vulnérabilités, construction de dashboards Elastic/Kibana et règles Sigma.
+\end{itemize}
+\section{Projets DevOps / Infrastructure}
+\cventry{BeeWAF --- Infrastructure Kubernetes en Production}{FastAPI, Docker, Kubernetes, Jenkins, ArgoCD, Prometheus, Grafana}{}{2026}
+\begin{itemize}
+  \item Cluster Kubernetes (3 masters + 2 workers, Calico CNI), manifests complets (Deployment, Service, Ingress, PVC, Secrets), probes santé, affinité nœuds.
+  \item CI/CD : Jenkins (8 étapes) + ArgoCD (GitOps), déploiement continu zéro downtime (maxUnavailable: 0, maxSurge: 1).
+  \item Monitoring : Prometheus/Grafana, ELK Stack, alerting temps réel. Sécurité : 27 modules, 10 041 règles, 3 modèles ML, 37 CVE patchés virtuellement.
+  \item Latence overhead $<$20ms, score 98,2/100, 0\% faux positifs.
+\end{itemize}
+\cventry{Architecture Microservices Conteneurisée}{TypeScript, Node.js, Docker, Microservices, REST API}{}{2026}
+\begin{itemize}
+  \item Application distribuée : services découplés, communication REST, orchestration Docker, organisation modulaire orientée scalabilité.
+\end{itemize}
+\cventry{Pipeline de Données --- Data Warehouse \& ETL}{Python, PostgreSQL, Streamlit, Plotly, Docker}{}{2026}
+\begin{itemize}
+  \item Pipeline ETL sur 900K+ enregistrements : data warehouse schéma étoile, dashboards interactifs, conteneurisation Docker.
+\end{itemize}
+\cventry{SOC Analyst --- Détection de menaces \& Intégration SIEM}{Elastic Stack, Kibana, Sigma, Bash, PowerShell}{}{2024}
+\begin{itemize}
+  \item Détection SOC : Elastic/Kibana, règles Sigma, scripts d'attaques automatisés (Bash/PowerShell), workflows d'investigation documentés.
+\end{itemize}
+\cventry{Plateforme E-commerce --- Fedi Phone}{Next.js, TypeScript, Prisma, PostgreSQL, Docker}{}{2026}
+\begin{itemize}
+  \item Application full-stack conteneurisée : PostgreSQL Dockerisé, auth JWT, dashboard admin, déploiement Docker Compose.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{ENIT}{Tunisie}{09/2023 -- 06/2026}
+\cventry{Classes préparatoires (Physique-Technologie)}{IPEI El Manar}{Tunisie}{09/2021 -- 06/2023}
+\section{Certifications}
+Fondements du Deep Learning --- NVIDIA (2025) ; IA Adversariale --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Réseaux --- Cisco (2025) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Langues}
+Anglais (B2) \quad|\quad Français (B2) \quad|\quad Arabe (Natif) \quad|\quad Chinois (Notions)
+\end{document}

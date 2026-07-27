@@ -1,0 +1,165 @@
+% !TEX TS-program = pdflatex
+% CV — Baha Eddine Belhaj Mouldi — one-page professional layout
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[left=1.1cm,right=1.1cm,top=1.0cm,bottom=0.9cm]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{marvosym}      % \Telefon \Letter
+\usepackage{paracol}
+\usepackage[hidelinks]{hyperref}
+
+% ---- Couleurs ----
+\definecolor{accent}{RGB}{0,90,170}      % bleu profond
+\definecolor{accentlight}{RGB}{0,120,215}
+\definecolor{darktext}{RGB}{34,40,49}
+\definecolor{graytext}{RGB}{90,98,110}
+\definecolor{rulegray}{RGB}{215,219,225}
+
+\renewcommand{\familydefault}{\sfdefault}
+\color{darktext}
+
+% ---- Espacements globaux ----
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.02}
+\pagestyle{empty}
+
+% ---- Titres de section ----
+\titleformat{\section}
+  {\large\bfseries\color{accent}}{}{0pt}
+  {}[{\vspace{1pt}\color{rulegray}\titlerule[1pt]}]
+\titlespacing*{\section}{0pt}{8pt}{5pt}
+
+% ---- Listes ----
+\setlist[itemize]{leftmargin=1.1em,label=\textcolor{accent}{\small$\blacktriangleright$},
+  itemsep=1.2pt,topsep=2pt,parsep=0pt,labelsep=0.5em}
+
+% ---- Macros entrées ----
+% \role{Titre}{Date}{Sous-titre / lieu}
+\newcommand{\role}[3]{%
+  {\bfseries #1}\hfill{\small\color{graytext}#2}\\[1pt]
+  {\itshape\small\color{accentlight}#3}\par\vspace{2pt}}
+
+% Compétence catégorisée : \skillcat{Titre}{contenu}
+\newcommand{\skillcat}[2]{%
+  {\bfseries\color{darktext}#1}\\[1pt]{\small\color{graytext}#2}\par\vspace{5pt}}
+
+% Lien avec icône brand minimaliste
+\newcommand{\contactitem}[2]{\textcolor{accent}{#1}~#2}
+
+\begin{document}
+
+% =====================================================================
+%  EN-TÊTE
+% =====================================================================
+\begin{minipage}[c]{0.75\textwidth}
+  {\fontsize{24}{26}\selectfont\bfseries\color{darktext}BAHA EDDINE BELHAJ MOULDI}\\[3pt]
+  {\large\color{accent}Ingénieur Cybersécurité \& Intelligence Artificielle}\\[7pt]
+  {\small
+    \contactitem{\Telefon}{\href{tel:+21655128982}{+216 55 128 982}}\quad
+    \contactitem{\Letter}{\href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[3pt]
+    \contactitem{\textbf{in}}{\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi}}\quad
+    \contactitem{\textbf{GitHub}}{\href{https://github.com/bahamouldi}{github.com/bahamouldi}}\quad
+    \contactitem{\textbf{$\bullet$}}{Tunis, Tunisie}
+  }
+\end{minipage}\hfill
+\begin{minipage}[c]{0.22\textwidth}
+  \raggedleft
+  \begin{tikzpicture}
+    \clip (0,0) circle (1.25cm);
+    \node at (0,0) {\includegraphics[width=2.6cm,height=2.6cm,keepaspectratio]{photo.jpg}};
+    \draw[accent,line width=1.5pt] (0,0) circle (1.24cm);
+  \end{tikzpicture}
+\end{minipage}
+
+\vspace{4pt}
+\noindent\textcolor{accent}{\rule{\linewidth}{1.5pt}}
+\vspace{2pt}
+
+% =====================================================================
+%  CORPS — DEUX COLONNES
+% =====================================================================
+\columnratio{0.34}
+\setlength{\columnsep}{1.4em}
+\begin{paracol}{2}
+
+% ----------------------- COLONNE GAUCHE -----------------------
+\section*{}
+\vspace{-14pt}
+
+\section{Compétences}
+\skillcat{Sécurité offensive}{Pentest Web \& API, OWASP Top 10, XSS, SQLi, CSRF, fuzzing, MITM, sécurité Wi-Fi}
+\skillcat{Outils sécurité}{Burp Suite, OWASP ZAP, Metasploit, Nmap, Wireshark, Hydra, Ettercap}
+\skillcat{IA \& Machine Learning}{Python, Scikit-learn, Pandas, K-Means, Adversarial ML (FGSM/PGD), SHAP, LLM/RAG, LangChain}
+\skillcat{DevSecOps \& Cloud}{Docker, Kubernetes, CI/CD, Jenkins, GitHub Actions, ELK Stack, Prometheus}
+\skillcat{Données \& Systèmes}{MySQL, MongoDB, Kali Linux, Bash, PowerShell, Git}
+\skillcat{Codage sécurisé}{Bonnes pratiques OWASP, chiffrement (AES, SHA), gestion des accès}
+
+\section{Langues}
+\begin{itemize}
+  \item Anglais — B2
+  \item Français — B2
+  \item Chinois — notions
+\end{itemize}
+
+\section{Certifications}
+\begin{itemize}
+  \item Fundamentals of Deep Learning — \textbf{NVIDIA} (2025)
+  \item Exploring Adversarial ML — \textbf{NVIDIA} (2025)
+  \item Machine Learning — \textbf{NVIDIA} (2024)
+  \item Réseaux — \textbf{Cisco} (2025)
+  \item Git \& GitHub — \textbf{365 Data Science} (2024)
+\end{itemize}
+
+% ----------------------- COLONNE DROITE -----------------------
+\switchcolumn
+
+\section{Profil}
+{\small Ingénieur diplômé en génie informatique de l'ENIT, spécialisé en \textbf{cybersécurité offensive} et \textbf{IA appliquée à la sécurité}. Expérience concrète en tests d'intrusion, détection d'attaques par Machine Learning et architectures multi-agents. À la recherche d'un poste junior en sécurité applicative ou ingénierie IA.}
+
+\section{Formation}
+\role{École Nationale d'Ingénieurs de Tunis (ENIT)}{2023 -- 2026}{Diplôme d'Ingénieur en Génie Informatique — diplômé le 25/06/2026}
+\role{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{2021 -- 2023}{Physique-Technologie — classé 65\textsuperscript{e}/600+ au concours national}
+\role{Lycée Abdelaziz Khouja, Kélibia}{2021}{Baccalauréat Technique — Mention Très Bien}
+
+\section{Expérience}
+\role{Stagiaire — Détection de menaces SAP}{Juil. -- Août 2025}{Streamlink, Tunisie}
+\begin{itemize}
+  \item Prototype de détection temps réel d'activités suspectes sur systèmes SAP.
+  \item Collecte automatisée via Python/PyRFC et corrélation des événements dans ELK.
+\end{itemize}
+\role{Stagiaire — Sécurité réseau}{Juil. 2024}{Tunisie Télécom, Tunisie}
+\begin{itemize}
+  \item Évaluation de sécurité réseau : 10+ vulnérabilités identifiées.
+  \item Automatisation partielle des tests (scripts Python \& Bash).
+\end{itemize}
+\role{Chef de projet technique — Vmate}{Juin 2024}{ENIT, Tunisie}
+\begin{itemize}
+  \item Encadrement d'une équipe de 4 sur une plateforme sécurisée web/mobile — \textbf{projet classé 1\textsuperscript{er}}.
+\end{itemize}
+
+\section{Projets techniques}
+\role{BeeWAF — Web Application Firewall intelligent (PFE soutenu)}{2026}{FastAPI, ML, Docker, Kubernetes, ELK}
+\begin{itemize}
+  \item WAF d'entreprise : 10\,041 règles + 3 modèles ML (RandomForest, GradientBoosting, IsolationForest) — score 98.2/100, 0\% faux positifs.
+  \item 27 modules : anti-bot, DLP, anti-DDoS, virtual patching (37 CVE), conformité 7 frameworks (OWASP, PCI DSS, GDPR, NIST, ISO 27001\dots).
+\end{itemize}
+\role{Détection d'attaques web par Data Mining}{2024}{Python, Scikit-learn, SHAP, AWS}
+\begin{itemize}
+  \item Pipeline de clustering K-Means (silhouette 0.787) sur logs AWS : 39 attaques détectées (13.8\% du trafic).
+\end{itemize}
+\role{WebSec — Plateforme de test de sécurité (PFA2)}{2025}{Python, OWASP ZAP}
+\begin{itemize}
+  \item Tests automatisés de vulnérabilités web (XSS, SQLi) avec génération de rapports.
+\end{itemize}
+
+\end{paracol}
+\end{document}

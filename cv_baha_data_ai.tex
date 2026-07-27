@@ -1,0 +1,90 @@
+% !TEX TS-program = pdflatex
+% Targeted CV — Data & AI Engineer
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.9cm,right=0.9cm,top=0.5cm,bottom=0.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.72}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Data \& AI Engineer},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Data Engineering, Machine Learning, NLP, RAG, Multi-Agent}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{3pt}{1.5pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0.1pt,topsep=0.2pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[1pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[3pt]
+{\large Data \& AI Engineer}\\[5pt]
+Tunis, Tunisia \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{1pt}
+\section{Profile}
+Computer engineering graduate specialized in data engineering, machine learning and AI systems. Built production-grade data pipelines (900K+ records), BI dashboards, predictive models, RAG/LLM applications and multi-agent architectures. Hands-on with Python, SQL, NLP, sentiment analysis, semantic web and cloud AI services. Seeking Data Engineer, ML Engineer, AI Engineer or Data Scientist roles.
+\section{Core Skills}
+\textbf{Machine Learning} : Python, Scikit-learn, Pandas, NumPy, RandomForest, GradientBoosting, IsolationForest, K-Means, SHAP explainability\\[0.5pt]
+\textbf{Data Engineering} : SQL, PostgreSQL, MySQL, MongoDB, Data Warehouse (star schema), ETL pipelines, Pandas, Plotly, Streamlit\\[0.5pt]
+\textbf{NLP \& GenAI} : RAG (Retrieval-Augmented Generation), LangChain, LLM orchestration, sentiment analysis, text classification, Gemini, Azure AI Foundry\\[0.5pt]
+\textbf{Multi-Agent AI} : Agent-to-Agent protocols, distributed agent architectures, workflow orchestration, real-time event correlation\\[0.5pt]
+\textbf{Semantic Web} : OWL, RDF, SPARQL, ontology design, knowledge graphs, data interoperability\\[0.5pt]
+\textbf{Visualization \& BI} : Plotly, Streamlit, Kibana, dashboards, interactive analytics, automated reporting\\[0.5pt]
+\textbf{Tools \& Cloud} : Python, Git, Docker, Azure AI, AWS, Bash, REST APIs
+\section{Professional Experience}
+\cventry{Junior Cybersecurity Specialist --- Stagiaire PFE}{Digital Power Consulting}{Tunisia}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Built ML-driven detection models (RandomForest, GradientBoosting, IsolationForest) for BeeWAF, achieving 98.2/100 score with 0\% false positives on 10,041 detection rules.
+\end{itemize}
+\cventry{Cybersecurity Intern --- SAP Threat Detection}{Streamlink}{Tunisia}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Developed Python data pipelines for SAP log collection, ELK-based analytics dashboards and automated risk scoring for 7 critical transaction types.
+\end{itemize}
+\cventry{Network Security Intern}{Tunisie Telecom}{Tunisia}{07/2024}
+\begin{itemize}
+  \item Analyzed network traffic data, identified 10+ vulnerabilities, built detection dashboards with Elastic/Kibana and Sigma rules.
+\end{itemize}
+\section{Data \& AI Projects}
+\cventry{Revenue Assurance Dashboard --- Tunisie Telecom}{Streamlit, PostgreSQL, Data Warehouse, RAG, Gemini}{}{2026}
+\begin{itemize}
+  \item Star-schema DW analyzing ~900K telecom records across 4 domains. RAG chatbot (Gemini), Plotly dashboards, forecasting (3-30 days), gap detection (NE vs TAX).
+\end{itemize}
+\cventry{Plateforme d'analyse financiere --- SFBT}{Python, Data Warehouse, BI, ML}{}{2026}
+\begin{itemize}
+  \item DW for financial performance: 20,000+ automated ratios (MSI), BI dashboards, predictive models, end-to-end ETL pipeline.
+\end{itemize}
+\cventry{Multi-Agent Customer Feedback Analysis}{Python, NLP, Sentiment Analysis, ML}{}{2026}
+\begin{itemize}
+  \item Real-time NLP pipeline: sentiment analysis, topic extraction, actionable insights from customer feedback via multi-agent orchestration.
+\end{itemize}
+\cventry{RAG Hotel Recommendation System}{Python, RAG, LangChain, LLM, Azure AI}{}{2025}
+\begin{itemize}
+  \item RAG system: semantic search over reviews, context-aware LLM recommendations, multi-agent orchestration for personalized suggestions.
+\end{itemize}
+\cventry{Multi-Agent Vulnerability Detection System}{Python, Multi-Agent, A2A, Azure AI}{}{2025}
+\begin{itemize}
+  \item Distributed agent architecture (A2A protocol) for real-time event collection, correlation and automated alerting.
+\end{itemize}
+\cventry{Healthcare Ontology}{Python, OWL, RDF, SPARQL, Semantic Web}{}{2026}
+\begin{itemize}
+  \item Semantic ontology: OWL/RDF modeling, SPARQL optimization, interoperability framework for heterogeneous health data.
+\end{itemize}
+\cventry{Web Attack Detection via Data Mining}{Python, Scikit-learn, SHAP, AWS}{}{2024}
+\begin{itemize}
+  \item K-Means clustering (silhouette 0.787) on AWS logs: 39 attacks detected (13.8\%), SHAP explainability.
+\end{itemize}
+\section{Education}
+\cventry{Engineering Degree in Computer Science}{ENIT}{Tunisia}{09/2023 -- 06/2026}
+\cventry{Preparatory Classes (Physique-Technologie)}{IPEI El Manar}{Tunisia}{09/2021 -- 06/2023}
+\section{Certifications}
+Fundamentals of Deep Learning --- NVIDIA (2025) ; Exploring Adversarial ML --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Networking --- Cisco (2025) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Languages}
+English (B2) \quad|\quad French (B2) \quad|\quad Arabic (Native) \quad|\quad Chinese (Basic)
+\end{document}

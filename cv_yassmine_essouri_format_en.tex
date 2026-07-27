@@ -1,0 +1,90 @@
+% !TEX TS-program = pdflatex
+% ATS-friendly CV — Yassmine Essouri (English)
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.3cm,right=1.3cm,top=0.8cm,bottom=0.7cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.93}
+\hypersetup{
+  pdftitle={CV - Yassmine Essouri},
+  pdfauthor={Yassmine Essouri},
+  pdfsubject={Digital Marketing, Multimedia and Content Creation}
+}
+\titleformat{\section}
+  {\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{4pt}{1.8pt}
+\setlist[itemize]{leftmargin=1.15em,label=\textbullet,itemsep=0pt,topsep=0.3pt,parsep=0pt}
+\newcommand{\cventry}[4]{%
+  \textbf{#1} \hfill \textbf{#4}\\[1pt]
+  #2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1.5pt}}
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries\color{navy} Yassmine Essouri}\\[4pt]
+  {\large Digital Marketing \& Content Creation}\\[6pt]
+  \normalsize
+  Kélibia, Tunisia \quad|\quad +216 58 626 547 \quad|\quad
+  \href{mailto:yassminessouri7@gmail.com}{yassminessouri7@gmail.com}\\[2pt]
+  UGC Portfolio
+\end{center}
+\vspace{3pt}
+\section{Profile}
+Junior profile in digital marketing, multimedia and content creation, with experience in UGC, social media, video editing, graphic design and digital communication. Comfortable with Adobe, Canva, CapCut and Meta Business Suite, with a technical background in web development and databases.
+\section{Skills}
+\textbf{Digital Marketing} : Community management, Meta Business Suite, UGC, promotional campaigns\\[1pt]
+\textbf{Content Creation} : Video editing, photography, social media content, posters, logos\\[1pt]
+\textbf{Creative Tools} : Adobe Premiere Pro, Illustrator, After Effects, Canva, CapCut\\[1pt]
+\textbf{Development} : HTML5, CSS3, Python, Visual Basic, Visual Studio, CRUD applications\\[1pt]
+\textbf{Languages} : Arabic, French, English, Italian (Basic)
+\section{Professional Experience}
+\cventry{Content Creator}{Yalla Digital}{Tunisia}{2025 -- present}
+\begin{itemize}
+  \item Photo/video content creation and visual assets for social media and digital campaigns.
+\end{itemize}
+\cventry{Radio Host}{Local Radio}{Tunisia}{2025 -- present}
+\begin{itemize}
+  \item Preparation and presentation of segments, content animation and audience engagement.
+\end{itemize}
+\cventry{Intern — Digital Content Creation}{Hcom Agency}{Kélibia, Tunisia}{2025}
+\begin{itemize}
+  \item Video editing for social media, photography and digital content creation.
+\end{itemize}
+\cventry{Freelance — Digital Marketing, UGC \& Graphic Design}{Independent Clients / Social Media}{Tunisia}{2022 -- present}
+\begin{itemize}
+  \item Marketing projects, UGC content, logos, posters and promotional materials.
+\end{itemize}
+\cventry{Online Sales}{Social Media}{Tunisia}{2023 -- 2024}
+\begin{itemize}
+  \item Social page management, customer communication, order tracking and promotional content.
+\end{itemize}
+\cventry{Intern — Tunisie Telecom}{Tunisie Telecom}{Kélibia, Tunisia}{2024}
+\begin{itemize}
+  \item Discovery of network and telecom infrastructure, technical assistance and professional systems observation.
+\end{itemize}
+\cventry{Intern — Société Espace Info}{Société Espace Info}{Kélibia, Tunisia}{2023}
+\begin{itemize}
+  \item Introduction to management information systems, maintenance and application support.
+\end{itemize}
+\section{Academic Projects}
+\textbf{Management Application} — Visual Basic, database, CRUD (2024)\\[1pt]
+\textbf{Commercial Application} — Product, invoice and customer management (2024)\\[1pt]
+\textbf{Flower Nursery Management} — Inventory, sales and customers (2023)\\[1pt]
+\textbf{Showcase Website — Italian Restaurant} — HTML, CSS, responsive design (09/2025)
+\section{Education}
+\cventry{Higher National Diploma (BTS) — Digital Marketing and Multimedia}{Unspecified Institution}{Tunisia}{2024 -- present}
+\cventry{Professional Technical Diploma (BTP) — Management Computing}{École Elite}{Tunisia}{2022 -- 2024}
+\cventry{Baccalaureate}{Lycée Abdelaziz Khouja, Kélibia}{Tunisia}{2021}
+\section{Certifications}
+Marketing ; Canva ; CapCut ; Stress Management ; LinkedIn Learning.
+\section{Associations}
+Marketing Manager — BDE (2025 -- present) ; Marketing Member — ANCU Nabeul (2024 -- present) ; Vice President — Young Citizen Club (2018).
+\end{document}

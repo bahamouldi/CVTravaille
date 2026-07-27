@@ -1,0 +1,85 @@
+% !TEX TS-program = pdflatex
+% Targeted CV — DevSecOps
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.3cm,right=1.3cm,top=0.85cm,bottom=0.75cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.90}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - DevSecOps Engineer},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={DevSecOps, Cloud Security, Platform Security}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=1.2em,label=\textbullet,itemsep=0.2pt,topsep=0.5pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[1pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{2pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[4pt]
+{\large DevSecOps / Cloud Security Engineer}\\[6pt]
+Tunis, Tunisia \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[2pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{3pt}
+\section{Profile}
+Computer engineering graduate focused on DevSecOps, application security and security monitoring. Practical experience with Docker, Kubernetes, CI/CD concepts, GitHub Actions, Jenkins, ELK Stack, AWS exposure, WAF engineering, web/API security testing and secure deployment workflows. Seeking DevSecOps, Cloud Security or Platform Security roles.
+\section{Core Skills}
+\textbf{DevSecOps \& Cloud} : Docker, Kubernetes, CI/CD, Jenkins, ArgoCD (GitOps), GitHub Actions, AWS, secure deployment\\[1pt]
+\textbf{Monitoring \& Observability} : ELK Stack, Kibana, Prometheus, Grafana, log analysis, alerting, dashboards, security reporting\\[1pt]
+\textbf{Application Security} : OWASP Top 10, Web/API testing, WAF, vulnerability validation, remediation support\\[1pt]
+\textbf{Scripting \& Automation} : Python, Bash, PowerShell, automation scripts, security workflows\\[1pt]
+\textbf{Development} : FastAPI, Java, Spring Boot, Node.js, REST APIs, MySQL, MongoDB, Git
+\section{Professional Experience}
+\cventry{DevSecOps / WAF Engineer --- Stagiaire PFE}{Digital Power Consulting}{Tunisia}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Built BeeWAF with FastAPI, Docker, Kubernetes and ELK-based visibility for suspicious web traffic.
+  \item Implemented security modules for anti-bot, DLP, anti-DDoS and virtual patching use cases.
+  \item Produced technical documentation and security reporting for enterprise-oriented deployment scenarios.
+\end{itemize}
+\cventry{Junior Cybersecurity Specialist, Freelance Part-Time}{Digital Power Consulting}{Tunisia}{01/2025 -- 05/2026}
+\begin{itemize}
+  \item Penetration testing on 8 web and API applications, produced multiple detailed remediation reports.
+\end{itemize}
+\cventry{Cybersecurity Intern — SAP Threat Detection}{Streamlink}{Tunisia}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Automated event collection with Python/PyRFC and integrated logs into ELK Stack for correlation.
+\end{itemize}
+\cventry{Network Security Intern}{Tunisie Telecom}{Tunisia}{07/2024}
+\begin{itemize}
+  \item Built a SOC-oriented detection project with Elastic/Kibana, Sigma rules and scripted attack simulations.
+\end{itemize}
+\section{DevSecOps Projects}
+\cventry{BeeWAF — Intelligent Web Application Firewall (PFE)}{FastAPI, Docker, Kubernetes, ELK, ML}{}{2026}
+\begin{itemize}
+  \item Enterprise WAF: 10,041 rules + 3 ML models (RandomForest, GradientBoosting, IsolationForest), score 98.2/100, 0\% false positives.
+  \item 27 security modules (anti-bot, DLP, anti-DDoS, virtual patching of 37 CVEs), compliance with 7 frameworks (OWASP, PCI DSS, GDPR, NIST, ISO 27001).
+  \item Kubernetes deployment via Jenkins 8-stage pipeline + ArgoCD (GitOps), ELK and Prometheus/Grafana dashboards, real-time alerting.
+\end{itemize}
+\cventry{Architecture Microservices}{TypeScript, Node.js, Docker, Microservices, REST API}{}{2026}
+\begin{itemize}
+  \item Modular distributed application with 3+ decoupled services, REST APIs, container orchestration and CI/CD-ready structure.
+\end{itemize}
+\cventry{SOC Analyst Project — Threat Detection \& SIEM Integration}{Elastic Stack, Kibana, Sigma, Bash, PowerShell}{}{2024}
+\begin{itemize}
+  \item SOC-oriented detection pipeline with Elastic/Kibana, Sigma rules, brute force and DNS exfiltration simulations.
+  \item Automated attack scripts (Bash/PowerShell) and documented investigation workflows.
+\end{itemize}
+\cventry{Fedi Phone — E-commerce Platform}{Next.js, TypeScript, Prisma, PostgreSQL, Docker}{}{2026}
+\begin{itemize}
+  \item Full-stack e-commerce: Dockerized PostgreSQL, JWT auth, admin dashboard, Docker Compose deployment.
+\end{itemize}
+\section{Education}
+\cventry{Engineering Degree in Computer Science}{National Engineering School of Tunis (ENIT)}{Tunisia}{09/2023 -- 06/2026}
+\cventry{Preparatory Classes in Physics and Technology}{Preparatory Institute for Engineering Studies, El Manar}{Tunisia}{09/2021 -- 06/2023}
+\section{Certifications}
+Networking — Cisco (2025) ; Git \& GitHub — 365 Data Science (2024) ; Fundamentals of Deep Learning — NVIDIA (2025) ; Exploring Adversarial Machine Learning — NVIDIA (2025) ; Machine Learning — NVIDIA (2024).
+\section{Languages}
+English (B2) \quad|\quad French (B2) \quad|\quad Arabic (Native) \quad|\quad Chinese (Basic)
+\end{document}

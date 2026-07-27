@@ -1,0 +1,81 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Salt Spécialiste Cybersécurité Junior
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.3cm,right=1.3cm,top=0.85cm,bottom=0.75cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.94}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Spécialiste Cybersécurité Junior},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Spécialiste Cybersécurité Junior}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=1.2em,label=\textbullet,itemsep=0.2pt,topsep=0.5pt,parsep=0pt}
+\newcommand{\cventry}[4]{%
+  \textbf{#1} \hfill \textbf{#4}\\[1pt]
+  #2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{2pt}}
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[4pt]
+  {\large Spécialiste Cybersécurité Junior}\\[6pt]
+  \normalsize
+  Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad
+  \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[2pt]
+  \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad
+  \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad
+  \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{3pt}
+\section{Profil}
+Diplômé en génie informatique de l'ENIT avec une exposition pratique aux opérations de sécurité, intégration SIEM, tests de sécurité Web/API, évaluation réseau, environnements Linux et workflows de supervision de sécurité. Expérience concrète dans la collecte de données techniques, l'analyse d'activité système, la documentation de résultats et le support de remédiation. Recherche d'un poste junior en cybersécurité axé sur le triage d'alertes, l'investigation de menaces et l'identification de risques.
+\section{Compétences clés}
+\textbf{Opérations de Sécurité} : Triage d'alertes, investigation d'événements, documentation, recherche de menaces, analyse de logs, règles Sigma, SIEM\\[1pt]
+\textbf{Tests de Sécurité} : Évaluation Web/API, OWASP Top 10, identification de vulnérabilités, XSS, injection SQL, CSRF, fuzzing\\[1pt]
+\textbf{Réseaux \& Systèmes} : Fondamentaux TCP/IP, sécurité réseau, Linux/Kali Linux, Windows, Wireshark, Nmap\\[1pt]
+\textbf{Outils} : Elastic Stack, Kibana, Burp Suite, OWASP ZAP, Metasploit, Hydra, Wireshark, Nmap, Git, Docker\\[1pt]
+\textbf{Scripting \& Données} : Python, Bash, PowerShell, Java, MySQL, MongoDB, Pandas
+\section{Expérience professionnelle}
+\cventry{Spécialiste Cybersécurité Junior, Freelance temps partiel}{Digital Power Consulting}{Tunisie}{01/2025 -- 05/2026}
+\begin{itemize}
+  \item Tests d'intrusion sur 8 applications web et API, production de plusieurs rapports de remédiation détaillés.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité — Détection de menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Développement d'un prototype de détection en temps réel d'activités suspectes dans les environnements SAP.
+  \item Automatisation de la collecte d'événements via Python/PyRFC et support de corrélation des événements de sécurité dans ELK Stack.
+\end{itemize}
+\cventry{Stagiaire Sécurité réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Évaluation de la posture de sécurité réseau et identification de plus de 10 vulnérabilités.
+  \item Projet de détection de menaces orienté SOC avec Elastic/Kibana, règles Sigma et simulations d'attaques.
+\end{itemize}
+\section{Projets}
+\cventry{BeeWAF — Pare-feu applicatif intelligent, Projet de fin d'études}{FastAPI, Machine Learning, Docker, Kubernetes, ELK}{}{2026}
+\begin{itemize}
+  \item Prototype WAF d'entreprise combinant détection par règles et modèles de Machine Learning.
+  \item Utilisation de monitoring et reporting ELK pour la visibilité du trafic web suspect.
+\end{itemize}
+\cventry{Projet SOC Analyst — Détection de menaces, Simulation \& Intégration SIEM}{Elastic Stack, Kibana, Sigma, Bash, PowerShell}{}{2024}
+\begin{itemize}
+  \item Simulation de scénarios brute force, DNS suspects et exfiltration de données pour valider la logique de détection.
+  \item Création de règles de détection, visualisation d'alertes dans Kibana et documentation des résultats d'investigation.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\begin{itemize}
+  \item Classé 65e sur plus de 600 au concours national d'entrée aux écoles d'ingénieurs.
+\end{itemize}
+\section{Certifications}
+Fondements du Deep Learning — NVIDIA (2025) ; IA Adversariale — NVIDIA (2025) ; Machine Learning — NVIDIA (2024) ; Réseaux — Cisco (2025) ; Git \& GitHub — 365 Data Science (2024).
+\section{Langues}
+Anglais (B2) \quad|\quad Français (B2) \quad|\quad Arabe (Natif) \quad|\quad Chinois (Notions)
+\end{document}

@@ -1,0 +1,98 @@
+% !TEX TS-program = pdflatex
+% CV targeted — Backend Developer — ZForm (B2G / GovTech)
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.83}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Backend Developer},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Backend Development, JavaScript, APIs, AI, Deployment}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} Backend Developer --- JavaScript \textbar\ TypeScript \textbar\ APIs \textbar\ AI-Supported Development}\\[3pt]
+{\small Tunis, Tunisia \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profile}
+Computer engineering graduate with hands-on backend development experience building APIs, server-side logic and deployable applications using JavaScript/TypeScript and Python. Comfortable with AI-assisted development workflows, code review and sprint delivery. Strong ownership mentality with a startup-friendly attitude --- equally at ease in a strategic planning meeting and on a launch day. Motivated by user-friendly GovTech and administrative tools.
+\section{Core Skills}
+\textbf{Backend \& APIs} : JavaScript, TypeScript, Node.js, Next.js, Python, FastAPI, Java, Spring Boot, REST APIs, JSON, microservices\\[0.3pt]
+\textbf{Frontend} : React, Next.js, Angular, TypeScript, HTML5/CSS3, Tailwind CSS, Framer Motion\\[0.3pt]
+\textbf{Database} : PostgreSQL, MySQL, MongoDB, Prisma ORM, SQL, NoSQL, error logging \& tracking\\[0.3pt]
+\textbf{AI \& Assisted Development} : LLM, RAG, LangChain, Gemini, Azure AI, AI code generation, vibe coding, prompt engineering\\[0.3pt]
+\textbf{DevOps \& Deployment} : Docker, Kubernetes, Jenkins, ArgoCD (GitOps), GitHub Actions, CI/CD, cloud (AWS, Azure), Prometheus/Grafana\\[0.3pt]
+\textbf{Quality} : Code review, unit/integration testing, technical documentation, sprint delivery, cross-functional collaboration
+\section{Professional Experience}
+\cventry{Backend Developer --- Intern (PFE)}{Digital Power Consulting}{Tunisia}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Designed and built REST APIs with FastAPI and Node.js, handling JSON payloads, JWT authentication and error logging.
+  \item Owned backend sprint delivery: feature implementation, code review, bug fixes and production deployment on Kubernetes.
+  \item Integrated AI-assisted development: LLM features (RAG chatbot, semantic search) and AI code generation for faster iteration.
+  \item Set up CI/CD pipeline (Jenkins + ArgoCD GitOps) and Docker containerization for repeatable deployments.
+  \item Deployed on Kubernetes cluster (3 masters + 2 workers, Calico CNI): full manifests, health probes, zero-downtime rolling updates.
+\end{itemize}
+\cventry{Backend Developer, Freelance (Part-Time)}{Digital Power Consulting}{Tunisia}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Built backend services: JavaScript/TypeScript APIs, PostgreSQL databases, JWT/OAuth2 authentication.
+  \item Code review and vulnerability analysis on 8 web and API applications, delivering detailed remediation reports.
+  \item Technical documentation and cross-functional collaboration with frontend and operations teams.
+\end{itemize}
+\cventry{Cybersecurity Intern --- SAP Threat Detection}{Streamlink}{Tunisia}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Automated SAP log collection pipelines via Python/PyRFC, ELK correlation and real-time alerting.
+  \item Risk scoring for 7 critical SAP transactions, detection $<$2 min, automated blocking $<$7 min.
+\end{itemize}
+\cventry{Technical Project Lead --- Vmate}{ENIT}{Tunisia}{06/2024}
+\begin{itemize}
+  \item Led team of 4 on a secure web/mobile platform --- project ranked 1st. Sprint planning, code review and deployment.
+\end{itemize}
+\cventry{Network Security Intern}{Tunisie Telecom}{Tunisia}{07/2024}
+\begin{itemize}
+  \item Network monitoring dashboards (Elastic/Kibana), traffic analysis, identification of 10+ vulnerabilities.
+\end{itemize}
+\section{Key Projects}
+\cventry{BeeWAF --- Intelligent Web Application Firewall (PFE, graded 86/100)}{FastAPI, Python, ML, Docker, Kubernetes, ELK, Prometheus, Grafana}{}{2026}
+\begin{itemize}
+  \item Enterprise WAF deployed in production (v8.54) on Kubernetes: 27 modules, 107 signatures (9,824 regex), 3 ML models (RF, GB, IF), 38 features, 18-layer evasion detection, 37 virtual CVE patches.
+  \item ML evaluation on CSIC 2010 (12,213 requests): 92.3\% accuracy, 98.2\% precision, 89.8\% F1. Latency $<$20ms. Compliance with 7 frameworks (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2).
+  \item CI/CD: Jenkins (8 stages) + ArgoCD (GitOps). MITRE ATT\&CK mapping (22 techniques), APT attribution (APT28, APT29, Lazarus).
+\end{itemize}
+\cventry{Fedi Phone --- E-commerce Platform}{Next.js, TypeScript, React, Prisma, PostgreSQL, Tailwind CSS, Docker}{}{2026}
+\begin{itemize}
+  \item Full-stack e-commerce: backend API routes, React/TypeScript frontend, JWT, cart, wishlist, real-time search, admin dashboard, WhatsApp integration, Prisma ORM, dark mode.
+\end{itemize}
+\cventry{Microservices Architecture}{TypeScript, Node.js, REST API, Docker}{}{2026}
+\begin{itemize}
+  \item Distributed microservices application: decoupled JavaScript/TypeScript services, REST communication, Docker containerization.
+\end{itemize}
+\cventry{Revenue Assurance Dashboard --- Tunisie Telecom}{Python, Streamlit, PostgreSQL, Plotly, RAG, Gemini}{}{2026}
+\begin{itemize}
+  \item Star-schema DW analyzing ~900K telecom records across 4 domains. RAG chatbot (Gemini), Plotly dashboards, 3--30 day forecasting, gap detection.
+\end{itemize}
+\section{Education}
+\cventry{Engineering Degree in Computer Science}{National Engineering School of Tunis (ENIT)}{Tunisia}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Graduated 06/25/2026. Ranked 65th out of 600+ in the national engineering school entrance exam.
+\end{itemize}
+\cventry{Preparatory Classes (Physics \& Technology)}{Preparatory Institute for Engineering Studies, El Manar}{Tunisia}{09/2021 -- 06/2023}
+\cventry{Technical Baccalaureate --- High Distinction}{Lycee Abdelaziz Khouja, Kelibia}{Tunisia}{06/2021}
+\section{Certifications}
+Fundamentals of Deep Learning --- NVIDIA (2025) ; Exploring Adversarial ML --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Networking --- Cisco (2025) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Languages}
+French (Fluent) \quad|\quad English (B2) \quad|\quad Arabic (Native) \quad|\quad Chinese (Basic)
+\end{document}

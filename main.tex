@@ -1,0 +1,128 @@
+% !TEX TS-program = pdflatex
+% CV ATS-friendly — Baha Eddine Belhaj Mouldi
+% Single column, system font, standard headings, MM/YYYY dates, text-selectable PDF.
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}   % police type Helvetica/Arial (ATS-safe)
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.4cm,right=1.4cm,top=1.0cm,bottom=0.9cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+% Accent bleu marine sobre (ATS-safe : vrai texte, fort contraste)
+\definecolor{navy}{RGB}{23,54,93}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.97}
+
+% PDF lisible par les ATS (texte sélectionnable, métadonnées)
+\hypersetup{
+  pdftitle={CV - Baha Eddine Belhaj Mouldi},
+  pdfauthor={Baha Eddine Belhaj Mouldi},
+  pdfsubject={Ingenieur Cybersecurite et Intelligence Artificielle}
+}
+
+% ---- Titres de section : standards, en gras, avec filet ----
+\titleformat{\section}
+  {\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{5pt}{2.5pt}
+
+% ---- Listes ----
+\setlist[itemize]{leftmargin=1.3em,label=\textbullet,itemsep=0.5pt,topsep=1pt,parsep=0pt}
+
+% ---- Entrée d'expérience/formation ----
+% \cventry{Poste / Diplôme}{Organisation}{Lieu}{Date}
+\newcommand{\cventry}[4]{%
+  \textbf{#1} \hfill \textbf{#4}\\[1pt]
+  #2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{2pt}}
+
+\begin{document}
+
+% =====================================================================
+%  EN-TÊTE
+% =====================================================================
+\begin{center}
+  {\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[4pt]
+  {\large Ingénieur Cybersécurité \& Intelligence Artificielle}\\[6pt]
+  \normalsize
+  Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad
+  \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[2pt]
+  \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad
+  \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad
+  \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{4pt}
+
+% =====================================================================
+\section{Profil}
+Ingénieur diplômé en génie informatique de l'ENIT, spécialisé en cybersécurité offensive et en intelligence artificielle appliquée à la sécurité. Expérience pratique en tests d'intrusion, détection d'attaques par Machine Learning et architectures multi-agents. Recherche un poste d'ingénieur junior en sécurité applicative ou en ingénierie IA.
+
+% =====================================================================
+\section{Compétences}
+\textbf{Sécurité offensive} : Pentest Web \& API, OWASP Top 10, XSS, SQLi, CSRF, fuzzing, MITM, sécurité Wi-Fi\\[2pt]
+\textbf{Outils de sécurité} : Burp Suite, OWASP ZAP, Metasploit, Nmap, Wireshark, Hydra, Ettercap\\[2pt]
+\textbf{IA \& Machine Learning} : Python, Scikit-learn, Pandas, K-Means, Adversarial ML (FGSM/PGD), SHAP, LLM, RAG, LangChain\\[2pt]
+\textbf{DevSecOps \& Cloud} : Docker, Kubernetes, CI/CD, Jenkins, GitHub Actions, ELK Stack, Prometheus, AWS\\[2pt]
+\textbf{Développement \& Données} : Python, Bash, PowerShell, Java, Git, MySQL, MongoDB
+
+% =====================================================================
+\section{Expérience professionnelle}
+\cventry{Pentester --- Stagiaire PFE}{Digital Power Consulting}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Tests d'intrusion sur 8 applications web et API, production de plusieurs rapports de remédiation détaillés.
+\end{itemize}
+\cventry{Stagiaire — Détection de menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Développement d'un prototype de détection en temps réel d'activités suspectes sur des systèmes SAP.
+  \item Collecte automatisée des événements via Python/PyRFC et corrélation dans ELK Stack.
+\end{itemize}
+\cventry{Stagiaire — Sécurité réseau}{Tunisie Télécom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Évaluation de la sécurité réseau et identification de plus de 10 vulnérabilités.
+  \item Automatisation partielle des tests à l'aide de scripts Python et Bash.
+\end{itemize}
+\cventry{Chef de projet technique — Vmate}{ENIT}{Tunisie}{06/2024}
+\begin{itemize}
+  \item Encadrement d'une équipe de 4 personnes sur une plateforme sécurisée web/mobile (projet classé 1er).
+  \item Développement sécurisé, tests d'intrusion et revue de code.
+\end{itemize}
+
+% =====================================================================
+\section{Projets}
+\cventry{BeeWAF — Web Application Firewall intelligent (PFE soutenu, Digital Power Consulting)}{FastAPI, Machine Learning, Docker, Kubernetes, ELK}{}{2026}
+\begin{itemize}
+  \item Pare-feu applicatif d'entreprise : 10 041 règles et 3 modèles ML (RandomForest, GradientBoosting, IsolationForest), score 98,2/100 et 0\% de faux positifs.
+  \item 27 modules de sécurité (anti-bot, DLP, anti-DDoS, virtual patching de 37 CVE) ; conformité à 7 référentiels (OWASP, PCI DSS, GDPR, NIST, ISO 27001).
+\end{itemize}
+\cventry{WebSec — Plateforme de test de sécurité (PFA2)}{Python, OWASP ZAP}{}{2025}
+\begin{itemize}
+  \item Tests automatisés de vulnérabilités web (XSS, SQLi) avec génération de rapports détaillés.
+\end{itemize}
+
+% =====================================================================
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Diplômé le 25/06/2026 après soutenance du projet de fin d'études.
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\begin{itemize}
+  \item Classé 65e sur plus de 600 au concours national d'entrée aux écoles d'ingénieurs.
+\end{itemize}
+\cventry{Baccalauréat Technique — Mention Très Bien}{Lycée Abdelaziz Khouja, Kélibia}{Tunisie}{06/2021}
+
+% =====================================================================
+\section{Certifications}
+Fundamentals of Deep Learning — NVIDIA (2025) ; Exploring Adversarial Machine Learning — NVIDIA (2025) ; Machine Learning — NVIDIA (2024) ; Réseaux — Cisco (2025) ; Git \& GitHub — 365 Data Science (2024).
+
+% =====================================================================
+\section{Langues}
+Anglais (B2) \quad|\quad Français (B2) \quad|\quad Chinois (notions)
+
+\end{document}

@@ -1,0 +1,94 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Fullstack Developer
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.0cm,right=1.0cm,top=0.6cm,bottom=0.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.70}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Fullstack Developer},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Fullstack, React, Next.js, TypeScript, Python, APIs}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{3pt}{1.5pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0.1pt,topsep=0.2pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[1pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[3pt]
+{\large Ingénieur Full-Stack --- React \textbar\ Next.js \textbar\ Python \textbar\ TypeScript}\\[5pt]
+Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{1pt}
+\section{Profil}
+Ingénieur en génie informatique avec une forte appétence pour le développement full-stack : frontend React/Next.js et backend Python/TypeScript. Expérience concrète de bout en bout --- conception d'APIs REST, développement d'interfaces utilisateur riches, gestion de bases de données, conteneurisation Docker et déploiement CI/CD. Sensibilité à la sécurité applicative et aux bonnes pratiques de développement. Recherche un poste de Full-Stack Developer pour concevoir des applications web complètes et performantes.
+\section{Compétences clés}
+\textbf{Frontend} : Angular, React, Next.js, TypeScript, HTML5/CSS3, Tailwind CSS, Framer Motion\\[0.5pt]
+\hspace*{1.5em} responsive design mobile-first\\[0.5pt]
+\textbf{Backend} : Python, FastAPI, Java, Spring Boot, Node.js, REST APIs, microservices, authentification JWT\\[0.5pt]
+\textbf{Base de données} : PostgreSQL, MySQL, MongoDB, Prisma ORM, SQL, NoSQL, modélisation de données\\[0.5pt]
+\textbf{DevOps \& Outils} : Docker, Git, GitHub Actions, CI/CD, Linux, Bash\\[0.5pt]
+\textbf{Sécurité} : OWASP Top 10, codage sécurisé, authentification/autorisation, tests d'intrusion\\[0.5pt]
+\textbf{Qualité} : Tests unitaires, tests d'intégration, revue de code, architecture modulaire, documentation technique
+\section{Expérience professionnelle}
+\cventry{Développeur Full-Stack, Freelance}{Digital Power Consulting}{Tunisie}{01/2024 -- 05/2026}
+\begin{itemize}
+  \item Développement d'applications web full-stack pour des clients : frontend Angular/TypeScript, backend Java/Spring Boot, APIs REST, bases de données PostgreSQL/MySQL.
+  \item Conception d'interfaces utilisateur responsive, intégration de systèmes d'authentification (JWT, OAuth2), conteneurisation Docker et déploiement CI/CD.
+  \item Participation à des projets de sécurité applicative : tests d'intrusion, analyse de vulnérabilités, remédiation OWASP.
+\end{itemize}
+\cventry{Développeur Full-Stack --- Stagiaire PFE}{Digital Power Consulting}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Application full-stack : backend Python (FastAPI), APIs REST, frontend React/Next.js/TypeScript, authentification JWT, Docker, Kubernetes.
+  \item Dashboard interactif temps réel : visualisation de données, graphiques dynamiques, interface responsive mobile-first.
+  \item Intégration de modèles ML dans le backend, pipelines de données, documentation technique et déploiement CI/CD.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Développement de scripts Python de collecte et transformation de données, dashboards interactifs avec ELK (Elasticsearch, Kibana).
+\end{itemize}
+\cventry{Stagiaire Sécurité Réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Construction de dashboards de monitoring réseau (Elastic/Kibana), analyse de données de trafic et détection d'anomalies.
+\end{itemize}
+\section{Projets Full-Stack}
+\cventry{Fedi Phone --- Plateforme E-commerce}{Next.js, TypeScript, React, Prisma, PostgreSQL, Tailwind CSS, Docker}{}{2026}
+\begin{itemize}
+  \item Application e-commerce full-stack : backend API routes, frontend React/TypeScript, JWT, panier, wishlist, recherche temps réel, dashboard admin, intégration WhatsApp, Prisma ORM, mode sombre, Framer Motion.
+\end{itemize}
+\cventry{Architecture Microservices}{TypeScript, Node.js, REST API, Docker}{}{2026}
+\begin{itemize}
+  \item Application distribuée en microservices : services découplés, communication REST, organisation modulaire.
+\end{itemize}
+\cventry{Dashboard Assurance Revenus --- Tunisie Telecom}{Python, Streamlit, PostgreSQL, Plotly, RAG}{}{2026}
+\begin{itemize}
+  \item Dashboard interactif : backend Python, PostgreSQL (900K+ enregistrements), visualisation Plotly, chatbot RAG, prévision.
+\end{itemize}
+\cventry{Plateforme d'analyse financière --- SFBT}{Python, Data Warehouse, BI, ML}{}{2026}
+\begin{itemize}
+  \item Pipeline ETL complet : data warehouse, dashboards BI interactifs, modèles prédictifs.
+\end{itemize}
+\cventry{IDTS --- Application Web Sécurisée}{Java, Spring Boot, Angular, PostgreSQL, Docker, Kubernetes}{}{2024}
+\begin{itemize}
+  \item Application full-stack : backend Spring Boot (JPA, REST APIs), frontend Angular, PostgreSQL, conteneurisation Docker, déploiement Kubernetes.
+\end{itemize}
+\cventry{Kairos --- Plateforme de Gestion}{Java, Spring Boot, Angular, PostgreSQL, Docker, Kubernetes}{}{2024}
+\begin{itemize}
+  \item Application full-stack : backend Spring Boot (JPA, REST APIs), frontend Angular, PostgreSQL, Docker, déploiement Kubernetes.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{ENIT}{Tunisie}{09/2023 -- 06/2026}
+\cventry{Classes préparatoires (Physique-Technologie)}{IPEI El Manar}{Tunisie}{09/2021 -- 06/2023}
+\section{Certifications}
+Git \& GitHub --- 365 Data Science (2024) ; Réseaux --- Cisco (2025) ; Fondements du Deep Learning --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024).
+\section{Langues}
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif) \quad|\quad Chinois (Notions)
+\end{document}

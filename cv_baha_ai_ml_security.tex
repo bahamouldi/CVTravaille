@@ -1,0 +1,84 @@
+% !TEX TS-program = pdflatex
+% Targeted CV — AI / Machine Learning Security
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.3cm,right=1.3cm,top=0.85cm,bottom=0.75cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.88}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - AI ML Security Engineer},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={AI Security, Machine Learning, LLM, RAG}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=1.2em,label=\textbullet,itemsep=0.2pt,topsep=0.5pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[1pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{2pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[4pt]
+{\large AI / Machine Learning Security Engineer}\\[6pt]
+Tunis, Tunisia \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[2pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{3pt}
+\section{Profile}
+Computer engineering graduate specialized in cybersecurity and AI applied to threat detection. Built BeeWAF, an intelligent Web Application Firewall combining rule-based detection, Machine Learning models and ELK reporting. Hands-on with adversarial ML, SHAP, RAG, LangChain, multi-agent architectures, Python data pipelines and security analytics. Seeking AI Security, ML Engineer, GenAI or LLM Security roles.
+\section{Core Skills}
+\textbf{AI \& Machine Learning} : Python, Scikit-learn, Pandas, K-Means, RandomForest, GradientBoosting, IsolationForest\\[1pt]
+\textbf{AI Security} : Adversarial ML, FGSM/PGD awareness, SHAP explainability, attack detection, anomaly detection\\[1pt]
+\textbf{LLM \& GenAI} : RAG, LangChain, LLM orchestration, multi-agent systems, Gemini, Azure AI Foundry\\[1pt]
+\textbf{Security} : OWASP Top 10, Web/API security, WAF, SOC detection, ELK Stack, threat correlation\\[1pt]
+\textbf{Engineering} : FastAPI, Docker, Kubernetes, Git, Bash, PowerShell, MySQL, MongoDB
+\section{Professional Experience}
+\cventry{AI Security / WAF Engineer --- Stagiaire PFE}{Digital Power Consulting}{Tunisia}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Built BeeWAF, an enterprise-oriented intelligent WAF combining 10,041 detection rules and 3 ML models.
+  \item Implemented security modules for anti-bot, DLP, anti-DDoS, virtual patching and ELK-based reporting.
+  \item Evaluated ML-driven detection results and prepared technical documentation for security use cases.
+\end{itemize}
+\cventry{Junior Cybersecurity Specialist, Freelance Part-Time}{Digital Power Consulting}{Tunisia}{01/2025 -- 05/2026}
+\begin{itemize}
+  \item Penetration testing on 8 web and API applications, produced multiple detailed remediation reports.
+\end{itemize}
+\cventry{Cybersecurity Intern — SAP Threat Detection}{Streamlink}{Tunisia}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Automated SAP event collection using Python/PyRFC and supported ELK correlation for suspicious activities.
+\end{itemize}
+\section{AI \& Security Projects}
+\cventry{BeeWAF — Intelligent Web Application Firewall}{FastAPI, Python, ML, Docker, Kubernetes, ELK, Prometheus, Grafana}{}{2026}
+\begin{itemize}
+  \item Enterprise WAF deployed in production (v8.54) on Kubernetes: 27-module inspection pipeline, 107 signatures (9,824 regex), 3 ML models (RF, GB, IF) with 38 features, 18-layer evasion detection, 37 CVE virtual patches, 7 compliance frameworks (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2).
+  \item ML evaluation on CSIC 2010 (12,213 requests): 92.3\% accuracy, 98.2\% precision, 89.8\% F1. Tested against 153 OWASP scenarios with Burp Suite Professional. Production latency overhead $<$20ms median.
+  \item CI/CD pipeline: Jenkins (8 stages) + ArgoCD (GitOps). Monitoring: Prometheus + Grafana. Threat intelligence: MITRE ATT\&CK mapping (22 techniques), APT attribution (APT28, APT29, Lazarus).
+\end{itemize}
+\cventry{Revenue Assurance Dashboard — Tunisie Telecom}{Streamlit, PostgreSQL, Data Warehouse, RAG, Gemini}{}{2026}
+\begin{itemize}
+  \item Built analytics and RAG chatbot workflows over nearly 900,000 telecom revenue records with forecasting dashboards.
+\end{itemize}
+\cventry{Multi-Agent Vulnerability Detection System}{Python, Multi-Agent, A2A, Azure AI}{}{2025}
+\begin{itemize}
+  \item Designed distributed agents for real-time security event collection, correlation and automated alerting.
+\end{itemize}
+\cventry{RAG Hotel Recommendation System}{Python, RAG, LangChain, LLM, Azure AI}{}{2025}
+\begin{itemize}
+  \item Built semantic retrieval and context-aware LLM recommendation workflows from user reviews and preferences.
+\end{itemize}
+\cventry{Web Attack Detection via Data Mining}{Python, Scikit-learn, SHAP, AWS}{}{2024}
+\begin{itemize}
+  \item K-Means clustering pipeline (silhouette 0.787) on AWS logs: 39 attacks detected (13.8\% of traffic), SHAP explainability for model interpretability.
+\end{itemize}
+\section{Education}
+\cventry{Engineering Degree in Computer Science}{National Engineering School of Tunis (ENIT)}{Tunisia}{09/2023 -- 06/2026}
+\cventry{Preparatory Classes in Physics and Technology}{Preparatory Institute for Engineering Studies, El Manar}{Tunisia}{09/2021 -- 06/2023}
+\section{Certifications}
+Fundamentals of Deep Learning — NVIDIA (2025) ; Exploring Adversarial Machine Learning — NVIDIA (2025) ; Machine Learning — NVIDIA (2024) ; Networking — Cisco (2025) ; Git \& GitHub — 365 Data Science (2024).
+\section{Languages}
+English (B2) \quad|\quad French (B2) \quad|\quad Arabic (Native) \quad|\quad Chinese (Basic)
+\end{document}
