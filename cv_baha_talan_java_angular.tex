@@ -1,0 +1,92 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Talan : Full Stack Java/Angular Senior
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.0cm,right=1.0cm,top=0.5cm,bottom=0.4cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.72}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Full Stack Java/Angular},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Java, Spring Boot, Angular, Kafka, Microservices}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{3pt}{1.5pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0.1pt,topsep=0.2pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.5pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[3pt]
+{\large Full Stack Java/Angular --- Spring Boot \textbar Kafka \textbar Microservices}\\[4pt]
+Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{2pt}
+\section{Profil}
+Ingénieur diplômé en génie informatique (ENIT, 65e/600+) avec 2+ ans d'expérience en développement full stack Java/Spring Boot et Angular. Expérience concrète en architecture événementielle Kafka (producers, consumers, topics, fenêtrage, exactly-once), microservices, APIs REST et conteneurisation Docker/Kubernetes. Pipeline de streaming temps réel (Kafka + PySpark + PostgreSQL) déployé en Docker Compose. CI/CD (Jenkins, ArgoCD), tests JUnit et méthodologies Agile/Scrum.
+
+\section{Compétences clés}
+\textbf{Backend \& Java} : Java SE 17, Spring Boot 3.x, JPA/Hibernate, Spring Security, REST APIs, microservices, Kafka (topics, producers/consumers, exactly-once, fenêtrage, backpressure)\\[0.5pt]
+\textbf{Frontend \& Angular} : Angular 14+, TypeScript, RxJS, Tailwind CSS, Angular Material, reactive forms, lazy loading, interceptors HTTP\\[0.5pt]
+\textbf{Base de données} : PostgreSQL, MySQL, MongoDB, SQL avancé, NoSQL, JDBC, psycopg2, SQLAlchemy\\[0.5pt]
+\textbf{CI/CD \& DevOps} : Jenkins, GitHub Actions, ArgoCD (GitOps), Docker/Docker Compose, Kubernetes (Deployment, Service, Ingress)\\[0.5pt]
+\textbf{Qualité \& Tests} : JUnit 5, Mockito, tests unitaires/intégration, Swagger/OpenAPI, revue de code\\[0.5pt]
+\textbf{Streaming \& Data} : Kafka (kafka-python), PySpark Structured Streaming, windowing, watermarking, Flask, dashboards temps réel\\[0.5pt]
+\textbf{Méthodologies} : Agile/Scrum, Jira, sprints, rétrospectives, Kanban
+
+\section{Expérience professionnelle}
+\cventry{Développeur Full Stack Java/Angular}{Digital Power Consulting}{Tunisie}{01/2024 -- 05/2026}
+\begin{itemize}
+  \item 5+ applications web full stack : Java/Spring Boot, Angular/TypeScript, APIs REST, PostgreSQL/MySQL.
+  \item Microservices : communication REST et Kafka, scalabilité horizontale, circuits breakers.
+  \item Auth : Spring Security, JWT, OAuth2, rôles/permissions. Conteneurisation Docker, CI/CD Jenkins, K8s.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Scripts Python (PyRFC), dashboards ELK (Elasticsearch, Kibana), scoring de risque automatisé 7 transactions critiques.
+\end{itemize}
+\cventry{Stagiaire Sécurité Réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Dashboards Elastic/Kibana, analyse trafic, détection d'anomalies, 10+ vulnérabilités identifiées.
+\end{itemize}
+
+\section{Projets clés}
+\cventry{Pipeline Streaming Temps Réel --- Kafka + PySpark + PostgreSQL}{PySpark, Kafka, PostgreSQL, Docker Compose, Flask}{}{2024}
+\begin{itemize}
+  \item Architecture événementielle complète (6 services Docker Compose) : Kafka Producer → topic \`temperature\_readings\` → consumer PySpark Structured Streaming → fenêtrage 30 min + watermark → agrégation temps réel → PostgreSQL via JDBC.
+  \item Kafka : partitioning, backpressure, rate limiting, earliest offset. PySpark : parsing JSON, extraction schéma, windowed aggregation, writeStream.
+  \item Dashboard Flask : API REST (stats, séries temporelles, analyse par salle), psycopg2, health check, déploiement Docker.
+\end{itemize}
+\cventry{Architecture Microservices --- Kafka + Spring Boot}{Java, Spring Boot, Kafka, Angular, PostgreSQL, Docker, Kubernetes}{}{2026}
+\begin{itemize}
+  \item 4 microservices Java/Spring Boot découplés, Kafka (topics ordonnés, exactly-once), Angular, PostgreSQL par service, Docker + Kubernetes.
+\end{itemize}
+\cventry{IDTS --- Plateforme de Gestion Sécurisée}{Java, Spring Boot, Angular, PostgreSQL, Docker, Kubernetes}{}{2024}
+\begin{itemize}
+  \item Backend Spring Boot (JPA/Hibernate, REST APIs, validation), frontend Angular (CRUD, reactive forms, guards), PostgreSQL, Docker, Kubernetes.
+\end{itemize}
+\cventry{Kairos --- Système de Gestion}{Java, Spring Boot, Angular, PostgreSQL, Docker, Kubernetes}{}{2024}
+\begin{itemize}
+  \item APIs REST sécurisées JWT, cache EhCache, pagination/filtering/tri. Angular : interceptors HTTP, lazy loading, composants réutilisables.
+\end{itemize}
+\cventry{Dashboard Assurance Revenus --- Tunisie Telecom}{Python, Streamlit, PostgreSQL, Plotly, RAG}{}{2026}
+\begin{itemize}
+  \item Pipeline ETL 900K+ enregistrements : data warehouse schéma étoile, dashboards interactifs, chatbot RAG, modèles de prévision.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{ENIT}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Classé 65e/600+ au concours national. PFE : Architecture microservices avec Kafka (86/100).
+\end{itemize}
+\cventry{Classes préparatoires (Physique-Technologie)}{IPEI El Manar}{Tunisie}{09/2021 -- 06/2023}
+\section{Certifications}
+Git \& GitHub --- 365 Data Science (2024) ; Réseaux --- Cisco (2025) ; Deep Learning --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024).
+\section{Langues}
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif) \quad|\quad Chinois (Notions)
+\end{document}

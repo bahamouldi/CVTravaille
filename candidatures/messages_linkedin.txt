@@ -1,0 +1,26 @@
+=====================================================================
+MESSAGES LINKEDIN — prêts à envoyer (après redémarrage du MCP LinkedIn)
+=====================================================================
+
+--- 1. NOTE DE DEMANDE DE CONNEXION (recruteur / manager) — max 300 caractères ---
+
+Bonjour [Prénom], ingénieur ENIT diplômé en 2026 et pentester freelance (cybersécurité + IA), je suis très intéressé par les opportunités chez [Entreprise]. Je serais ravi d'échanger. Mon portfolio : bahamouldi.github.io/portfolio. Bonne journée !
+
+
+--- 2. MESSAGE APRÈS CONNEXION / InMail (plus détaillé) ---
+
+Bonjour [Prénom],
+
+Merci pour la mise en relation. Je me permets de vous écrire car je recherche un poste de [Junior AI Engineer / Ingénieur Cybersécurité junior] et le travail de [Entreprise] m'intéresse beaucoup.
+
+Mon profil est à la croisée de la sécurité offensive et de l'IA : je suis pentester freelance chez Digital Power Consulting, où j'ai réalisé et soutenu mon PFE BeeWAF (un WAF intelligent : 10 000+ règles + 3 modèles ML, 98,2/100, 0 % de faux positifs). J'ai aussi construit des systèmes multi-agents et RAG, et un dashboard data pour Tunisie Telecom.
+
+Seriez-vous ouvert(e) à un court échange cette semaine ? Mon CV et mes projets : bahamouldi.github.io/portfolio
+
+Merci d'avance,
+Baha Eddine Belhaj Mouldi
+
+
+--- 3. RÉPONSE À UNE OFFRE POSTÉE (commentaire / message au posteur) ---
+
+Bonjour [Prénom], votre annonce pour [Poste] m'intéresse beaucoup. Profil cybersécurité + IA (pentester freelance, PFE WAF intelligent à base de ML). Je vous envoie mon CV en message — portfolio : bahamouldi.github.io/portfolio. Merci !

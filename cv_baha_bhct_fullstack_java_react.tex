@@ -1,0 +1,98 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — BHCT : Développeur Full Stack Java / ReactJS
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.0cm,right=1.0cm,top=0.5cm,bottom=0.4cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.72}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Développeur Full Stack Java / ReactJS},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Java, Spring Boot, ReactJS, APIs REST, Microservices}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{3pt}{1.5pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0.1pt,topsep=0.2pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.5pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[3pt]
+{\large Développeur Full Stack Java / ReactJS --- Spring Boot \textbar React \textbar Microservices}\\[4pt]
+Berges du Lac 2, Tunis \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{2pt}
+\section{Profil}
+Ingénieur diplômé en génie informatique (ENIT, 65e/600+) avec 3+ ans d'expérience en développement Full Stack Java/Spring Boot et ReactJS. Conception et réalisation de bout en bout d'applications web robustes : analyse des besoins, architecture technique, développement backend Java (Spring Boot, Spring Security, Spring Data), frontend React/TypeScript, tests unitaires, revues de code et mise en production. Expérience concrète en microservices, conteneurisation Docker et pipelines CI/CD (Jenkins). Méthodologies Agile/Scrum. Excellent niveau de français, oral et écrit.
+
+\section{Compétences clés}
+\textbf{Back-end \& Java} : Java 8/11/17, Spring Boot 3.x, Spring Security (JWT, OAuth2), Spring Data JPA/Hibernate, REST APIs, microservices, validation de beans, gestion des erreurs\\[0.5pt]
+\textbf{Front-end \& React} : ReactJS, React Router, hooks (useState, useEffect, useMemo), composants fonctionnels, TypeScript, HTML5/CSS3, Tailwind CSS, interfaces responsive\\[0.5pt]
+\textbf{Base de données} : SQL avancé, PostgreSQL, MySQL, Elasticsearch (indexation, requêtes), modélisation de données, JDBC, JPA\\[0.5pt]
+\textbf{Outils \& Technologies} : Git, Maven, Jenkins (pipelines CI/CD), Docker/Docker Compose, Elasticsearch, Jira, Confluence\\[0.5pt]
+\textbf{Qualité \& Tests} : JUnit 5, Mockito, tests unitaires et d'intégration, Swagger/OpenAPI, revue de code, architecture modulaire\\[0.5pt]
+\textbf{Méthodologies} : Agile/Scrum, sprints, rétrospectives, Kanban, rédaction de documentation technique
+
+\section{Expérience professionnelle}
+\cventry{Développeur Full Stack Java / ReactJS --- Freelance}{Digital Power Consulting}{Tunisie}{01/2024 -- 05/2026}
+\begin{itemize}
+  \item Réalisation de bout en bout de 5+ applications web full stack : backend Java/Spring Boot (Spring Security, Spring Data, REST APIs), frontend ReactJS/TypeScript, bases de données PostgreSQL/MySQL.
+  \item Architecture microservices : découplage de services, communication REST, scalabilité horizontale, circuits breakers.
+  \item Sécurité applicative : authentification JWT/OAuth2, gestion des rôles/permissions, codage sécurisé conforme OWASP.
+  \item Conteneurisation Docker, CI/CD Jenkins, déploiement Kubernetes. Tests unitaires JUnit 5/Mockito, revues de code.
+\end{itemize}
+\cventry{Développeur Full Stack --- Stagiaire PFE}{Digital Power Consulting}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Application full-stack : backend Java/Spring Boot (JPA/Hibernate, REST APIs, Spring Security), frontend ReactJS/TypeScript, PostgreSQL, Docker.
+  \item Dashboard interactif temps réel : visualisation de données, graphiques dynamiques, interface responsive mobile-first.
+  \item Architecture technique documentée, choix d'architecture validés avec l'équipe, mise en production via pipeline CI/CD Jenkins.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Scripts Python (PyRFC), dashboards ELK (Elasticsearch, Kibana), scoring de risque automatisé pour 7 transactions critiques SAP.
+\end{itemize}
+\cventry{Stagiaire Sécurité Réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Dashboards Elastic/Kibana, analyse trafic réseau, détection d'anomalies, identification de 10+ vulnérabilités.
+\end{itemize}
+
+\section{Projets clés}
+\cventry{Architecture Microservices --- Kafka + Spring Boot}{Java, Spring Boot, ReactJS, PostgreSQL, Docker, Kubernetes, Kafka}{}{2026}
+\begin{itemize}
+  \item 4 microservices Java/Spring Boot découplés, API REST inter-services, Kafka (topics ordonnés, exactly-once), frontend ReactJS, PostgreSQL par service, Docker + Kubernetes.
+  \item Spring Security (JWT), Spring Data JPA, tests unitaires JUnit 5/Mockito, documentation Swagger/OpenAPI.
+\end{itemize}
+\cventry{IDTS --- Plateforme de Gestion Sécurisée}{Java, Spring Boot, ReactJS, PostgreSQL, Docker, Kubernetes}{}{2024}
+\begin{itemize}
+  \item Backend Spring Boot (JPA/Hibernate, REST APIs, validation, gestion des erreurs), frontend ReactJS (CRUD, hooks, routes protégées), PostgreSQL, Docker, Kubernetes.
+\end{itemize}
+
+\cventry{Pipeline Streaming Temps Réel --- Kafka + PySpark}{PySpark, Kafka, PostgreSQL, Docker Compose, Flask}{}{2024}
+\begin{itemize}
+  \item Architecture événementielle complète (6 services Docker Compose) : Kafka Producer → consumer PySpark Structured Streaming → fenêtrage 30 min + watermark → PostgreSQL via JDBC.
+\end{itemize}
+\cventry{Dashboard Assurance Revenus --- Tunisie Telecom}{Python, Streamlit, PostgreSQL, Plotly, RAG}{}{2026}
+\begin{itemize}
+  \item Pipeline ETL 900K+ enregistrements : data warehouse schéma étoile, dashboards interactifs, chatbot RAG, modèles de prévision.
+\end{itemize}
+
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Classé 65e/600+ au concours national d'entrée. PFE : Architecture microservices Java/Spring Boot avec Kafka (86/100).
+\end{itemize}
+\cventry{Classes préparatoires (Physique-Technologie)}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+
+\section{Certifications}
+Git \& GitHub --- 365 Data Science (2024) ; Réseaux --- Cisco (2025) ; Fondements du Deep Learning --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024).
+
+\section{Langues}
+Français (Courant, écrit et oral) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif)
+
+\end{document}

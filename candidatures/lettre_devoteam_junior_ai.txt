@@ -1,0 +1,17 @@
+Objet : Candidature — Junior AI Engineer (Devoteam, Tunis)
+
+Madame, Monsieur,
+
+Ingénieur diplômé en génie informatique de l'ENIT, j'ai découvert votre offre de Junior AI Engineer chez Devoteam et je me permets de vous adresser ma candidature. Le positionnement de Devoteam comme « Digital Transformakers », à la croisée de l'IA et du conseil, correspond exactement au type d'environnement où je veux construire mes premières années d'ingénieur.
+
+L'IA appliquée est au cœur de mon travail. J'ai conçu un système de recommandation basé sur le RAG (LLM), un système multi-agents pour la corrélation d'événements de sécurité, et plus récemment un dashboard d'assurance revenus pour Tunisie Telecom intégrant un entrepôt de données, des modèles de prévision et un chatbot conversationnel RAG (Gemini) sur près de 900 000 lignes. Côté Machine Learning, mon PFE BeeWAF, réalisé et soutenu en 2026, s'appuie sur trois modèles entraînés (RandomForest, GradientBoosting, IsolationForest) atteignant 98,2/100 et 0 % de faux positifs.
+
+J'ai travaillé comme pentester freelance chez Digital Power Consulting, ce qui me donne une double compétence rare pour un profil junior : savoir construire des systèmes d'IA, et savoir les sécuriser. Mes certifications NVIDIA (Deep Learning, Machine Learning, Adversarial ML) complètent cette base.
+
+Je suis disponible rapidement et serais très heureux d'échanger avec vous. Mon CV est en pièce jointe et mes projets sont détaillés ici : https://bahamouldi.github.io/portfolio/
+
+Je vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.
+
+Baha Eddine Belhaj Mouldi
++216 55 128 982 — bahaeddine.belhajmouldi@etudiant-enit.utm.tn
+linkedin.com/in/bahamouldi — github.com/bahamouldi

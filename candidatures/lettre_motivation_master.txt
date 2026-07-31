@@ -1,0 +1,21 @@
+Objet : Candidature au poste de [POSTE] — Baha Eddine Belhaj Mouldi
+
+Madame, Monsieur,
+
+Votre offre de [POSTE] a retenu toute mon attention : la sécurité applicative et l'IA sont précisément les deux domaines sur lesquels je travaille au quotidien, et [raison précise liée à l'entreprise — ex. votre positionnement en cybersécurité / vos projets data].
+
+Je suis ingénieur diplômé en génie informatique de l'ENIT, et j'ai travaillé en parallèle comme pentester freelance chez Digital Power Consulting. J'y ai mené des tests d'intrusion sur des applications web et des API (identification, exploitation et reporting de vulnérabilités, OWASP Top 10) et j'y ai réalisé puis soutenu mon projet de fin d'études : BeeWAF, un pare-feu applicatif intelligent. Ce WAF combine plus de 10 000 règles de détection et trois modèles de Machine Learning, avec un score de 98,2/100 et 0 % de faux positifs sur mes jeux de test.
+
+Au-delà de ce projet, j'ai construit un profil hybride sécurité / IA : détection d'attaques web par clustering, systèmes multi-agents pour la corrélation d'événements, et un dashboard d'assurance revenus pour Tunisie Telecom mêlant Data Warehouse, prévision et chatbot RAG. Mes stages (détection de menaces SAP chez Streamlink, sécurité réseau à Tunisie Télécom) m'ont appris à livrer des résultats concrets et à automatiser ce qui peut l'être.
+
+Ce qui me motive, c'est de m'attaquer à des problèmes réels et de livrer quelque chose qui tient en production. Je serais ravi d'en discuter avec vous lors d'un entretien.
+
+Vous trouverez mon CV en pièce jointe et l'ensemble de mes projets sur mon portfolio : https://bahamouldi.github.io/portfolio/
+
+Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+Baha Eddine Belhaj Mouldi
++216 55 128 982
+bahaeddine.belhajmouldi@etudiant-enit.utm.tn
+LinkedIn : linkedin.com/in/bahamouldi
+GitHub : github.com/bahamouldi

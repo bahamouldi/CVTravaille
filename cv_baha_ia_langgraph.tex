@@ -1,0 +1,95 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Ingénieur IA Python / LangGraph
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.0cm,right=1.0cm,top=0.5cm,bottom=0.4cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.72}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Ingenieur IA Python LangGraph},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Python, LangGraph, RAG, LLM, Multi-Agents, API}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{3pt}{1.5pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0.1pt,topsep=0.2pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.5pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[3pt]
+{\large Ingénieur IA --- Python \textbar LangGraph \textbar RAG \textbar LLM \textbar Multi-Agents}\\[4pt]
+Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{2pt}
+\section{Profil}
+Ingénieur diplômé en génie informatique (ENIT, 65e/600+) spécialisé en IA appliquée : pipelines RAG, orchestration LLM, architectures multi-agents et développement d'APIs Python. Expérience concrète de production sur LangChain, LangGraph (StateGraph, multi-agents, Human-in-the-Loop), gemini, Azure AI Foundry et LangSmith pour le monitoring et l'évaluation de modèles. Habitué à l'industrialisation (Docker, Kubernetes, CI/CD) et à la rédaction de documentation technique et runbooks. Recherche un poste d'Ingénieur IA pour développer et industrialiser des agents IA.
+
+\section{Compétences clés}
+\textbf{IA \& Agents} : Python, LangGraph (StateGraph, nodes, edges, Human-in-the-Loop), LangChain, multi-agent architectures, A2A, orchestration de workflows, prompt engineering, versionning de prompts\\[0.5pt]
+\textbf{RAG \& LLM} : RAG pipelines (retrieval, context injection, generation, evaluation), LangChain, Gemini, Azure AI Foundry, Azure AI Search, semantic search, LLM fine-tuning (LoRA), Ollama/Llama/Qwen\\[0.5pt]
+\textbf{Monitoring \& Évaluation} : LangSmith (tracing, evaluation, monitoring), métriques de qualité (latence, retrieval accuracy, generation quality), Prometheus/Grafana\\[0.5pt]
+\textbf{Backend \& APIs} : Python, FastAPI, REST APIs, JSON, async, error logging, Swagger/OpenAPI\\[0.5pt]
+\textbf{Industrialisation} : Docker, Kubernetes, CI/CD (Jenkins, GitLab CI, GitHub Actions), ArgoCD, versioning, documentation technique, runbooks\\[0.5pt]
+\textbf{Data \& ML} : SQL, PostgreSQL, MongoDB, Pandas, Scikit-learn, SHAP, NLP, sentiment analysis\\[0.5pt]
+\textbf{Outils} : Git, Bash, Linux, Jira, Confluence
+
+\section{Expérience professionnelle}
+\cventry{Ingénieur IA --- Stagiaire PFE}{Digital Power Consulting}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Systèmes IA en production : pipelines RAG (LangChain/LangGraph), orchestration LLM (Gemini, Azure AI Foundry), architectures multi-agents, services FastAPI sur Kubernetes.
+  \item LangSmith : tracing, evaluation, monitoring des pipelines IA, métriques de qualité, alerting Prometheus/Grafana.
+  \item Versionning des prompts et configurations d'agents. Revues de code actives. Documentation Swagger/OpenAPI, runbooks, ADR.
+\end{itemize}
+\cventry{Ingénieur IA \& Backend, Freelance}{Digital Power Consulting}{Tunisie}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Services backend IA : FastAPI, intégrations LLM, pipelines RAG, orchestration multi-agents. Revue de code et analyse de vulnérabilités sur 8 apps.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Pipeline détection automatisé : Python/PyRFC, corrélation ELK, orchestration N8N, workflows testables et auditables.
+\end{itemize}
+\cventry{Chef de projet technique --- Vmate}{ENIT}{Tunisie}{06/2024}
+\begin{itemize}
+  \item Encadrement équipe de 4, plateforme sécurisée web/mobile (classée 1ère). Sprints, revue de code, collaboration transverse.
+\end{itemize}
+
+\section{Projets IA \& RAG}
+\cventry{Chatbot RAG --- Dashboard Assurance Revenus (Tunisie Telecom)}{Python, LangChain, Gemini, Azure AI Foundry, Streamlit, PostgreSQL}{}{2026}
+\begin{itemize}
+  \item Pipeline RAG production sur ~900K enregistrements : retrieval, injection contexte, génération Gemini. Monitoring LangSmith/Grafana (latence, qualité retrieval, précision génération).
+\end{itemize}
+\cventry{Système Multi-Agent de Détection de Vulnérabilités}{Python, LangGraph, Multi-Agent, A2A, Azure AI Foundry}{}{2025}
+\begin{itemize}
+  \item Agents spécialisés (collecte, corrélation, alerting). Protocoles A2A, workflows LangGraph StateGraph testables et auditables.
+\end{itemize}
+\cventry{Analyse Multi-Agent de Feedback Client}{Python, LangGraph, NLP, Sentiment Analysis, ML}{}{2026}
+\begin{itemize}
+  \item Pipeline agentic : sentiments, extraction sujets, insights actionnables. Versionning des prompts et gestion de configurations.
+\end{itemize}
+\cventry{Système de Recommandation d'Hôtels RAG}{Python, LangChain, LLM, Azure AI Foundry}{}{2025}
+\begin{itemize}
+  \item RAG : recherche sémantique sur avis, recommandations LLM contextuelles, orchestration multi-agents.
+\end{itemize}
+\cventry{BeeWAF --- Pare-feu Applicatif Intelligent (PFE, 86/100)}{FastAPI, Python, ML, Docker, Kubernetes, ELK, Prometheus, Grafana}{}{2026}
+\begin{itemize}
+  \item WAF production : 27 modules, 107 signatures, 3 modèles ML, CI/CD Jenkins+ArgoCD, monitoring, latence $<$20ms.
+\end{itemize}
+
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{ENIT}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Classé 65e/600+ au concours national. PFE : Architecture multi-agents et RAG (86/100).
+\end{itemize}
+\cventry{Classes préparatoires (Physique-Technologie)}{IPEI El Manar}{Tunisie}{09/2021 -- 06/2023}
+\section{Certifications}
+Fondements du Deep Learning --- NVIDIA (2025) ; IA Adversariale --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Réseaux --- Cisco (2025) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Langues}
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif) \quad|\quad Chinois (Notions)
+\end{document}
