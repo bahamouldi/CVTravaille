@@ -1,0 +1,89 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Ingénieur Cybersécurité H/F (CDI) — Sagemcom, Mégrine
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.80}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Ingenieur Cybersecurite - Sagemcom},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Cybersecurite, Audit, Gestion des vulnerabilites, Reponse a incident, SOC, IA/ML}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} Ingénieur Cybersécurité \textbar\ Audit \& Conformité \textbar\ Gestion des Vulnérabilités \& Incidents \textbar\ IA/ML appliquée à la sécurité}\\[3pt]
+{\small Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profil}
+Ingénieur diplômé de l'ENIT (mention Très Bien), spécialisé en cybersécurité, avec une expérience concrète et documentée couvrant l'ensemble du cycle de sécurité opérationnelle : audit et diagnostic de vulnérabilités, développement d'outils de détection et de surveillance, gestion des incidents et réponse, veille technologique et conformité réglementaire (OWASP, ISO 27001, NIST, PCI DSS, GDPR, SOC 2). Auteur de BeeWAF, un pare-feu applicatif intelligent conçu, développé et déployé en production, conforme à 7 référentiels de sécurité. Capacité avérée à fédérer des équipes techniques et à transmettre des compétences, démontrée en gestion de projet (VMate) et au travers d'actions de sensibilisation et de formation à la sécurité. Rigueur, esprit d'analyse et forte orientation automatisation/amélioration continue.
+\section{Compétences clés}
+\textbf{Politique \& Conformité} : ISO 27001, NIST CSF, PCI DSS, GDPR, SOC 2, CIS, OWASP Top 10/API/LLM, MITRE ATT\&CK, diagnostic de conformité \& remédiation\\[0.3pt]
+\textbf{Audit, Vulnérabilités \& Incidents} : Analyse de vulnérabilités web/API, tests d'intrusion, CVSS/CWE, virtual patching, TheHive, scoring de risque, réponse à incident automatisée (détection $<$2 min, blocage $<$7 min)\\[0.3pt]
+\textbf{Outils \& Automatisation} : Python, SIEM (Elastic Stack, Kibana), règles Sigma, N8N, ML (RandomForest, GradientBoosting, IsolationForest), Docker, Kubernetes, CI/CD (Jenkins, ArgoCD)\\[0.3pt]
+\textbf{Veille \& Sensibilisation} : Suivi CVE/CTI, certifications continues (NVIDIA, Cisco), conception de supports pédagogiques sécurité, documentation utilisateur\\[0.3pt]
+\textbf{Encadrement \& coordination} : Gestion de projet technique, coordination d'équipes Agile/Scrum, reporting par indicateurs (KPI, dashboards)\\[0.3pt]
+\textbf{Développement} : Python, FastAPI, Java, Spring Boot, Node.js, Bash, PowerShell, SQL, MongoDB
+\section{Expérience professionnelle}
+\cventry{Ingénieur Sécurité --- Stagiaire PFE (Audit, Outillage \& Réponse à incident)}{Beehive Entreprises}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Conception et déploiement en production de \textbf{BeeWAF}, outil de sécurité combinant 10 041 règles de détection et 3 modèles ML --- score 98,2/100, 0\% faux positifs --- répondant directement au besoin d'outils de détection et de surveillance automatisés.
+  \item Diagnostic continu de conformité sur 7 référentiels (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2) avec reporting par indicateurs ciblés (dashboards Grafana/Prometheus, ELK).
+  \item Gestion des vulnérabilités (virtual patching de 37 CVE, 27 modules anti-bot/DLP/anti-DDoS, CI/CD Jenkins+ArgoCD/K8s) et veille menaces (MITRE ATT\&CK, 22 techniques, attribution APT) avec alerting temps réel.
+\end{itemize}
+\cventry{Spécialiste Cybersécurité Junior, Freelance (Audit \& Contrôle)}{Beehive Entreprises}{Tunisie}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Audit de vulnérabilités et revue de code sécurité sur 8 applications web et API : diagnostic des failles, benchmark bonnes pratiques/état de l'art, rapports de remédiation détaillés transmis aux équipes de développement.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection \& Réponse à incident SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Pipeline de détection et réponse à incident automatisé : collecte Python/PyRFC, corrélation ELK, orchestration N8N, suivi et catégorisation via TheHive. Détection $<$2 min, blocage automatisé $<$7 min.
+  \item Surveillance de 7 transactions critiques SAP (SU01, SE16N, PFCG) avec scoring de risque et notification en temps réel des équipes opérationnelles via Kibana.
+\end{itemize}
+\cventry{Chef de projet technique, Indépendant}{VMate}{Tunisie}{01/2024 -- 06/2024}
+\begin{itemize}
+  \item Pilotage d'un projet technique en autonomie : planification, coordination d'intervenants et reporting --- expérience transférable à l'encadrement d'une équipe d'experts.
+\end{itemize}
+\cventry{Stagiaire Sécurité réseau (Audit \& Détection)}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Projet de détection SOC (Elastic/Kibana, règles Sigma, simulations brute force/exfiltration DNS) : 10+ vulnérabilités identifiées, rapports de sécurité pour les équipes opérationnelles.
+\end{itemize}
+\section{Projets clés}
+\cventry{BeeWAF --- Outil de Sécurisation \& Conformité Continue (PFE, note 86/100)}{FastAPI, Python, ML, Docker, Kubernetes, ELK, Prometheus, Grafana}{}{2026}
+\begin{itemize}
+  \item Outil d'entreprise déployé en production : pipeline à 27 modules, 107 signatures, 3 modèles ML. Évaluation sur CSIC 2010 (12 213 requêtes) : 92,3\% accuracy, 98,2\% precision, latence $<$20ms, 100\% des attaques OWASP Top 10 bloquées en test.
+  \item Conformité vérifiée en continu sur 7 référentiels réglementaires --- support direct à la politique de sécurité de l'entreprise.
+\end{itemize}
+\cventry{Système de Détection et Réponse aux Incidents SAP}{Python, PyRFC, ELK, N8N, TheHive}{}{2025}
+\begin{itemize}
+  \item Pipeline complet audit $\rightarrow$ détection $\rightarrow$ réponse (logs SAP $\rightarrow$ ELK $\rightarrow$ N8N $\rightarrow$ TheHive), réponse automatisée (BAPI\_USER\_LOCK) sur 3 scénarios : connexions anormales, escalade de privilèges, accès non autorisé.
+\end{itemize}
+\cventry{WebSec Scanner --- Audit Automatisé de Vulnérabilités Web}{Angular, Spring Boot, JWT, WebSocket}{}{2024 -- 2025}
+\begin{itemize}
+  \item Outil d'audit (SQLi, XSS, CSRF) avec rapports de remédiation et guide utilisateur intégré --- validé sur DVWA/bWAPP, tests de charge JMeter (500 utilisateurs).
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique --- Spécialité Cybersécurité}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Diplômé le 25/06/2026, mention Très Bien. Classé 65e sur 600+ au concours national d'entrée.
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\cventry{Baccalauréat Technique --- Mention Très Bien}{Lycée Abdelaziz Khouja, Kélibia}{Tunisie}{06/2021}
+\section{Certifications}
+Fondements du Deep Learning --- NVIDIA (2025) ; IA Adversariale --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Réseaux (CCNA) --- Cisco (2025) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Langues}
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif) \quad|\quad Chinois (Notions)
+\end{document}

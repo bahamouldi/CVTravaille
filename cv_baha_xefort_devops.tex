@@ -1,0 +1,91 @@
+% !TEX TS-program = pdflatex
+% Targeted CV — XEFORT SOLUTIONS: DevOps Engineer (Remote)
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.0cm,right=1.0cm,top=0.5cm,bottom=0.4cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.75}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - DevOps Engineer},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={DevOps, Cloud, CI/CD, Docker, Kubernetes, Terraform, AWS}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{3pt}{1.5pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0.1pt,topsep=0.2pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.5pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[3pt]
+{\large DevOps Engineer --- Cloud \textbar\ CI/CD \textbar\ Kubernetes \textbar\ Automation}\\[4pt]
+Tunis, Tunisia (Remote) \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{2pt}
+\section{Profile}
+Computer engineering graduate (ENIT, Mention Très Bien) with hands-on, production-grade DevOps experience: built and operated a CI/CD pipeline (Jenkins + ArgoCD GitOps) deploying a containerized system on a 5-node Kubernetes cluster, with full observability (Prometheus, Grafana, ELK Stack). Comfortable with Linux administration, Docker, Kubernetes manifests, Bash/Python automation scripting, and AWS fundamentals. Early exposure to Infrastructure as Code (Terraform). Self-motivated, remote-ready, and used to owning infrastructure and deployment tasks end-to-end. Seeking a DevOps Engineer role to grow into cloud and automation at scale.
+\section{Core Skills}
+\textbf{Containers \& Orchestration} : Docker, Docker Compose, Kubernetes (Deployment, Service, Ingress, PVC, Secrets, ConfigMap), Helm-ready manifests\\[0.5pt]
+\textbf{CI/CD \& GitOps} : Jenkins (multi-stage pipelines), ArgoCD (GitOps), GitHub Actions, GitLab CI, zero-downtime rolling updates\\[0.5pt]
+\textbf{Cloud} : AWS (EC2, S3, VPC, IAM, RDS, CloudWatch), Azure (fundamentals), exposure to GCP\\[0.5pt]
+\textbf{Infrastructure as Code} : Terraform (manifests, provisioning), Kubernetes YAML, Docker Compose\\[0.5pt]
+\textbf{Monitoring \& Logging} : Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), real-time alerting, dashboards\\[0.5pt]
+\textbf{Scripting \& Automation} : Python, Bash, PowerShell, automation scripts, deployment workflows\\[0.5pt]
+\textbf{Systems \& Networking} : Linux (Ubuntu, Debian, Kali), TCP/IP, DNS, routing, system hardening, Wireshark, Nmap\\[0.5pt]
+\textbf{Version Control \& Tools} : Git, GitHub, GitLab, Docker Hub, Harbor registry
+\section{Professional Experience}
+\cventry{DevOps / Security Engineer --- Intern (PFE, Mention Très Bien)}{Beehive Entreprises}{Tunisia}{02/2026 -- 06/2026}
+\begin{itemize}
+  \item Built and deployed a production system on a 5-node Kubernetes cluster (3 masters + 2 workers, Calico CNI): complete manifests (Deployment, Service, Ingress, PVC, Secrets), health/liveness probes, resource sizing.
+  \item CI/CD pipeline: Jenkins (8 stages) + ArgoCD (GitOps), zero-downtime rolling updates (maxUnavailable: 0, maxSurge: 1).
+  \item Full observability stack: Prometheus/Grafana dashboards (26 panels), ELK Stack log pipeline (Filebeat $\to$ Logstash $\to$ Elasticsearch $\to$ Kibana), real-time alerting.
+  \item Wrote Python/Bash automation scripts for deployment, monitoring and reporting tasks.
+\end{itemize}
+\cventry{Full-Stack Developer, Freelance}{Beehive Entreprises}{Tunisia}{01/2024 -- 05/2026}
+\begin{itemize}
+  \item Delivered 5+ full-stack applications with Docker containerization and Jenkins CI/CD deployment.
+  \item Managed PostgreSQL/MySQL databases, REST APIs, and Kubernetes deployments for client projects.
+\end{itemize}
+\cventry{Cybersecurity Intern --- SAP Threat Detection}{Streamlink}{Tunisia}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Automated log collection pipelines (Python), ELK-based dashboards, real-time alerting via N8N orchestration.
+\end{itemize}
+\cventry{Network Security Intern}{Tunisie Telecom}{Tunisia}{07/2024}
+\begin{itemize}
+  \item Linux system administration, network traffic analysis, Elastic/Kibana dashboards, identified 10+ vulnerabilities.
+\end{itemize}
+\section{Key Projects}
+\cventry{Production Kubernetes Infrastructure --- CI/CD \& Observability}{Docker, Kubernetes, Jenkins, ArgoCD, Prometheus, Grafana, ELK}{}{2026}
+\begin{itemize}
+  \item Full Kubernetes cluster deployment: manifests, node affinity, health probes, resource sizing, zero-downtime rolling updates.
+  \item CI/CD: Jenkins (8 stages) + ArgoCD (GitOps). Monitoring: Prometheus/Grafana, ELK Stack, real-time alerting. Latency overhead $<$20ms in production.
+\end{itemize}
+\cventry{Containerized Microservices Architecture}{TypeScript, Node.js, Docker, Kubernetes, REST API}{}{2026}
+\begin{itemize}
+  \item Distributed application: decoupled services, container orchestration, Docker-based CI/CD-ready structure.
+\end{itemize}
+\cventry{Real-Time Streaming Pipeline --- Kafka + PySpark}{Kafka, PySpark, PostgreSQL, Docker Compose}{}{2024}
+\begin{itemize}
+  \item Event-driven architecture (6 Docker Compose services): Kafka producer/consumer, PySpark Structured Streaming, windowed aggregation, PostgreSQL via JDBC.
+\end{itemize}
+\cventry{Containerized E-commerce Platform --- Fedi Phone}{Next.js, TypeScript, PostgreSQL, Docker}{}{2026}
+\begin{itemize}
+  \item Full-stack application: Dockerized PostgreSQL, JWT auth, Docker Compose deployment.
+\end{itemize}
+\section{Education}
+\cventry{Engineering Degree in Computer Science --- Highest Honors (Mention Très Bien)}{National Engineering School of Tunis (ENIT)}{Tunisia}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Ranked 65th out of 600+ in the national engineering school entrance exam. Defended 06/25/2026.
+\end{itemize}
+\cventry{Preparatory Classes in Physics and Technology}{Preparatory Institute for Engineering Studies, El Manar}{Tunisia}{09/2021 -- 06/2023}
+\section{Certifications}
+Networking --- Cisco (2025) ; Git \& GitHub --- 365 Data Science (2024) ; Fundamentals of Deep Learning --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024).
+\section{Languages}
+French (Fluent) \quad|\quad English (B2) \quad|\quad Arabic (Native)
+\end{document}

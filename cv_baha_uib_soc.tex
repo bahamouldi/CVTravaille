@@ -1,0 +1,97 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Ingénieur(e) Sécurité, Centre des Opérations de Sécurité (SOC) — UIB
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.83}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Ingenieur Securite SOC - UIB},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={SOC, SIEM, SOAR, WAF, IAM, PKI, MFA, PAM, Active Directory}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} Ingénieur Sécurité --- Centre des Opérations de Sécurité (SOC)}\\[3pt]
+{\small Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profil}
+Diplômé Ingénieur en Génie Informatique (ENIT), avec une expérience pratique complète du cycle SOC : surveillance continue, analyse et réponse aux alertes, investigation d'incidents et pilotage des actions de confinement. Bonne maîtrise des systèmes Windows Server / Active Directory et Linux, du réseau (VPN, Proxy, Firewall) et des briques de sécurité identité (PKI, MFA, PAM, IAM). Auteur de BeeWAF, une plateforme de sécurité applicative de niveau entreprise (SIEM/SOAR-like, WAF, DLP) conforme à 7 référentiels (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2). Rigueur, esprit d'analyse, sens de la confidentialité et goût pour le travail en équipe sous pression.
+\section{Compétences clés}
+\textbf{Opérations SOC} : Surveillance continue, triage et investigation d'alertes, corrélation de logs, règles Sigma, identification de comportements anormaux, confinement d'incidents, reporting\\[0.3pt]
+\textbf{SIEM \& SOAR} : Elastic Stack (Elasticsearch, Kibana, Metricbeat), corrélation d'événements, optimisation de règles de détection, orchestration de réponse type SOAR (N8N + TheHive), réponse automatisée (BAPI)\\[0.3pt]
+\textbf{Systèmes \& Annuaire} : Windows Server, Active Directory (utilisateurs, groupes, unités d'organisation, GPO, stratégies de mot de passe), Linux (Ubuntu, CentOS, Kali, Debian), durcissement système\\[0.3pt]
+\textbf{Réseau \& Périmètre} : VPN, Proxy, Firewall (règles, segmentation, filtrage), TCP/IP, DNS, routage, Wireshark, Nmap\\[0.3pt]
+\textbf{Identité \& Accès} : PKI (certificats X.509, autorité de certification), MFA, PAM (comptes à privilèges), IAM, Segregation of Duties (SoD), moindre privilège, RBAC, JWT/OAuth2\\[0.3pt]
+\textbf{Sécurité applicative \& WAF} : WAF (BeeWAF), DLP, anti-DDoS, virtual patching, OWASP Top 10, tests d'intrusion (Burp Suite Professional, OWASP ZAP, Metasploit, Hydra)\\[0.3pt]
+\textbf{Automatisation \& Développement} : Python, Bash, PowerShell, Java/Spring Boot, SQL, Docker, Kubernetes, CI/CD (Jenkins, ArgoCD, GitHub Actions)
+\section{Expérience professionnelle}
+\cventry{Analyste Sécurité --- Stagiaire PFE}{Beehive Entreprises}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Conception de BeeWAF, pare-feu applicatif intelligent combinant 10 041 règles de détection et 3 modèles ML --- score 98,2/100, 0\% faux positifs.
+  \item Implémentation des briques d'identité et d'accès du projet : PKI (certificats X.509), MFA et PAM pour les comptes à privilèges, en complément de 27 modules de sécurité (anti-bot, DLP, anti-DDoS, virtual patching de 37 CVE).
+  \item Pipeline CI/CD (Jenkins 8 étapes + ArgoCD GitOps), déploiement Kubernetes, monitoring ELK et Prometheus/Grafana avec alerting temps réel.
+  \item Mapping MITRE ATT\&CK (22 techniques), attribution APT, conformité 7 référentiels (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2).
+\end{itemize}
+\cventry{Spécialiste Cybersécurité Junior, Freelance}{Beehive Entreprises}{Tunisie}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Administration et durcissement d'environnements Windows Server / Active Directory (gestion des utilisateurs, groupes, GPO) et Linux pour les besoins de projets clients.
+  \item Configuration et supervision de VPN, proxy et règles de firewall réseau dans le cadre de missions de sécurisation d'infrastructure.
+  \item Analyse de vulnérabilités et revue de code sécurité sur 8 applications web et API, avec rapports de remédiation détaillés pour les équipes de développement.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Pipeline de détection automatisé : collecte Python/PyRFC, corrélation ELK, orchestration N8N (SOAR-like), suivi des incidents sous TheHive. Détection $<$2 min, blocage auto $<$7 min.
+  \item Gestion des accès à privilèges (PAM applicatif SAP) : SU01, PFCG, conception d'un rôle "Monitoring Basis" en moindre privilège et contrôle de Segregation of Duties (SoD).
+  \item Surveillance de 7 transactions critiques SAP avec scoring de risque automatisé et alerting temps réel via Kibana.
+\end{itemize}
+\cventry{Stagiaire Sécurité réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Audit de la posture de sécurité réseau (VPN, firewall, segmentation) et identification de 10+ vulnérabilités.
+  \item Projet de détection SOC avec Elastic/Kibana, règles Sigma, simulations d'attaques (brute force, exfiltration DNS).
+\end{itemize}
+\section{Projets clés}
+\cventry{BeeWAF --- Plateforme de Sécurité d'Entreprise (PFE, note 86/100)}{FastAPI, Python, ML, PKI, MFA, PAM, Docker, Kubernetes, ELK}{}{2026}
+\begin{itemize}
+  \item WAF d'entreprise déployé en production : pipeline de détection à 27 modules, 107 signatures, 3 modèles ML, détection d'évasion 18 couches.
+  \item Briques d'authentification et d'accès : PKI (certificats X.509), MFA, PAM ; conformité auditée sur 7 référentiels (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2).
+  \item Évaluation ML sur CSIC 2010 (12 213 requêtes) : 92,3\% accuracy, 98,2\% precision, 89,8\% F1. Latence $<$20ms.
+\end{itemize}
+\cventry{Laboratoire Windows Server / Active Directory \& Réseau Périmétrique}{Windows Server, Active Directory, GPO, VPN, Proxy, Firewall}{}{ENIT}
+\begin{itemize}
+  \item Travaux pratiques d'administration Active Directory (utilisateurs, groupes, unités d'organisation, stratégies de groupe) et de sécurisation périmétrique (VPN, proxy, règles de firewall, segmentation réseau).
+\end{itemize}
+\cventry{Système de Détection et Réponse aux Menaces SAP}{Python, PyRFC, ELK, N8N, TheHive, SoD}{}{2025}
+\begin{itemize}
+  \item Pipeline SOC complet : collecte de logs SAP $\rightarrow$ Metricbeat $\rightarrow$ Elasticsearch $\rightarrow$ Kibana $\rightarrow$ N8N $\rightarrow$ TheHive.
+  \item Réponse automatisée : BAPI\_USER\_LOCK pour blocage instantané. 3 scénarios testés : connexions anormales, escalade de privilèges, accès non autorisé.
+\end{itemize}
+\cventry{Projet SOC Analyst --- Détection de menaces \& SIEM}{Elastic Stack, Kibana, Sigma, Bash, PowerShell}{}{2024}
+\begin{itemize}
+  \item Pipeline de détection SOC : simulations brute force, DNS suspects, exfiltration. Règles Sigma, dashboards Kibana, documentation des investigations.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Diplômé le 25/06/2026. Classé 65e sur 600+ au concours national d'entrée. Modules et TP : systèmes et réseaux (Windows Server, Active Directory, VPN, firewall), cryptographie et PKI, sécurité des systèmes d'information.
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\cventry{Baccalauréat Technique --- Mention Très Bien}{Lycée Abdelaziz Khouja, Kélibia}{Tunisie}{06/2021}
+\section{Certifications}
+Réseaux --- Cisco (2025) ; Fondements du Deep Learning --- NVIDIA (2025) ; IA Adversariale --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Langues}
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif) \quad|\quad Chinois (Notions)
+\end{document}

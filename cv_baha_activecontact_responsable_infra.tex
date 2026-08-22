@@ -1,0 +1,88 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Responsable Infrastructure et Exploitation Informatique — Active Contact
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.82}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Responsable Infrastructure et Exploitation Informatique},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Infrastructure, Exploitation, Systemes, Reseaux, Securite, Management}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} Responsable Infrastructure \& Exploitation Informatique \textbar\ Systèmes \textbar\ Réseaux \textbar\ Sécurité \textbar\ Management}\\[3pt]
+{\small Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profil}
+Ingénieur en génie informatique (ENIT, mention Très Bien) combinant administration systèmes/réseaux, exploitation d'infrastructure et expérience réelle de management d'équipe. Pratique concrète des environnements Windows Server / Active Directory (utilisateurs, groupes, GPO), DHCP, virtualisation et sauvegarde (Veeam), acquise en travaux pratiques puis approfondie sur le terrain pendant un an de mission freelance et durant le stage de fin d'études chez Beehive Entreprises. A piloté une équipe de 8 personnes en tant que chef de projet technique (VMate) : planification, répartition des tâches, arbitrages techniques et reporting. Auteur de BeeWAF, plateforme de sécurité applicative déployée en production sur Kubernetes et conforme à 7 référentiels de sécurité (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2) --- un atout direct pour accompagner une DSI dans sa politique de sécurité. Rigueur, réactivité et sens du résultat.
+\section{Compétences clés}
+\textbf{Management \& coordination} : pilotage d'équipe (8 personnes), planification, répartition des tâches, reporting, coordination multi-intervenants, méthodologie Agile\\[0.3pt]
+\textbf{Systèmes \& Annuaire} : Windows Server, Active Directory (utilisateurs, groupes, unités d'organisation, GPO, stratégies de mot de passe), Linux (Ubuntu, CentOS, Debian, Kali), durcissement système\\[0.3pt]
+\textbf{Réseaux} : DHCP, VPN, Proxy, Firewall, segmentation réseau, TCP/IP, DNS, supervision réseau multi-sites\\[0.3pt]
+\textbf{Virtualisation \& Conteneurisation} : environnements virtualisés, Docker, Kubernetes (Deployment, Service, Ingress, PVC, Secrets)\\[0.3pt]
+\textbf{Sauvegarde \& continuité} : solutions de sauvegarde (Veeam), plans de reprise, exploitation et haute disponibilité des systèmes\\[0.3pt]
+\textbf{Exploitation \& supervision} : traitement de tickets RUN, monitoring (Prometheus, Grafana, ELK Stack), alerting temps réel, maintenance préventive, bonnes pratiques IT\\[0.3pt]
+\textbf{Sécurité SI} : PKI, MFA, IAM, conformité ISO 27001/NIST/PCI DSS/GDPR/SOC 2, OWASP Top 10, gestion des vulnérabilités\\[0.3pt]
+\textbf{Cloud \& transformation IT} : Docker/Kubernetes, CI/CD (Jenkins, ArgoCD GitOps), accompagnement de projets cloud et virtualisation\\[0.3pt]
+\textbf{Scripting} : Python, Bash, PowerShell, automatisation d'exploitation
+\section{Expérience professionnelle}
+\cventry{Ingénieur Sécurité \& Infrastructure --- Stagiaire PFE (mention Très Bien)}{Beehive Entreprises}{Tunisie}{02/2026 -- 06/2026}
+\begin{itemize}
+  \item Déploiement et exploitation en production sur cluster Kubernetes (5 nœuds) : haute disponibilité, zéro downtime, dimensionnement des ressources, supervision continue.
+  \item Mise en place des bonnes pratiques IT : pipeline CI/CD (Jenkins 8 étapes + ArgoCD GitOps), monitoring Prometheus/Grafana + ELK, alerting temps réel, maintenance préventive.
+  \item Accompagnement de la politique de sécurité : conformité continue sur 7 référentiels (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2), gestion des vulnérabilités (37 CVE patchés).
+\end{itemize}
+\cventry{Spécialiste IT \& Sécurité, Freelance (1 an)}{Beehive Entreprises}{Tunisie}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Administration et durcissement d'environnements Windows Server / Active Directory (utilisateurs, groupes, GPO) et Linux ; configuration DHCP, VPN, proxy et règles de firewall pour des infrastructures clients.
+  \item Mise en œuvre de solutions de virtualisation et de sauvegarde (Veeam) ; audit de vulnérabilités et revue de sécurité sur 8 applications web et API, rapports de remédiation transmis aux équipes techniques.
+\end{itemize}
+\cventry{Chef de projet technique, Indépendant --- Encadrement d'une équipe de 8 personnes}{VMate}{Tunisie}{01/2024 -- 06/2024}
+\begin{itemize}
+  \item Management direct d'une équipe pluridisciplinaire de 8 personnes : planification des tâches, arbitrages techniques, suivi d'avancement et reporting régulier.
+  \item Pilotage de projet en autonomie complète --- expérience directement transférable au management d'équipes Infrastructure et Exploitation.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection \& Réponse à incident SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Automatisation de pipelines de supervision (Python/PyRFC, ELK, N8N) ; détection $<$2 min, blocage automatisé $<$7 min sur transactions SAP critiques.
+\end{itemize}
+\cventry{Stagiaire Sécurité Réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Analyse de trafic réseau, durcissement de configuration, identification de 10+ vulnérabilités, dashboards de supervision Elastic/Kibana.
+\end{itemize}
+\section{Projets \& travaux pratiques}
+\cventry{Infrastructure Windows Server / Active Directory \& Réseau Périmétrique}{Windows Server, Active Directory, GPO, DHCP, VPN, Proxy, Firewall}{}{ENIT}
+\begin{itemize}
+  \item Administration Active Directory (utilisateurs, groupes, unités d'organisation, stratégies de groupe), configuration DHCP et sécurisation périmétrique (VPN, proxy, règles firewall, segmentation réseau).
+\end{itemize}
+\cventry{BeeWAF --- Infrastructure de Sécurité en Production}{FastAPI, Docker, Kubernetes, Jenkins, ArgoCD, Prometheus, Grafana}{}{2026}
+\begin{itemize}
+  \item Cluster Kubernetes en production : haute disponibilité, CI/CD, monitoring temps réel. Conformité vérifiée en continu sur 7 référentiels réglementaires.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Diplômé le 25/06/2026, mention Très Bien. Classé 65e sur 600+ au concours national d'entrée. Modules \& TP : systèmes et réseaux (Windows Server, Active Directory, DHCP, VPN, firewall), virtualisation, cryptographie et PKI, sécurité des systèmes d'information.
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\cventry{Baccalauréat Technique --- Mention Très Bien}{Lycée Abdelaziz Khouja, Kélibia}{Tunisie}{06/2021}
+\section{Certifications}
+Réseaux (CCNA) --- Cisco (2025) ; Fondements du Deep Learning --- NVIDIA (2025) ; IA Adversariale --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Langues}
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif) \quad|\quad Chinois (Notions)
+\end{document}

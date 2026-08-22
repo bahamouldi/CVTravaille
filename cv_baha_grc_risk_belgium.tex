@@ -1,0 +1,88 @@
+% !TEX TS-program = pdflatex
+% Targeted CV — Cyber Security Risk / GRC Consultant — Belgium (Freelance)
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.1cm,right=1.1cm,top=0.45cm,bottom=0.4cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.78}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Cyber Security Risk / GRC Consultant},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={GRC, ISO 27001, NIST, Risk Assessment, Vulnerability Management, IAM}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{2pt}{1pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0pt,topsep=0.2pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.5pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.8pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[4pt]
+{\large Cyber Security Risk / GRC Consultant --- ISO 27001 \textbar\ NIST \textbar\ Vulnerability Management \textbar\ IAM}\\[3pt]
+Tunis, Tunisia (open to Brussels hybrid) \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{1pt}
+\section{Profile}
+Computer engineering graduate with hands-on cybersecurity experience spanning security risk assessment, compliance mapping, vulnerability management and IAM/access governance. Designed and deployed an enterprise-grade security system audited against 7 compliance frameworks (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2), including full risk cataloguing, control documentation and virtual patching of 37 CVEs. Performed SAP identity and access governance (SoD analysis, least-privilege role design, sensitive-transaction risk scoring) and penetration testing with structured remediation reporting across 8 client applications. Fluent English speaker, available for hybrid engagement in Brussels.
+\section{Core Skills}
+\textbf{GRC \& Compliance} : ISO 27001, NIST CSF, PCI DSS, GDPR, SOC 2, CIS Controls, OWASP Top 10, control mapping, compliance documentation, audit support\\[1pt]
+\textbf{Risk Assessment} : Threat modelling, risk scoring \& cataloguing, MITRE ATT\&CK mapping, control gap analysis, remediation planning, security reporting\\[1pt]
+\textbf{Vulnerability Management} : Web/API penetration testing (Burp Suite Professional, OWASP ZAP), vulnerability identification \& classification, virtual patching, CVE tracking, remediation lifecycle\\[1pt]
+\textbf{IAM \& Access Reviews} : SAP SU01/PFCG (users \& roles), Segregation of Duties (SoD) analysis, least-privilege enforcement, JWT/OAuth2/RBAC, access certification\\[1pt]
+\textbf{Security Monitoring} : ELK Stack, Sigma rules, SIEM integration, incident tracking (TheHive), real-time alerting, log correlation\\[1pt]
+\textbf{Tools \& Systems} : Nmap, Wireshark, Metasploit, Hydra, Linux/Kali, Python, Bash, PowerShell, Docker, Kubernetes, Git
+\section{Professional Experience}
+\cventry{Security Risk \& Application Security Engineer --- Intern (PFE)}{Beehive Entreprises}{Tunisia}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item Led compliance mapping and control assurance for an enterprise security platform against 7 frameworks (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2); documented risk assessments and remediation for every control gap.
+  \item Catalogued and virtually patched 37 CVEs; ran 153 OWASP-scenario penetration tests with Burp Suite Professional and tracked results to closure.
+  \item Built MITRE ATT\&CK-based threat modelling (22 techniques) with APT attribution, feeding a structured risk register.
+  \item Delivered technical documentation, audit evidence and security reporting for stakeholder review.
+\end{itemize}
+\cventry{Junior Cybersecurity Specialist, Freelance (Part-Time)}{Beehive Entreprises}{Tunisia}{01/2025 -- 05/2026}
+\begin{itemize}
+  \item Conducted vulnerability assessments and penetration testing on 8 web and API applications; identified, classified and tracked findings through remediation.
+  \item Produced detailed risk and remediation reports, translating technical findings into business risk language for client teams.
+\end{itemize}
+\cventry{Cybersecurity Intern --- SAP Identity, Access \& Threat Governance}{Streamlink}{Tunisia}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Performed IAM/access governance in SAP: designed a least-privilege "Monitoring Basis" role, enforced Segregation of Duties (SoD) via SU01/PFCG analysis.
+  \item Catalogued and risk-scored 7 sensitive SAP transactions (SU01, SE16N, PFCG, SM59, SE38), with CRITICAL/HIGH/MEDIUM classification and automated alerting.
+  \item Built an automated detection-and-response pipeline (Python/RFC SDK $\to$ ELK $\to$ N8N $\to$ TheHive): detection $<$2 min, auto-blocking $<$7 min, 0\% false positives, documented for audit traceability.
+\end{itemize}
+\cventry{Network Security Intern}{Tunisie Telecom}{Tunisia}{07/2024}
+\begin{itemize}
+  \item Assessed network security posture and identified 10+ vulnerabilities; built a SOC-oriented detection project with Elastic/Kibana and Sigma rules.
+\end{itemize}
+\section{Key Projects}
+\cventry{BeeWAF --- Enterprise Security Platform, Risk \& Compliance (PFE, graded 86/100)}{Risk Assessment, Compliance Mapping, ISO 27001/NIST/PCI DSS/GDPR/CIS/SOC 2}{}{2026}
+\begin{itemize}
+  \item Full risk lifecycle: threat modelling, control mapping to 7 frameworks, penetration testing, remediation tracking and audit documentation for a production-deployed system.
+  \item 27 security controls, 37 CVE virtual patches, 18-layer evasion/detection review; 92.3\% detection accuracy validated against CSIC 2010 benchmark (12,213 requests).
+\end{itemize}
+\cventry{SAP Threat Detection \& Access Governance System}{Python, PyRFC, ELK, N8N, TheHive, SoD Analysis}{}{2025}
+\begin{itemize}
+  \item Access review and risk-scoring framework for 7 critical SAP transactions; least-privilege role design and SoD compliance validation.
+  \item Automated incident response tested against 3 attack scenarios (abnormal logins, privilege escalation, unauthorized access); 100\% detection coverage.
+\end{itemize}
+\cventry{SOC Analyst Project --- Threat Detection \& SIEM Integration}{Elastic Stack, Kibana, Sigma, Bash, PowerShell}{}{2024}
+\begin{itemize}
+  \item Built detection rules and investigation workflows for brute force and DNS exfiltration scenarios; documented findings for audit trail.
+\end{itemize}
+\section{Education}
+\cventry{Engineering Degree in Computer Science}{National Engineering School of Tunis (ENIT)}{Tunisia}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Ranked 65th out of 600+ in the national engineering school entrance exam.
+\end{itemize}
+\cventry{Preparatory Classes in Physics and Technology}{Preparatory Institute for Engineering Studies, El Manar}{Tunisia}{09/2021 -- 06/2023}
+\section{Certifications}
+Networking --- Cisco (2025) ; Fundamentals of Deep Learning --- NVIDIA (2025) ; Exploring Adversarial Machine Learning --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Languages}
+English (B2, professional working proficiency) \quad|\quad French (Fluent) \quad|\quad Arabic (Native)
+\end{document}

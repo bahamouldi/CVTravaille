@@ -1,0 +1,91 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — CleverTech : Ingénieur Java Spring, Backend / Fullstack
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.9cm,right=0.9cm,top=0.35cm,bottom=0.3cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.63}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Ingénieur Java Spring Backend Fullstack},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Java, Spring Boot, Kafka, Microservices, Event-Driven, Docker}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{3pt}{1.5pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0.1pt,topsep=0.2pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.5pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[3pt]
+{\large Ingénieur Java Spring --- Backend \textbar\ Fullstack \textbar\ Microservices \textbar\ Event-Driven}\\[4pt]
+Berges du Lac 2, Tunis \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{2pt}
+\section{Profil}
+Ingénieur diplômé en génie informatique (ENIT, mention Très Bien) avec une expérience concrète et répétée en développement Java/Spring Boot sur architectures microservices et event-driven. Plusieurs projets menés de bout en bout avec Kafka (producers/consumers, topics, exactly-once, fenêtrage temps réel), Spring Security, JPA/Hibernate, tests JUnit/Mockito, conteneurisation Docker et pipelines CI/CD (Jenkins, GitLab CI, ArgoCD). À l'aise avec les principes SOLID, le craftsmanship logiciel et les méthodologies Agile/Scrum. Egalement compétent en frontend (Angular, React) pour des livraisons fullstack complètes. Recherche un poste d'Ingénieur Java Spring Backend/Fullstack pour contribuer à des architectures distribuées à fort impact.
+\section{Compétences clés}
+\textbf{Backend \& Java} : Java 8/11/17/21, Spring Boot 3.x, Spring Security (JWT, OAuth2), Spring Data JPA/Hibernate, REST APIs, microservices, architecture event-driven\\[0.5pt]
+\textbf{Messagerie \& Streaming} : Apache Kafka (producers/consumers, topics ordonnés, exactly-once, partitioning, backpressure), PySpark Structured Streaming, windowing/watermarking\\[0.5pt]
+\textbf{Bases de données} : PostgreSQL, MySQL, MongoDB, SQL avancé, NoSQL, JDBC, modélisation de données\\[0.5pt]
+\textbf{DevOps \& Cloud} : Docker/Docker Compose, Kubernetes, Jenkins, GitLab CI, ArgoCD (GitOps), AWS (EC2, S3, VPC, IAM), CI/CD\\[0.5pt]
+\textbf{Frontend} : Angular 14+ (RxJS, reactive forms, interceptors HTTP, lazy loading), React/Next.js, TypeScript, Tailwind CSS\\[0.5pt]
+\textbf{Qualité \& Craftsmanship} : JUnit 5, Mockito, TDD, tests unitaires/intégration, SOLID, revue de code, Swagger/OpenAPI, Git\\[0.5pt]
+\textbf{Méthodologies} : Agile/Scrum, sprints, rétrospectives, Kanban, collaboration transverse métier/technique
+\section{Expérience professionnelle}
+\cventry{Développeur Full Stack Java / ReactJS --- Freelance}{Beehive Entreprises}{Tunisie}{01/2024 -- 05/2026}
+\begin{itemize}
+  \item Réalisation de bout en bout de 5+ applications web full stack : backend Java/Spring Boot (Spring Security, Spring Data, REST APIs), frontend Angular/ReactJS/TypeScript, bases de données PostgreSQL/MySQL.
+  \item Architecture microservices : découplage de services, communication REST et Kafka, scalabilité horizontale, circuits breakers.
+  \item Sécurité applicative : authentification JWT/OAuth2, gestion des rôles/permissions, codage sécurisé conforme OWASP.
+  \item Conteneurisation Docker, CI/CD Jenkins, déploiement Kubernetes. Tests unitaires JUnit 5/Mockito, revues de code.
+\end{itemize}
+\cventry{Ingénieur Sécurité IA / Backend --- Stagiaire PFE (mention Très Bien)}{Beehive Entreprises}{Tunisie}{02/2026 -- 06/2026}
+\begin{itemize}
+  \item Conception et déploiement en production d'un système backend FastAPI/Python sur Kubernetes, architecture en pipeline modulaire (27 modules), CI/CD Jenkins + ArgoCD (GitOps).
+  \item Tests rigoureux (unitaires, intégration, sécurité), monitoring Prometheus/Grafana + ELK, documentation technique complète.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection menaces SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Scripts Python (PyRFC), dashboards ELK (Elasticsearch, Kibana), scoring de risque automatisé pour 7 transactions critiques SAP.
+\end{itemize}
+\cventry{Stagiaire Sécurité Réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Dashboards Elastic/Kibana, analyse trafic réseau, détection d'anomalies, identification de 10+ vulnérabilités.
+\end{itemize}
+\section{Projets clés}
+\cventry{Architecture Microservices --- Kafka + Spring Boot}{Java, Spring Boot, ReactJS, PostgreSQL, Docker, Kubernetes, Kafka}{}{2026}
+\begin{itemize}
+  \item 4 microservices Java/Spring Boot découplés, API REST inter-services, Kafka (topics ordonnés, exactly-once), frontend ReactJS, PostgreSQL par service, Docker + Kubernetes.
+  \item Spring Security (JWT), Spring Data JPA, tests unitaires JUnit 5/Mockito, documentation Swagger/OpenAPI.
+\end{itemize}
+\cventry{Pipeline Streaming Temps Réel --- Kafka + PySpark}{PySpark, Kafka, PostgreSQL, Docker Compose, Flask}{}{2024}
+\begin{itemize}
+  \item Architecture événementielle complète (6 services Docker Compose) : Kafka Producer → consumer PySpark Structured Streaming → fenêtrage 30 min + watermark → PostgreSQL via JDBC.
+  \item Kafka : partitioning, backpressure, rate limiting, earliest offset. Dashboard API REST, health check, déploiement Docker.
+\end{itemize}
+\cventry{IDTS --- Plateforme de Gestion Sécurisée}{Java, Spring Boot, Angular, PostgreSQL, Docker, Kubernetes}{}{2024}
+\begin{itemize}
+  \item Backend Spring Boot (JPA/Hibernate, REST APIs, validation, gestion des erreurs), frontend Angular (CRUD, hooks, routes protégées), PostgreSQL, Docker, Kubernetes.
+\end{itemize}
+\cventry{Kairos --- Plateforme de Gestion}{Java, Spring Boot, Angular, PostgreSQL, Docker, Kubernetes}{}{2024}
+\begin{itemize}
+  \item APIs REST sécurisées JWT, cache EhCache, pagination/filtering/tri. Angular : interceptors HTTP, lazy loading, composants réutilisables.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique --- Mention Très Bien}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Classé 65e/600+ au concours national d'entrée. PFE : Sécurité applicative \& architecture microservices, soutenu le 25/06/2026.
+\end{itemize}
+\cventry{Classes préparatoires (Physique-Technologie)}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\section{Certifications}
+Git \& GitHub --- 365 Data Science (2024) ; Réseaux --- Cisco (2025) ; Fondements du Deep Learning --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024).
+\section{Langues}
+Français (Courant, écrit et oral) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif)
+\end{document}
