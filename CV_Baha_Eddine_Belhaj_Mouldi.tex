@@ -1,0 +1,89 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Ingénieur Cybersécurité & DevSecOps / R&D Logiciel — Telnet
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.92]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.2cm,right=1.2cm,top=0.55cm,bottom=0.45cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.93}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Ingenieur Cybersecurite DevSecOps RD Logiciel - Telnet},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Cybersecurite, DevSecOps, R&D Logiciel, Telnet}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=1.1em,label=\textbullet,itemsep=0.5pt,topsep=0.5pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.5pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{1pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[3pt]
+{\normalsize\color{navy} Ingénieur Cybersécurité \& DevSecOps \textbar\ R\&D Logiciel}\\[4pt]
+{\small Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[2pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{2pt}
+
+\section{Profil}
+Ingénieur en génie informatique (ENIT, mention Très Bien) spécialisé en cybersécurité offensive/défensive et DevSecOps, avec une pratique solide du développement logiciel (Java/Spring Boot, Python/FastAPI) et de l'IA appliquée à la sécurité. Auteur de BeeWAF, un pare-feu applicatif intelligent déployé en production, et d'un pipeline SOC temps réel sur systèmes SAP critiques. Le modèle R\&D nearshore/offshore de Telnet pour clients européens, sa certification CMMI Level 5 et son exigence de qualité correspondent directement à ma façon de travailler : rigueur, documentation et sécurité « by design ». Autonome et orienté résultats, prêt à intégrer une équipe projet Telnet (Software Engineering ou Cybersécurité).
+
+\section{Compétences clés}
+\textbf{Cybersécurité \& DevSecOps} : Pentest web/API (Burp Suite Pro, OWASP Top 10/API), SOC (SIEM Elastic/Kibana, Sigma, TheHive), gestion des vulnérabilités, virtual patching, CI/CD sécurisé\\[1pt]
+\textbf{Développement logiciel} : Java, Spring Boot, FastAPI, Python, Node.js, TypeScript, React, APIs REST, architecture microservices\\[1pt]
+\textbf{Infrastructure \& Cloud} : Docker, Kubernetes, Jenkins, GitHub Actions, ELK Stack, Prometheus, AWS, Linux (Ubuntu, CentOS, Debian), Windows Server/AD\\[1pt]
+\textbf{IA appliquée \& données} : Python, Scikit-learn, détection d'anomalies (Random Forest, Gradient Boosting, Isolation Forest), LLM/RAG, LangChain\\[1pt]
+\textbf{Qualité \& Conformité} : ISO 27001, NIST CSF, PCI DSS, GDPR, SOC 2, CIS, SQL/PostgreSQL/MongoDB
+
+\section{Expérience professionnelle}
+\cventry{Ingénieur Sécurité \& R\&D --- Stagiaire PFE (mention Très Bien)}{Beehive Entreprises}{Tunisie}{02/2026 -- 06/2026}
+\begin{itemize}
+  \item Conception de BeeWAF : pare-feu applicatif intelligent en production, pipeline à 27 modules (anti-bot, DLP, anti-DDoS), 3 modèles ML, détection d'évasion 18 couches, 0\% de faux positifs.
+  \item Conformité continue sur 7 référentiels internationaux (ISO 27001, NIST, PCI DSS, GDPR, CIS, SOC 2, OWASP) ; virtual patching de 37 CVE.
+\end{itemize}
+\cventry{Backend Developer, Freelance (temps partiel, soirs/week-ends)}{ZForm}{Remote}{03/2026 -- 07/2026}
+\begin{itemize}
+  \item En parallèle du PFE : développement d'APIs REST (Node.js/Python) pour une plateforme B2G, gestion des payloads JSON, authentification et logging d'erreurs.
+\end{itemize}
+\cventry{Stagiaire --- Détection \& Réponse à Incident SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Pipeline SOC automatisé (Python/PyRFC, ELK Stack, N8N, TheHive) : détection $<$2 min, blocage automatisé $<$7 min sur transactions SAP critiques.
+\end{itemize}
+\cventry{Stagiaire Sécurité Réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Audit de sécurité réseau (SIEM Elastic/Kibana, règles Sigma) : 10+ vulnérabilités identifiées, automatisation Python/Bash.
+\end{itemize}
+\cventry{Chef de Projet Technique, Indépendant --- Équipe de 8 personnes}{VMate}{Tunisie}{01/2024 -- 06/2024}
+\begin{itemize}
+  \item Coordination d'équipe, arbitrages techniques et livraison d'une plateforme web/mobile sécurisée (projet classé 1er, ENIT).
+\end{itemize}
+
+\section{Projets clés}
+\cventry{BeeWAF --- Architecture \& Résultats (PFE, note de soutenance 86/100)}{FastAPI, Python, ML, Docker, Kubernetes, ELK, Jenkins, ArgoCD}{}{2026}
+\begin{itemize}
+  \item Kubernetes + CI/CD Jenkins/ArgoCD, MITRE ATT\&CK (22 techniques) ; ML sur CSIC 2010 : 98,2\% precision (score produit interne, distinct de la note académique).
+\end{itemize}
+\cventry{Système de Détection et Réponse aux Incidents SAP}{Python, PyRFC, ELK, N8N, TheHive}{}{2025}
+\begin{itemize}
+  \item Pipeline SOC complet : collecte de logs SAP $\to$ corrélation Elastic/Kibana $\to$ réponse automatisée (BAPI\_USER\_LOCK) sur 3 scénarios d'incident. (Streamlink, projet client --- code non public)
+\end{itemize}
+\cventry{Revenue Assurance Dashboard --- Tunisie Telecom}{Streamlit, PostgreSQL, Data Warehouse, RAG, Gemini}{}{2026}
+\begin{itemize}
+  \item Détection d'écarts réseau/facturation sur 4 domaines, ~900K lignes analysées, prévisions 3--30 jours, chatbot RAG conversationnel.
+\end{itemize}
+\cventry{Architecture Microservices}{TypeScript, Node.js, REST API}{}{2026}
+\begin{itemize}
+  \item Application distribuée en microservices : services découplés, communication REST, organisation modulaire orientée scalabilité.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique --- Mention Très Bien}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+
+\section{Certifications \& Langues}
+Réseaux (CCNA) --- Cisco (2025) ; Fondements du Deep Learning --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024).\\[2pt]
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif)
+
+\end{document}

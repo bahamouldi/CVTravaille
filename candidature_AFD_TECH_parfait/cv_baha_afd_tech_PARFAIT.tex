@@ -1,0 +1,97 @@
+% !TEX TS-program = pdflatex
+% CV PARFAIT 1 PAGE — Cloud & DevOps — AFD TECH part of Accenture — Basé sur main.tex/devsecops 10pt
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.0cm,right=1.0cm,top=0.6cm,bottom=0.6cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.82}
+\hypersetup{pdftitle={CV PARFAIT - Baha Eddine Belhaj Mouldi - Cloud DevOps - AFD TECH},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={DevOps, Cloud, AWS, Kubernetes, ArgoCD, AFD TECH}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{3pt}{1.5pt}
+\setlist[itemize]{leftmargin=1.3em,label=\textbullet,itemsep=0.4pt,topsep=1pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[1pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{2pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[4pt]
+{\large Cloud \& DevOps Engineer — AWS \textbar\ Azure \textbar\ GCP \textbar\ Kubernetes \textbar\ ArgoCD \textbar\ Terraform}\\[6pt]
+\normalsize
+Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[2pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{4pt}
+
+\section{Profil}
+Ingénieur diplômé ENIT (Mention Très Bien, 65e/600+, 25/06/2026, 86/100) avec expérience Cloud \& DevOps en production sur Kubernetes. Exactement le profil AFD TECH part of Accenture : AWS/Azure/GCP, Kubernetes, Docker, ArgoCD, Terraform, Ansible, GitLab CI/CD, SonarQube, Vault. Cluster K8s 5 nœuds (Calico) en prod, Jenkins 8 stages + ArgoCD GitOps, zéro downtime, Prometheus/Grafana 26 panels + ELK, $<$20ms, 37 CVE patchés. Disponible immédiatement.
+
+\section{Compétences}
+\textbf{Cloud} : AWS (EC2/S3/VPC/IAM/RDS), Azure, GCP — EKS/AKS/GKE, CloudWatch\\[2pt]
+\textbf{Conteneurs} : Docker, Kubernetes (Deployment/Service/Ingress/PVC/Secrets, Calico, probes, autoscaling), Helm-ready\\[2pt]
+\textbf{GitOps/CI/CD} : ArgoCD, Jenkins 8 stages, GitLab CI/CD, GitHub Actions, zéro downtime (maxUnavailable:0)\\[2pt]
+\textbf{IaC} : Terraform (remote state), Ansible, Kubernetes YAML, Docker Compose\\[2pt]
+\textbf{Observabilité} : Prometheus/Grafana, ELK (Filebeat→Logstash→Elasticsearch→Kibana), SonarQube, Vault, Dynatrace, CSPM\\[2pt]
+\textbf{Sécurité} : RBAC, IAM, WAF, OWASP, least-privilege, network policies — DevSecOps\\[2pt]
+\textbf{Middleware/BI/DB} : MQ/ESB/CFT/SFTP/B2BI, Java/WebSphere, Oracle/Datastage, Business Objects/SpotFire, ETL\\[2pt]
+\textbf{Data \& Sémantique} : Plotly, Kibana, OWL/RDF/SPARQL, knowledge graphs, visualisation BI\\[2pt]
+\textbf{Scripting} : Python, Bash, PowerShell, Linux (Ubuntu/Debian)
+
+\section{Expérience professionnelle}
+\cventry{DevOps / Security Engineer — PFE (Mention Très Bien, 86/100)}{Beehive Entreprises — Cluster 5 nœuds prod}{Tunisie}{02/2026 -- 06/2026}
+\begin{itemize}
+  \item K8s 5 nœuds (Calico) : manifests complets, probes, autoscaling — Terraform/Ansible — ArgoCD GitOps + Jenkins 8 stages, zéro downtime, Python/Bash automation.
+  \item Observabilité : Prometheus/Grafana 26 panels + ELK, $<$20ms, 92.3\% accuracy — collaboration dev/QA/infra, documentation.
+\end{itemize}
+\cventry{DevOps Freelance — 5+ apps conteneurisées}{Beehive Entreprises}{Tunisie}{01/2024 -- 05/2026}
+\begin{itemize}
+  \item Docker/Kubernetes, Jenkins CI/CD, PostgreSQL/MySQL, REST APIs — 5+ livraisons, optimisation processus livraison.
+\end{itemize}
+\cventry{Stagiaire SAP — Pipeline ELK/N8N}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Python/PyRFC → ELK → N8N → TheHive — détection $<$2min — ELK maîtrisé.
+\end{itemize}
+\cventry{Chef de projet technique — Équipe 8 pers. (1er ENIT)}{VMate}{Tunisie}{01/2024 -- 06/2024}
+\begin{itemize}
+  \item Coordination Agile/Scrum, arbitrages techniques, livraison plateforme web/mobile sécurisée — gestion d'équipe 8 pers.
+\end{itemize}
+
+\section{Projets}
+\cventry{Infrastructure K8s Production — CI/CD \& Observabilité}{Docker, K8s, Jenkins, ArgoCD, Terraform}{}{2026}
+\begin{itemize}
+  \item Calico, Ingress, PVC/Secrets, GitOps, zero-downtime, Prometheus/Grafana + ELK, $<$20ms, 27 modules, 37 CVE.
+\end{itemize}
+\cventry{Pipeline Streaming Kafka + PySpark — 6 services}{Kafka, PySpark, PostgreSQL, Docker Compose}{}{2024}
+\begin{itemize}
+  \item Kafka producer/consumer, PySpark windowing/watermark, JDBC — 6 services Docker Compose.
+\end{itemize}
+\cventry{Web Attack Detection via Data Mining — K-Means SHAP}{Python, Scikit-learn, SHAP, AWS}{}{2024}
+\begin{itemize}
+  \item K-Means (silhouette 0.787) sur logs AWS — 39 attaques (13.8\%), SHAP, pipeline data mining — transposable DevOps.
+\end{itemize}
+\cventry{Revenue Assurance Dashboard — 900K (Tunisie Telecom) — BI/RAG}{Python, Streamlit, PostgreSQL, Data Warehouse, RAG}{}{2026}
+\begin{itemize}
+  \item Star-schema DW sur 4 domaines, RAG chatbot Gemini, Plotly dashboards, prévision 3-30j, détection écarts NE/TAX — BI pillar AFD TECH.
+\end{itemize}
+
+\section{Formation}
+\cventry{Diplôme d'Ingénieur Génie Informatique — Mention Très Bien}{ENIT}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Classé 65e/600+ concours national. PFE DevOps 86/100 (25/06/2026).
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{IPEI El Manar}{Tunisie}{09/2021 -- 06/2023}
+\cventry{Bac Technique — Mention Très Bien}{Lycée Abdelaziz Khouja, Kélibia}{Tunisie}{06/2021}
+
+\section{Certifications}
+CCNA Cisco (2025) ; Git \& GitHub 365 Data Science (2024) ; Fondements Deep Learning NVIDIA (2025) ; Adversarial ML NVIDIA (2025) ; Machine Learning NVIDIA (2024).
+
+\section{Langues}
+Anglais (B2) \quad|\quad Français (B2) \quad|\quad Arabe (Natif) — Opérationnel remote.
+\end{document}

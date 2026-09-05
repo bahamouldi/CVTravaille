@@ -1,0 +1,86 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Expert Cybersécurité (SOC / Pentest / GRC) — Cybertic
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.82}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Expert Cybersecurite SOC Pentest GRC - Cybertic},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={SOC, Pentest, GRC, Cybersecurite, Conformite}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} Cybersécurité \textbar\ SOC \textbar\ Tests d'intrusion \textbar\ GRC (Gouvernance, Risques \& Conformité)}\\[3pt]
+{\small Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profil}
+Ingénieur en cybersécurité (ENIT, mention Très Bien) couvrant les trois piliers SOC, tests d'intrusion et GRC. Expérience concrète de cycle SOC complet (surveillance, triage d'alertes, investigation, réponse à incident), de tests d'intrusion web/API avec Burp Suite Professional (153 scénarios OWASP), et de conformité multi-référentiels (ISO 27001, NIST, PCI DSS, GDPR, SOC 2, CIS) au travers du projet BeeWAF, pare-feu applicatif intelligent déployé en production. Auteur d'audits de vulnérabilités et de rapports de remédiation sur 8 applications clientes. Rigueur, autonomie et sens de la confidentialité, à l'aise pour documenter clairement des constats techniques à destination d'équipes variées.
+\section{Compétences clés}
+\textbf{SOC} : Triage d'alertes, investigation d'incidents, corrélation de logs, SIEM (Elastic Stack, Kibana), règles Sigma, TheHive, réponse à incident (détection $<$2 min, blocage $<$7 min)\\[0.3pt]
+\textbf{Tests d'intrusion} : Pentest web/API, Burp Suite Professional, OWASP Top 10/API/LLM, CVSS/CWE, recherche d'évasion WAF (18 couches), 153 scénarios d'attaque testés\\[0.3pt]
+\textbf{GRC} : ISO 27001, NIST CSF, PCI DSS, GDPR, SOC 2, CIS, diagnostic de conformité, gestion des risques et des vulnérabilités, virtual patching de CVE\\[0.3pt]
+\textbf{Systèmes \& Réseaux} : Windows Server, Active Directory (GPO), Linux (Ubuntu, CentOS, Kali, Debian), VPN, Proxy, Firewall, PKI, MFA, PAM, IAM\\[0.3pt]
+\textbf{Automatisation \& outillage} : Python, Bash, PowerShell, N8N, ELK Stack, Docker, Kubernetes, CI/CD\\[0.3pt]
+\textbf{Développement} : FastAPI, Java, Spring Boot, Node.js, SQL, MongoDB
+\section{Expérience professionnelle}
+\cventry{Ingénieur Sécurité --- Stagiaire PFE (mention Très Bien)}{Beehive Entreprises}{Tunisie}{02/2026 -- 06/2026}
+\begin{itemize}
+  \item Conception de BeeWAF : 10 041 règles de détection, 3 modèles ML, détection d'évasion 18 couches, testé sur 153 scénarios OWASP avec Burp Suite Professional.
+  \item Conformité continue sur 7 référentiels (OWASP, PCI DSS, GDPR, NIST, ISO 27001, CIS, SOC 2) ; gestion des vulnérabilités : virtual patching de 37 CVE.
+  \item Cartographie MITRE ATT\&CK (22 techniques), attribution APT, alerting temps réel pour les équipes opérationnelles.
+\end{itemize}
+\cventry{Spécialiste Cybersécurité, Freelance (1 an)}{Beehive Entreprises}{Tunisie}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Tests d'intrusion et audits de vulnérabilités sur 8 applications web et API, avec rapports de remédiation détaillés transmis aux équipes de développement.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Détection \& Réponse à incident SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Pipeline SOC automatisé (Python/PyRFC, ELK, N8N, TheHive) : détection $<$2 min, blocage automatisé $<$7 min sur transactions SAP critiques.
+\end{itemize}
+\cventry{Stagiaire Sécurité Réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Détection SOC (Elastic/Kibana, règles Sigma, simulations brute force/exfiltration) : 10+ vulnérabilités identifiées, rapports d'investigation.
+\end{itemize}
+\cventry{Chef de projet technique, Indépendant --- Équipe de 8 personnes}{VMate}{Tunisie}{01/2024 -- 06/2024}
+\begin{itemize}
+  \item Coordination d'équipe, arbitrages techniques, reporting.
+\end{itemize}
+\section{Projets clés}
+\cventry{BeeWAF --- Sécurité Applicative \& Conformité (PFE, 86/100)}{FastAPI, Python, ML, Docker, Kubernetes, ELK}{}{2026}
+\begin{itemize}
+  \item WAF d'entreprise en production : pipeline à 27 modules, 107 signatures, détection d'évasion 18 couches. Score 98,2/100, 0\% faux positifs.
+\end{itemize}
+\cventry{Système de Détection et Réponse aux Incidents SAP}{Python, PyRFC, ELK, N8N, TheHive}{}{2025}
+\begin{itemize}
+  \item Pipeline SOC complet : collecte $\to$ corrélation $\to$ réponse automatisée (BAPI\_USER\_LOCK) sur 3 scénarios d'incident.
+\end{itemize}
+\cventry{Infrastructure Windows Server / Active Directory \& Réseau Périmétrique}{Windows Server, AD, GPO, VPN, Proxy, Firewall}{}{ENIT}
+\begin{itemize}
+  \item Administration AD (utilisateurs, groupes, GPO), sécurisation périmétrique (VPN, proxy, firewall, segmentation).
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique --- Mention Très Bien}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Diplômé le 25/06/2026. Classé 65e sur 600+ au concours national d'entrée.
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\section{Certifications}
+Réseaux (CCNA) --- Cisco (2025) ; Fondements du Deep Learning --- NVIDIA (2025) ; IA Adversariale --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Langues}
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif)
+\end{document}

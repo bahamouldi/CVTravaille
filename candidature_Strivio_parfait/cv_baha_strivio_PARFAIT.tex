@@ -1,0 +1,94 @@
+% !TEX TS-program = pdflatex
+% CV PARFAIT 1 PAGE — Cloud & DevOps / Cybersécurité / Data — Strivio Tech — Basé sur main.tex/devsecops 10pt
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.1cm,right=1.1cm,top=0.75cm,bottom=0.7cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.88}
+\hypersetup{pdftitle={CV PARFAIT - Baha Eddine Belhaj Mouldi - Strivio Tech},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={DevOps, Cybersecurite, Data, Strivio}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=1.3em,label=\textbullet,itemsep=0.5pt,topsep=1pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[1pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{2pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[4pt]
+{\large Cloud \& DevOps \textbar\ Cybersécurité \textbar\ Data Engineer — 3-en-1}\\[6pt]
+\normalsize
+Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[2pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio} — Inscrit www.strivio.ma
+\end{center}
+\vspace{4pt}
+
+\section{Profil}
+Ingénieur diplômé ENIT (Mention Très Bien, 65e/600+, 25/06/2026, 86/100) avec triple compétence exactement comme Strivio Tech : \textit{Data Analyst/Engineer, Network Engineer, Cybersecurity Engineer, Cloud \& DevOps Engineer}. K8s 5 nœuds en prod, WAF 10 041 règles, pipeline 900K DW, 7 référentiels, 27 modules, 3 ML — produit, pas labo. Inscrit sur www.strivio.ma — recrutement@strivio.ma.
+
+\section{Compétences}
+\textbf{Cloud \& DevOps} : Docker, Kubernetes (Calico, probes, autoscaling), Jenkins 8 stages + ArgoCD GitOps, AWS EC2/S3/VPC/IAM, Terraform, Linux, Bash/Python\\[2pt]
+\textbf{Cybersécurité} : OWASP Top 10, WAF 10 041 règles (107 signatures, 9 824 regex), Burp Pro 153 scénarios, ELK, Sigma, MITRE ATT\&CK 22, 37 CVE, 92.3\% accuracy\\[2pt]
+\textbf{Data Engineer} : ETL/ELT 900K+, PostgreSQL, DW star schema, Pandas, Plotly, Streamlit, RAG (LangChain/Gemini), BI dashboards\\[2pt]
+\textbf{Réseau} : TCP/IP, DNS, DHCP, VPN, Proxy, Firewall, Wireshark, Nmap, CCNA Cisco\\[2pt]
+\textbf{IA \& Automatisation} : RAG, LangChain, Agents IA, SHAP, NLP, sentiment analysis, Python\\[2pt]
+\textbf{Data \& Sémantique} : OWL/RDF/SPARQL, knowledge graphs, visualisation BI, Kibana
+
+\section{Expérience professionnelle}
+\cventry{DevOps/Security/Data — PFE Mention Très Bien 86/100}{Beehive Entreprises — Prod 5 nœuds + 900K data}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item K8s 5 nœuds, Jenkins+ArgoCD, Prometheus/Grafana+ELK, $<$20ms, 27 modules, 10 041 règles, 3 ML, 37 CVE, 7 frameworks — DevOps + Sécu.
+  \item DW star schema 900K (4 domaines), RAG Gemini, Plotly, prévision 3-30j — Data + DevOps + Sécu en un seul projet prod.
+\end{itemize}
+\cventry{Data/DevOps Freelance — 5+ apps}{Beehive Entreprises}{Tunisie}{01/2024 -- 05/2026}
+\begin{itemize}
+  \item FastAPI, PostgreSQL, Docker/K8s, ELK, 8 audits sécu — 5+ livraisons, optimisation processus livraison.
+\end{itemize}
+\cventry{Chef de projet technique — Équipe 8 pers. (1er ENIT)}{VMate}{Tunisie}{01/2024 -- 06/2024}
+\begin{itemize}
+  \item Coordination Agile/Scrum, arbitrages techniques, livraison plateforme web/mobile sécurisée — gestion d'équipe 8 pers.
+\end{itemize}
+\cventry{Stagiaire SAP — Pipeline ELK/N8N}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Python/PyRFC → ELK → N8N → TheHive — détection $<$2min, blocage $<$7min — pipeline ELK maîtrisé.
+\end{itemize}
+
+\section{Projets}
+\cventry{Revenue Assurance Dashboard — 900K (Strivio Data)}{Python, PostgreSQL, Streamlit, RAG, ELK}{}{2026}
+\begin{itemize}
+  \item Star-schema DW sur 4 domaines, RAG chatbot Gemini, Plotly, prévision 3-30j, détection écarts — 900K, 4 domaines.
+\end{itemize}
+\cventry{BeeWAF — WAF Intelligent 27 modules (Strivio Cybersécu)}{FastAPI, ML, K8s, ELK}{}{2026}
+\begin{itemize}
+  \item 107 signatures (9 824 regex), 3 ML (92.3\% accuracy, 98.2\% precision), 18 couches évasion, MITRE 22, 37 CVE — K8s prod.
+\end{itemize}
+\cventry{Infrastructure K8s Production — 5 nœuds (Strivio DevOps)}{Docker, K8s, Jenkins, ArgoCD, Terraform}{}{2026}
+\begin{itemize}
+  \item Calico, Ingress, PVC/Secrets, GitOps, zero-downtime, Prometheus/Grafana + ELK.
+\end{itemize}
+\cventry{Web Attack Detection via Data Mining — K-Means SHAP}{Python, Scikit-learn, SHAP, AWS}{}{2024}
+\begin{itemize}
+  \item K-Means (silhouette 0.787) sur logs AWS — 39 attaques (13.8\%), SHAP, pipeline data mining.
+\end{itemize}
+
+\section{Formation}
+\cventry{Diplôme d'Ingénieur Génie Informatique — Mention Très Bien}{ENIT}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Classé 65e/600+ concours national. PFE DevOps/Data/Sécu 86/100 (25/06/2026).
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{IPEI El Manar}{Tunisie}{09/2021 -- 06/2023}
+\cventry{Bac Technique — Mention Très Bien}{Lycée Abdelaziz Khouja, Kélibia}{Tunisie}{06/2021}
+
+\section{Certifications}
+CCNA Cisco (2025) ; Fondements Deep Learning NVIDIA (2025) ; Adversarial ML NVIDIA (2025) ; Machine Learning NVIDIA (2024) ; Git \& GitHub 365 Data Science (2024).
+
+\section{Langues}
+Anglais (B2) \quad|\quad Français (B2) \quad|\quad Arabe (Natif) — Inscrit www.strivio.ma, disponible.
+\end{document}

@@ -1,0 +1,88 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Développeur Full Stack JavaScript (IA) — Welyne
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.82}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Developpeur Full Stack JavaScript IA - Welyne},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Full Stack, React, Node.js, IA, LangChain, RAG, Agents IA}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} Développeur Full Stack JavaScript \textbar\ React/Next.js \textbar\ Node.js \textbar\ IA \& Agents (LangChain, RAG, MCP)}\\[3pt]
+{\small Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profil}
+Ingénieur en génie informatique (ENIT, mention Très Bien) combinant développement full-stack JavaScript/TypeScript et intégration de briques IA générative. Expérience concrète chez Beehive Entreprises (stage PFE et un an de freelance) : APIs REST sécurisées (FastAPI, Node.js), intégration de modèles de langage (LangChain, LangGraph, Gemini, Azure AI Foundry), pipelines RAG et architectures multi-agents, avec bases de données PostgreSQL/MongoDB et conteneurisation Docker/Kubernetes. Pratique personnelle du protocole Agent-to-Agent et du Microsoft Agent Framework SDK sur Azure AI Foundry. Curieux des Agents IA et des plateformes conversationnelles, exactement les sujets sur lesquels Welyne construit ses produits. Esprit d'équipe, autonomie et goût pour l'architecture logicielle propre.
+\section{Compétences clés}
+\textbf{Front-end} : React.js, Next.js, TypeScript, Angular, HTML5/CSS3, Tailwind CSS\\[0.3pt]
+\textbf{Back-end} : Node.js, FastAPI (Python), REST API, architecture microservices, async, GraphQL (notions)\\[0.3pt]
+\textbf{Bases de données} : PostgreSQL, MongoDB, Redis (notions), SQL, modélisation de données\\[0.3pt]
+\textbf{IA \& Agents} : OpenAI API, Anthropic Claude, LangChain, LangGraph, RAG, MCP (Model Context Protocol), Vector Databases, protocole Agent-to-Agent (A2A), Microsoft Agent Framework SDK, Azure AI Foundry\\[0.3pt]
+\textbf{DevOps} : Docker, Kubernetes, Git, CI/CD (Jenkins, ArgoCD, GitHub Actions)\\[0.3pt]
+\textbf{Qualité \& architecture} : Clean Code, design patterns, revue de code, tests (JMeter), documentation technique (Swagger/OpenAPI)\\[0.3pt]
+\textbf{Sécurité applicative} : OWASP Top 10, JWT/BCrypt, gestion des accès, audits de vulnérabilités
+\section{Expérience professionnelle}
+\cventry{Ingénieur IA \& Backend --- Stagiaire PFE (mention Très Bien)}{Beehive Entreprises}{Tunisie}{02/2026 -- 06/2026}
+\begin{itemize}
+  \item Conception d'architectures techniques évolutives : APIs FastAPI sécurisées et performantes, déployées sur Kubernetes avec CI/CD (Jenkins + ArgoCD).
+  \item Intégration de modèles d'IA (LangChain, Gemini, Azure AI Foundry) dans un chatbot RAG interrogeant 900K enregistrements en langage naturel.
+  \item Architectures multi-agents et monitoring de la qualité de génération (LangSmith), collaboration avec les équipes Produit et DevOps.
+\end{itemize}
+\cventry{Développeur Full Stack \& IA, Freelance (1 an)}{Beehive Entreprises}{Tunisie}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Développement d'applications web modernes : APIs REST Node.js/FastAPI, intégrations LLM, pipelines RAG, PostgreSQL, pour des projets clients.
+  \item Revues de code et choix techniques ; audits de sécurité et remédiation sur 8 applications web/API.
+\end{itemize}
+\cventry{Chef de projet technique, Indépendant --- Équipe de 8 personnes}{VMate}{Tunisie}{01/2024 -- 06/2024}
+\begin{itemize}
+  \item Coordination d'une équipe pluridisciplinaire : architecture technique, planification, revues, collaboration transverse.
+\end{itemize}
+\section{Projets clés}
+\cventry{Chatbot RAG --- Dashboard Assurance Revenus (Tunisie Telecom)}{React/Streamlit, Python, LangChain, Gemini, Azure AI Foundry, PostgreSQL}{}{2026}
+\begin{itemize}
+  \item Pipeline RAG en production sur ~900K enregistrements, interrogation en langage naturel, dashboards interactifs.
+\end{itemize}
+\cventry{Agents Distants --- Azure AI Agent Service (Protocole A2A)}{Python, Azure AI Foundry, Azure AI Agent Service}{}{2026}
+\begin{itemize}
+  \item Agents collaboratifs communiquant via A2A : génération de contenu et enchaînement de tâches entre agents spécialisés.
+\end{itemize}
+\cventry{Fedi Phone --- Plateforme E-commerce}{Next.js, TypeScript, Prisma, PostgreSQL, Docker}{}{2026}
+\begin{itemize}
+  \item Application full-stack : API REST, frontend Next.js/React, authentification JWT, conteneurisation Docker.
+\end{itemize}
+\cventry{WebSec Scanner --- Application Web Full-Stack}{Angular, Spring Boot, JWT, WebSocket}{}{2024 -- 2025}
+\begin{itemize}
+  \item Application complète : backend RESTful sécurisé, frontend Angular réactif, alertes temps réel, rapports générés dynamiquement.
+\end{itemize}
+\cventry{BeeWAF --- APIs Sécurisées \& Scalables (PFE, 86/100)}{FastAPI, Python, ML, Docker, Kubernetes}{}{2026}
+\begin{itemize}
+  \item Backend FastAPI en production : architecture microservices, CI/CD, sécurité applicative, zéro downtime.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique --- Mention Très Bien}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Diplômé le 25/06/2026. Classé 65e sur 600+ au concours national d'entrée.
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\section{Certifications}
+Fondements du Deep Learning --- NVIDIA (2025) ; IA Adversariale --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Réseaux (CCNA) --- Cisco (2025) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Langues}
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif)
+\end{document}

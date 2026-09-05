@@ -1,0 +1,79 @@
+% !TEX TS-program = pdflatex
+% CV réseau LinkedIn — Cabinets IT / Staffing — Fullstack & DevOps généraliste
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.82}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Fullstack DevOps},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={Fullstack, Java, React, Node.js, DevOps, Kubernetes}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} Ingénieur Fullstack \& DevOps \textbar\ Java/Spring \textbar\ React/Angular \textbar\ Node.js \textbar\ Kubernetes}\\[3pt]
+{\small Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi} {github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profil}
+Ingénieur en génie informatique (ENIT, mention Très Bien) polyvalent sur l'écosystème fullstack et DevOps : Java/Spring Boot, React/Angular/Next.js, Node.js, conteneurisation Docker/Kubernetes et CI/CD. Expérience concrète chez Beehive Entreprises (stage PFE et un an de freelance) : APIs REST sécurisées, architectures microservices, déploiement Kubernetes en production avec CI/CD Jenkins/ArgoCD. Sensibilité sécurité applicative (OWASP, JWT/BCrypt). À l'aise pour s'adapter rapidement à des stacks et contextes clients variés, esprit d'équipe et autonomie.
+\section{Compétences clés}
+\textbf{Backend} : Java, Spring Boot, Node.js, FastAPI (Python), REST API, architecture microservices, Kafka\\[0.3pt]
+\textbf{Frontend} : React.js, Angular, Next.js, TypeScript, HTML5/CSS3\\[0.3pt]
+\textbf{Bases de données} : PostgreSQL, MySQL, MongoDB, SQL\\[0.3pt]
+\textbf{DevOps} : Docker, Kubernetes (Deployment, Service, Ingress, PVC, Secrets), Jenkins, ArgoCD (GitOps), GitHub Actions\\[0.3pt]
+\textbf{Sécurité applicative} : OWASP Top 10, JWT, BCrypt, CSRF, audits de vulnérabilités\\[0.3pt]
+\textbf{Supervision} : Prometheus, Grafana, ELK Stack\\[0.3pt]
+\textbf{Outils} : Git, tests (JMeter, Postman), documentation technique (Swagger/OpenAPI)
+\section{Expérience professionnelle}
+\cventry{Ingénieur Fullstack \& Infrastructure --- Stagiaire PFE (mention Très Bien)}{Beehive Entreprises}{Tunisie}{02/2026 -- 06/2026}
+\begin{itemize}
+  \item APIs FastAPI sécurisées, déployées sur Kubernetes (5 nœuds), CI/CD Jenkins + ArgoCD, zéro downtime.
+  \item Monitoring Prometheus/Grafana + ELK, gestion des correctifs et conformité OWASP.
+\end{itemize}
+\cventry{Développeur Fullstack, Freelance (1 an)}{Beehive Entreprises}{Tunisie}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Développement d'applications web pour clients : Node.js/FastAPI, PostgreSQL, intégrations diverses.
+  \item Revue de code, audits de sécurité sur 8 applications, collaboration avec équipes de développement.
+\end{itemize}
+\cventry{Chef de projet technique, Indépendant --- Équipe de 8 personnes}{VMate}{Tunisie}{01/2024 -- 06/2024}
+\begin{itemize}
+  \item Coordination d'équipe pluridisciplinaire, arbitrages techniques, reporting.
+\end{itemize}
+\section{Projets clés}
+\cventry{WebSec Scanner --- Application Web Full-Stack}{Angular, Spring Boot, JWT, WebSocket}{}{2024 -- 2025}
+\begin{itemize}
+  \item Application complète : backend RESTful sécurisé, frontend Angular, alertes temps réel.
+\end{itemize}
+\cventry{Fedi Phone --- Plateforme E-commerce}{Next.js, TypeScript, Prisma, PostgreSQL, Docker}{}{2026}
+\begin{itemize}
+  \item API REST, frontend Next.js/React, authentification JWT, conteneurisation Docker.
+\end{itemize}
+\cventry{Infrastructure Kubernetes en Production --- CI/CD \& Observabilité}{Docker, Kubernetes, Jenkins, ArgoCD, Prometheus, Grafana}{}{2026}
+\begin{itemize}
+  \item Cluster Kubernetes complet, pipeline CI/CD, monitoring temps réel, latence overhead $<$20ms.
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique --- Mention Très Bien}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Diplômé le 25/06/2026. Classé 65e sur 600+ au concours national d'entrée.
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\section{Certifications}
+Réseaux (CCNA) --- Cisco (2025) ; Fondements du Deep Learning --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Langues}
+Français (Courant) \quad|\quad Anglais (B2) \quad|\quad Arabe (Natif)
+\end{document}

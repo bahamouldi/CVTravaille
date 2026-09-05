@@ -1,0 +1,85 @@
+% !TEX TS-program = pdflatex
+% CV ciblé — Ingénieur DevOps Data — Tunisie Leasing et Factoring
+\documentclass[a4paper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.90]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=0.8cm,right=0.8cm,top=0.3cm,bottom=0.25cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.82}
+\hypersetup{pdftitle={CV - Baha Eddine Belhaj Mouldi - Ingenieur DevOps Data - Tunisie Leasing et Factoring},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={DevOps, Data Engineering, Pipelines, Kubernetes, Bases de donnees, Securite}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{1.5pt}{0.8pt}
+\setlist[itemize]{leftmargin=1.0em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[0.2pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{0.3pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[2pt]
+{\normalsize\color{navy} Ingénieur DevOps Data \textbar\ Pipelines Data/IA \textbar\ Conteneurisation \textbar\ Bases de données \textbar\ Supervision}\\[3pt]
+{\small Tunis, Tunisie \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}}\\[1pt]
+{\small \href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}}
+\end{center}
+\vspace{1pt}
+\section{Profil}
+Ingénieur en génie informatique (ENIT, mention Très Bien) à l'intersection du DevOps et de l'ingénierie de données. Expérience concrète de conception et d'automatisation de pipelines Data/IA chez Beehive Entreprises (stage PFE et un an de freelance) : data warehouse en production sur 900K+ enregistrements, pipelines ETL, déploiement conteneurisé sur Kubernetes avec CI/CD (Jenkins + ArgoCD), supervision et sécurité des environnements. Maîtrise de PostgreSQL, Docker/Kubernetes, automatisation Python/Bash et bonnes pratiques de sécurité (OWASP, gestion des correctifs). Esprit d'automatisation et d'amélioration continue, autonomie et goût du travail transverse avec les équipes Développement, Sécurité et Infrastructure.
+\section{Compétences clés}
+\textbf{Plateformes Data} : conception et administration de data warehouse (schéma étoile), pipelines ETL/ELT, Pandas, Apache Airflow (notions), ClickHouse (notions)\\[0.3pt]
+\textbf{Automatisation \& CI/CD} : Jenkins (pipelines multi-étapes), ArgoCD (GitOps), GitHub Actions, automatisation des déploiements Data/IA, scripts Python/Bash\\[0.3pt]
+\textbf{Conteneurisation \& orchestration} : Docker, Kubernetes (Deployment, Service, Ingress, PVC, Secrets), industrialisation des déploiements applicatifs\\[0.3pt]
+\textbf{Bases de données} : PostgreSQL, MongoDB, SQL, administration et configuration, modélisation de données\\[0.3pt]
+\textbf{Supervision \& performance} : Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), alerting temps réel, optimisation des performances\\[0.3pt]
+\textbf{Sécurité des données} : OWASP Top 10, gestion des correctifs (virtual patching de CVE), conformité (ISO 27001, GDPR, PCI DSS), IAM\\[0.3pt]
+\textbf{IA appliquée aux données} : RAG, LangChain, intégration de modèles pour l'analyse de données (dashboards intelligents, prévisions)\\[0.3pt]
+\textbf{Cloud} : AWS (EC2, S3, VPC, IAM), notions Azure
+\section{Expérience professionnelle}
+\cventry{Ingénieur Data \& Infrastructure --- Stagiaire PFE (mention Très Bien)}{Beehive Entreprises}{Tunisie}{02/2026 -- 06/2026}
+\begin{itemize}
+  \item Conception et déploiement d'une plateforme de données en production : data warehouse schéma étoile sur 900K+ enregistrements, dashboards interactifs et modèles de prévision.
+  \item Automatisation des pipelines d'intégration et de déploiement : CI/CD Jenkins (8 étapes) + ArgoCD (GitOps) sur cluster Kubernetes (5 nœuds), déploiement zéro downtime.
+  \item Supervision et sécurité : monitoring Prometheus/Grafana + ELK, alerting temps réel, gestion des correctifs (37 CVE), conformité continue sur 7 référentiels.
+\end{itemize}
+\cventry{Data \& Backend Engineer, Freelance (1 an)}{Beehive Entreprises}{Tunisie}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item Développement de pipelines de données et de services backend (FastAPI, PostgreSQL) pour applications clients ; administration et configuration de bases de données.
+  \item Automatisation d'opérations d'administration et de maintenance ; audits de sécurité et remédiation sur 8 applications, collaboration avec les équipes techniques.
+\end{itemize}
+\cventry{Chef de projet technique, Indépendant --- Équipe de 8 personnes}{VMate}{Tunisie}{01/2024 -- 06/2024}
+\begin{itemize}
+  \item Coordination d'une équipe pluridisciplinaire, collaboration transverse et reporting.
+\end{itemize}
+\cventry{Stagiaire Cybersécurité --- Automatisation \& Supervision SAP}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Automatisation Python de pipelines de données (PyRFC), corrélation ELK, orchestration N8N.
+\end{itemize}
+\section{Projets clés}
+\cventry{Revenue Assurance Dashboard --- Tunisie Telecom}{Python, PostgreSQL, Streamlit, Plotly, RAG}{}{2026}
+\begin{itemize}
+  \item Data warehouse schéma étoile sur 900K+ enregistrements revenus télécom : dashboards interactifs, modèles de prévision (3-30 jours), détection d'écarts entre systèmes.
+\end{itemize}
+\cventry{Plateforme d'Analyse Financière --- SFBT}{Python, Data Warehouse, BI, ML}{}{2026}
+\begin{itemize}
+  \item Pipeline ETL complet : calcul automatisé de 20K+ ratios financiers, data modelling, dashboards BI.
+\end{itemize}
+\cventry{Infrastructure Kubernetes en Production --- CI/CD \& Observabilité}{Docker, Kubernetes, Jenkins, ArgoCD, Prometheus, Grafana, ELK}{}{2026}
+\begin{itemize}
+  \item Pipeline CI/CD industrialisé, monitoring temps réel, sécurité et gestion des correctifs (BeeWAF, 37 CVE).
+\end{itemize}
+\section{Formation}
+\cventry{Diplôme d'Ingénieur en Génie Informatique --- Mention Très Bien}{École Nationale d'Ingénieurs de Tunis (ENIT)}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Diplômé le 25/06/2026. Classé 65e sur 600+ au concours national d'entrée.
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{Institut Préparatoire aux Études d'Ingénieurs, El Manar}{Tunisie}{09/2021 -- 06/2023}
+\section{Certifications}
+Réseaux (CCNA) --- Cisco (2025) ; Fondements du Deep Learning --- NVIDIA (2025) ; Machine Learning --- NVIDIA (2024) ; Git \& GitHub --- 365 Data Science (2024).
+\section{Langues}
+Arabe (Natif) \quad|\quad Français (Courant) \quad|\quad Anglais (B2)
+\end{document}

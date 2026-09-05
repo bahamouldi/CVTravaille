@@ -1,0 +1,100 @@
+% !TEX TS-program = pdflatex
+% CV PARFAIT 1 PAGE — DEVANTEC IA — Basé sur main.tex (ATS 10pt) + cv_baha_ia_langgraph
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.0cm,right=1.0cm,top=0.6cm,bottom=0.6cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{RGB}{23,54,93}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.82}
+\hypersetup{pdftitle={CV PARFAIT - Baha Eddine Belhaj Mouldi - Developpeur IA - DEVANTEC},pdfauthor={Baha Eddine Belhaj Mouldi},pdfsubject={IA, Python, RAG, LLM, Agents, DevOps, DEVANTEC}}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[{\vspace{1pt}\color{navy}\hrule height 0.6pt}]
+\titlespacing*{\section}{0pt}{3pt}{1.5pt}
+\setlist[itemize]{leftmargin=1.3em,label=\textbullet,itemsep=0.4pt,topsep=1pt,parsep=0pt}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textbf{#4}\\[1pt]#2{\ifx\relax#3\relax\else, #3\fi}\par\vspace{2pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{navy} Baha Eddine Belhaj Mouldi}\\[4pt]
+{\large Développeur IA — Python \textbar\ RAG \textbar\ LLM \textbar\ Agents IA \textbar\ DevOps}\\[6pt]
+\normalsize
+Tunis, Tunisie (ouvert Maroc) \quad|\quad +216 55 128 982 \quad|\quad \href{mailto:bahaeddine.belhajmouldi@gmail.com}{bahaeddine.belhajmouldi@gmail.com}\\[2pt]
+\href{https://www.linkedin.com/in/bahamouldi}{linkedin.com/in/bahamouldi} \quad|\quad \href{https://github.com/bahamouldi}{github.com/bahamouldi} \quad|\quad \href{https://bahamouldi.github.io/portfolio/}{bahamouldi.github.io/portfolio}
+\end{center}
+\vspace{4pt}
+
+\section{Profil}
+Ingénieur diplômé ENIT (Mention Très Bien, 65e/600+, 25/06/2026, 86/100) avec 2+ ans d'expérience en IA (PFE + 1 an freelance Beehive). Exactement le profil DEVANTEC : Python, IA Générative, Agents IA, RAG, LLM, DevOps. Production : RAG 900K (LangChain/Gemini/Azure AI), multi-agents (LangGraph/A2A), MLOps K8s 5 nœuds, Jenkins+ArgoCD. Disponible immédiatement — contact@devantec.ma.
+
+\section{Compétences}
+\textbf{IA Générative \& LLM} : Python, RAG (retrieval, génération, évaluation), LangChain, LangGraph, Gemini, Azure AI Foundry, prompt versioning, LoRA, Ollama\\[2pt]
+\textbf{Agents IA} : LangGraph StateGraph (nodes/edges/HITL), A2A, MCP, Microsoft Agent Framework SDK, orchestration\\[2pt]
+\textbf{ML \& NLP} : Scikit-learn, Pandas, RF/GB/IF, K-Means (silhouette 0.787), SHAP, NLP, sentiment analysis\\[2pt]
+\textbf{DevOps/MLOps} : Docker, Kubernetes (Calico), Jenkins 8 stages + ArgoCD GitOps, Prometheus/Grafana, ELK, Terraform\\[2pt]
+\textbf{Backend} : FastAPI, REST APIs, PostgreSQL, Azure Functions, LangSmith (tracing/evaluation), Streamlit\\[2pt]
+\textbf{Data \& Sémantique} : Plotly, Kibana, OWL/RDF/SPARQL, knowledge graphs, visualisation BI, dashboards interactifs
+
+\section{Expérience professionnelle}
+\cventry{Développeur IA — Stagiaire PFE (Mention Très Bien, 86/100)}{Beehive Entreprises}{Tunisie}{01/2026 -- 05/2026}
+\begin{itemize}
+  \item RAG en production 900K (Tunisie Telecom, 4 domaines) : pipeline LangChain/Gemini/Azure AI — retrieval, injection contexte, génération, évaluation LangSmith, dashboards Grafana, prévision 3-30j.
+  \item Agents IA : système multi-agents LangGraph StateGraph (3 agents, A2A) + Microsoft Agent Framework SDK sur Azure AI Agent Service — workflows testables.
+  \item MLOps : FastAPI sur K8s 5 nœuds (Calico), Jenkins 8 stages + ArgoCD, zéro downtime, Prometheus/Grafana 26 panels + ELK, $<$20ms.
+\end{itemize}
+\cventry{Développeur IA \& Backend — Freelance 1 an}{Beehive Entreprises}{Tunisie}{01/2025 -- 12/2025}
+\begin{itemize}
+  \item FastAPI, intégrations LLM (OpenAI/Claude/Gemini), pipelines RAG, orchestration multi-agents — 5+ livraisons, 8 audits OWASP.
+\end{itemize}
+\cventry{Chef de projet technique — Équipe 8 personnes (projet classé 1er ENIT)}{VMate}{Tunisie}{01/2024 -- 06/2024}
+\begin{itemize}
+  \item Coordination Agile/Scrum, arbitrages techniques, livraison plateforme web/mobile sécurisée — gestion d'équipe 8 pers.
+\end{itemize}
+\cventry{Stagiaire SAP — Pipeline ELK/N8N}{Streamlink}{Tunisie}{07/2025 -- 08/2025}
+\begin{itemize}
+  \item Python/PyRFC → ELK → N8N → TheHive — détection $<$2min, blocage $<$7min — pipeline RAG-like.
+\end{itemize}
+\cventry{Stagiaire Sécurité Réseau}{Tunisie Telecom}{Tunisie}{07/2024}
+\begin{itemize}
+  \item Elastic/Kibana + Sigma, 10+ vulnérabilités, Wireshark/Nmap — culture monitoring.
+\end{itemize}
+
+\section{Projets}
+\cventry{Chatbot RAG — 900K (Tunisie Telecom)}{Python, LangChain, Gemini, Azure AI, PostgreSQL}{}{2026}
+\begin{itemize}
+  \item Production : retrieval sémantique, génération Gemini, monitoring LangSmith/Grafana, prévision 3-30j — github.com/bahamouldi/tunisie\_telecom
+\end{itemize}
+\cventry{Agents Distants — A2A Microsoft Framework}{Python, Azure AI Foundry}{}{2026}
+\begin{itemize}
+  \item Agents collaboratifs via A2A sur Azure — génération contenu \& enchaînement tâches.
+\end{itemize}
+\cventry{BeeWAF — WAF Intelligent 27 modules (PFE 86/100)}{FastAPI, ML, Docker, K8s, ELK}{}{2026}
+\begin{itemize}
+  \item 107 signatures (9 824 regex), 3 ML (92.3\% accuracy, 98.2\% precision), 37 CVE, 7 référentiels, $<$20ms — prod 2 apps.
+\end{itemize}
+\cventry{Web Attack Detection via Data Mining — K-Means SHAP}{Python, Scikit-learn, SHAP, AWS, Pandas}{}{2024}
+\begin{itemize}
+  \item Clustering K-Means (silhouette 0.787) sur logs AWS — 39 attaques détectées (13.8\%), explicabilité SHAP, pipeline data mining.
+\end{itemize}
+
+\section{Formation}
+\cventry{Diplôme d'Ingénieur Génie Informatique — Mention Très Bien}{ENIT}{Tunisie}{09/2023 -- 06/2026}
+\begin{itemize}
+  \item Classé 65e/600+ concours national. PFE agents IA \& RAG 86/100 (25/06/2026).
+\end{itemize}
+\cventry{Classes préparatoires Physique-Technologie}{IPEI El Manar}{Tunisie}{09/2021 -- 06/2023}
+\cventry{Bac Technique — Mention Très Bien}{Lycée Abdelaziz Khouja, Kélibia}{Tunisie}{06/2021}
+
+\section{Certifications}
+Fondements du Deep Learning — NVIDIA (2025) ; Adversarial ML — NVIDIA (2025) ; Machine Learning — NVIDIA (2024) ; CCNA — Cisco (2025) ; Git \& GitHub — 365 Data Science (2024).
+
+\section{Langues}
+Anglais (B2) \quad|\quad Français (B2) \quad|\quad Arabe (Natif)
+
+\end{document}
